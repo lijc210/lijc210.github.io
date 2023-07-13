@@ -6,8 +6,8 @@
     <link>https://www.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 13 Jul 2023 07:58:16 GMT</pubDate>
-    <lastBuildDate>Thu, 13 Jul 2023 07:58:16 GMT</lastBuildDate>
+    <pubDate>Thu, 13 Jul 2023 10:12:08 GMT</pubDate>
+    <lastBuildDate>Thu, 13 Jul 2023 10:12:08 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>算法</category>
@@ -46,10 +46,11 @@
       <link>https://www.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html</link>
       <guid>https://www.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html</guid>
       <source url="https://www.cizai.io/rss.xml">关于本站</source>
-      <description>关于本站 一个全栈开发者，从事大数据开发。</description>
+      <description>关于本站 一个全栈开发者，从事大数据开发。 本站桌面端安装包，支持windows，linux，mac。下载地址</description>
       <pubDate>Thu, 13 Jul 2023 03:24:02 GMT</pubDate>
       <content:encoded><![CDATA[<h1> 关于本站</h1>
 <p>一个全栈开发者，从事大数据开发。</p>
+<p>本站桌面端安装包，支持windows，linux，mac。<a href="https://file.cizai.io/wooapp.json" target="_blank" rel="noopener noreferrer">下载地址</a></p>
 ]]></content:encoded>
       <enclosure url="https://www.cizai.io/assets/images/cover3.jpg" type="image/jpeg"/>
     </item>
