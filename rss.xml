@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://www.cizai.io/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <atom:link href="https://www.cizai.io/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>此在笔记</title>
+    <link>https://www.cizai.io/</link>
+    <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
+    <language>zh-CN</language>
+    <pubDate>Thu, 13 Jul 2023 03:26:49 GMT</pubDate>
+    <lastBuildDate>Thu, 13 Jul 2023 03:26:49 GMT</lastBuildDate>
+    <generator>vuepress-plugin-feed2</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>文章</category>
+    <category>站点收藏</category>
+    <category>每日悦读</category>
+    <category>数据库</category>
+    <item>
+      <title>template</title>
+      <link>https://www.cizai.io/template.html</link>
+      <guid>https://www.cizai.io/template.html</guid>
+      <source url="https://www.cizai.io/rss.xml">template</source>
+      <description>template</description>
+      <category>文章</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> template</h1>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>关于本站</title>
+      <link>https://www.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html</link>
+      <guid>https://www.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html</guid>
+      <source url="https://www.cizai.io/rss.xml">关于本站</source>
+      <description>关于本站 一个全栈开发者，从事大数据开发。</description>
+      <pubDate>Thu, 13 Jul 2023 03:24:02 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> 关于本站</h1>
+<p>一个全栈开发者，从事大数据开发。</p>
+]]></content:encoded>
+      <enclosure url="https://www.cizai.io/assets/images/cover3.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>站点收藏</title>
+      <link>https://www.cizai.io/%E7%AB%99%E7%82%B9%E6%94%B6%E8%97%8F.html</link>
+      <guid>https://www.cizai.io/%E7%AB%99%E7%82%B9%E6%94%B6%E8%97%8F.html</guid>
+      <source url="https://www.cizai.io/rss.xml">站点收藏</source>
+      <description>站点收藏 白噪音 简介 网址 下雨声 http://www.rainymood.com/ 下雨声 http://mostlyrain.com/ 下雨声 https://www.calm.com/</description>
+      <category>站点收藏</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> 站点收藏</h1>
+<h2> 白噪音</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">简介</th>
+<th style="text-align:left">网址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">下雨声</td>
+<td style="text-align:left"><a href="http://www.rainymood.com/" target="_blank" rel="noopener noreferrer">http://www.rainymood.com/</a></td>
+</tr>
+<tr>
+<td style="text-align:left">下雨声</td>
+<td style="text-align:left"><a href="http://mostlyrain.com/" target="_blank" rel="noopener noreferrer">http://mostlyrain.com/</a></td>
+</tr>
+<tr>
+<td style="text-align:left">下雨声</td>
+<td style="text-align:left"><a href="https://www.calm.com/" target="_blank" rel="noopener noreferrer">https://www.calm.com/</a></td>
+</tr>
+</tbody>
+</table>
+<h2> 独立博客列表</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">简介</th>
+<th style="text-align:left">网址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">中文独立博客列表</td>
+<td style="text-align:left"><a href="https://github.com/timqian/chinese-independent-blogs" target="_blank" rel="noopener noreferrer">https://github.com/timqian/chinese-independent-blogs</a></td>
+</tr>
+<tr>
+<td style="text-align:left">中国独立开发者项目列表</td>
+<td style="text-align:left"><a href="https://github.com/1c7/chinese-independent-developer" target="_blank" rel="noopener noreferrer">https://github.com/1c7/chinese-independent-developer</a></td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>订阅说明</title>
+      <link>https://www.cizai.io/%E6%AF%8F%E6%97%A5%E6%82%A6%E8%AF%BB/%E8%AE%A2%E9%98%85%E8%AF%B4%E6%98%8E.html</link>
+      <guid>https://www.cizai.io/%E6%AF%8F%E6%97%A5%E6%82%A6%E8%AF%BB/%E8%AE%A2%E9%98%85%E8%AF%B4%E6%98%8E.html</guid>
+      <source url="https://www.cizai.io/rss.xml">订阅说明</source>
+      <description>订阅说明 实现原理 使用ttrss.py启动订阅服务接口，使用rsshub订阅插件，将Tiny Tiny RSS地址改为订阅接口地址，即可直接订阅网站，存入rss.csv。 定时执行write2csv.py，抓取网络上的订阅地址，存入rss.csv。 定时执行write2md.py，读取rss.csv，获取今日新增文章，写入md文档，提交git，自动显示在每日悦读。 参考代码： ttrss.py # coding: utf-8 &amp;quot;&amp;quot;&amp;quot; @File : main.py @Time : 2023/05/05 18:46:35 @Author : lijc210@163.com @Desc : 模拟rsshub订阅插件，将Tiny Tiny RSS订阅到此地址 依赖模块 pip install fastapi,feedparser,uvicorn,requests 订阅请求地址 http://localhost:8000/public.php?op=bookmarklets--subscribe&amp;amp;feed_url=https://rustcc.cn/rss &amp;quot;&amp;quot;&amp;quot; import time import traceback import uvicorn from datetime import datetime, timedelta from typing import Union from fastapi import FastAPI from write2csv import write2csv app = FastAPI() order: str = time.strftime(&amp;quot;%Y%m%d&amp;quot;, time.localtime(time.time())) date: str = time.strftime(&amp;quot;%Y-%m-%d&amp;quot;, time.localtime(time.time())) tomorrow = (datetime.now() + timedelta(days=1)).strftime(&amp;quot;%Y-%m-%d&amp;quot;) @app.get(&amp;quot;/&amp;quot;) def read_root(): return {&amp;quot;Hello&amp;quot;: &amp;quot;World&amp;quot;} @app.get(&amp;quot;/items/{item_id}&amp;quot;) def read_item(item_id: int, q: Union[str, None] = None): return {&amp;quot;item_id&amp;quot;: item_id, &amp;quot;q&amp;quot;: q} @app.get(&amp;quot;/public.php&amp;quot;) def public(op: str, feed_url: str): try: # print(op) # print(feed_url) success, msg = write2csv(feed_url) except Exception: print(traceback.format_exc()) success, msg = False, traceback.format_exc() return {&amp;quot;success&amp;quot;: success, &amp;quot;msg&amp;quot;: msg} if __name__ == &amp;quot;__main__&amp;quot;: uvicorn.run(app=&amp;quot;ttrss:app&amp;quot;, host=&amp;quot;0.0.0.0&amp;quot;, port=8000, reload=True)</description>
+      <category>每日悦读</category>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> 订阅说明</h1>
+<h2> 实现原理</h2>
+<p>使用ttrss.py启动订阅服务接口，使用rsshub订阅插件，将Tiny Tiny RSS地址改为订阅接口地址，即可直接订阅网站，存入rss.csv。</p>
+<p>定时执行write2csv.py<span></span>，抓取网络上的订阅地址，存入rss.csv。</p>
+<p>定时执行write2md.py<span></span>，读取rss.csv，获取今日新增文章，写入md文档，提交git，自动显示在每日悦读。</p>
+<p>参考代码：</p>
+<h2> ttrss.py<span></span></h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> write2md.py<span></span></h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> write2csv.py<span></span></h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> utils.py<span></span></h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>clickhouse</title>
+      <link>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhouse.html</link>
+      <guid>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhouse.html</guid>
+      <source url="https://www.cizai.io/rss.xml">clickhouse</source>
+      <description>clickhouse clickhouse 常用命令 更新数据 ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update item_no=&amp;apos;&amp;apos; where item_no is null; ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update store_shop_code=&amp;apos;&amp;apos; where store_shop_code is null; ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update unify_goods_code=&amp;apos;&amp;apos; where unify_goods_code is null; 重命名表 RENAME TABLE table_A TO table_A_bak, table_B TO table_B_bak; 查看所有表 select * FROM system.tables t WHERE database =&amp;apos;ads&amp;apos; AND engine &amp;lt;&amp;gt;&amp;apos;Distributed&amp;apos; ORDER by total_rows DESC select * FROM system.tables t WHERE database =&amp;apos;ads&amp;apos; AND engine &amp;lt;&amp;gt;&amp;apos;Distributed&amp;apos; and name not like &amp;apos;%del%&amp;apos; and name not like &amp;apos;%20%&amp;apos; ORDER by total_rows DESC 自动清理query_log，query_thread_log，trace_log ALTER TABLE system.query_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY ALTER TABLE system.query_thread_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY ALTER TABLE system.trace_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY 立即清理 alter table system.query_thread_log_0 drop partition &amp;apos;202105&amp;apos; 分区名可以用下语句查询 select * from system.parts p where table = &amp;apos;表名&amp;apos; 查看parts select * from system.parts where table = &amp;apos;abs_activity_item_info_day_replica&amp;apos; select * from system.parts where active = 0 当前慢查询 SELECT * FROM system.processes limit 100 耗时大于60秒 kill query where elapsed &amp;gt;= 60 clickhouse不能创建等执行操作时（每个节点都要执行） select * from system.mutations where is_done = 0; kill mutation ON CLUSTER ck_cluster1 where database=&amp;apos;ads&amp;apos; and table=&amp;apos;ads_jd_erp_sale_outstock_replica&amp;apos; 进入zk清理任务 deleteall /clickhouse/distributed_ddl/query-0000011932 查询阻塞的任务 select * from system.distributed_ddl_queue where status != &amp;apos;Finished&amp;apos; 查看表大小 SELECT table AS `表名`, sum(rows) AS `总行数`, formatReadableSize(sum(data_uncompressed_bytes)) AS `原始大小`, formatReadableSize(sum(data_compressed_bytes)) AS `压缩大小`, round((sum(data_compressed_bytes) / sum(data_uncompressed_bytes)) * 100, 0) AS `压缩率` FROM system.parts GROUP BY table order by sum(data_compressed_bytes) desc 修改字段名 ALTER TABLE visits RENAME COLUMN webBrowser TO browser 分布式集群下用分布式DDL修改字段名 ALTER TABLE visits on cluster shipin_cluster RENAME COLUMN webBrowser TO browser 新增字段 alter table ads_itemprice_sales_section_replica ON CLUSTER ck_cluster1 add column sort_mark Nullable(int) alter table ads_itemprice_sales_section ON CLUSTER ck_cluster1 add column sort_mark Nullable(int)</description>
+      <category>数据库</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> clickhouse</h1>
+<h2> clickhouse 常用命令</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> clickhouse表引擎</h2>
+<table>
+<thead>
+<tr>
+<th>系列</th>
+<th>引擎</th>
+<th>特点</th>
+<th>场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Log</td>
+<td>TinyLog</td>
+<td>不支持并发读取数据文件，查询性能较差；格式简单，适合用来暂存中间数据；</td>
+<td>Log系列表引擎功能相对简单，主要用于快速写入小表（1百万行左右的表），然后全部读出的场景。</td>
+</tr>
+<tr>
+<td></td>
+<td>StripLog</td>
+<td>支持并发读取数据文件，查询性能比TinyLog好；将所有列存储在同一个大文件中，减少了文件个数；</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Log</td>
+<td>支持并发读取数据文件，查询性能比TinyLog好；每个列会单独存储在一个独立文件中。</td>
+<td></td>
+</tr>
+<tr>
+<td>Integration</td>
+<td>Kafka</td>
+<td>将Kafka Topic中的数据直接导入到ClickHouse；</td>
+<td>该系统表引擎主要用于将外部数据导入到ClickHouse中，或者在ClickHouse中直接操作外部数据源。</td>
+</tr>
+<tr>
+<td></td>
+<td>MySQL</td>
+<td>将Mysql作为存储引擎，直接在ClickHouse中对MySQL表进行select等操作；</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>JDBC/ODBC</td>
+<td>通过指定jdbc、odbc连接串读取数据源；</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>HDFS</td>
+<td>直接读取HDFS上的特定格式的数据文件；</td>
+<td></td>
+</tr>
+<tr>
+<td>Special</td>
+<td>Memory</td>
+<td>将数据存储在内存中，重启后会导致数据丢失。查询性能极好，适合于对于数据持久性没有要求的1亿一下的小表。在ClickHouse中，通常用来做临时表。</td>
+<td>Special系列的表引擎，大多是为了特定场景而定制的</td>
+</tr>
+<tr>
+<td></td>
+<td>Buffer</td>
+<td>为目标表设置一个内存buffer，当buffer达到了一定条件之后会flush到磁盘。</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>File</td>
+<td>直接将本地文件作为数据存储；</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Null</td>
+<td>写入数据被丢弃、读取数据为空；</td>
+<td></td>
+</tr>
+<tr>
+<td>MergeTree</td>
+<td>MergeTree</td>
+<td>MergeTree表引擎主要用于海量数据分析，支持数据分区、存储有序、主键索引、稀疏索引、数据TTL等。MergeTree支持所有ClickHouse SQL语法，但是有些功能与MySQL并不一致，比如在MergeTree中主键并不用于去重</td>
+<td>MergeTree系列才是官方主推的存储引擎，支持几乎所有ClickHouse核心功能。</td>
+</tr>
+<tr>
+<td></td>
+<td>ReplacingMergeTree</td>
+<td>为了解决MergeTree相同主键无法去重的问题，ClickHouse提供了ReplacingMergeTree引擎，用来做去重。</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>CollapsingMergeTree</td>
+<td>ClickHouse实现了CollapsingMergeTree来消除ReplacingMergeTree的限制。该引擎要求在建表语句中指定一个标记列Sign，后台Compaction时会将主键相同、Sign相反的行进行折叠，也即删除。</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>VersionedCollapsingMergeTree</td>
+<td>为了解决CollapsingMergeTree乱序写入情况下无法正常折叠问题，VersionedCollapsingMergeTree表引擎在建表语句中新增了一列Version，用于在乱序情况下记录状态行与取消行的对应关系。主键相同，且Version相同、Sign相反的行，在Compaction时会被删除</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>SummingMergeTree</td>
+<td>ClickHouse通过SummingMergeTree来支持对主键列进行预先聚合。在后台Compaction时，会将主键相同的多行进行sum求和，然后使用一行数据取而代之，从而大幅度降低存储空间占用，提升聚合计算性能。</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>AggregatingMergeTree</td>
+<td>AggregatingMergeTree也是预先聚合引擎的一种，用于提升聚合计算的性能。与SummingMergeTree的区别在于：SummingMergeTree对非主键列进行sum聚合，而AggregatingMergeTree则可以指定各种聚合函数。</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Replicated数据副本</td>
+<td>副本不依赖分片。每个分片有它自己的独立副本，ReplicatedReplacingMergeTree引擎可用于按主键更新写入</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> clickhouse性能优化</h2>
+<p>数据类型</p>
+<ul>
+<li>建表时能用数值型或日期时间型表示的字段，就不要用字符串——全String类型在以Hive为中心的数仓建设中常见，但CK环境不应受此影响。</li>
+<li>虽然clickhouse底层将DateTime存储为时间戳Long类型，但不建议直接存储Long类型，因为DateTime不需要经过函数转换处理，执行效率高、可读性好。</li>
+<li>官方已经指出Nullable类型几乎总是会拖累性能，因为存储Nullable列时需要创建一个额外的文件来存储NULL的标记，并且Nullable列无法被索引。因此除非极特殊情况，应直接使用字段默认值表示空，或者自行指定一个在业务中无意义的值（例如用-1表示没有商品ID）。</li>
+<li>数值类型分组最快，在新版本中ck会对string类型进行一次hash映射再分组<br>
+分区和索引</li>
+<li>分区粒度根据业务特点决定，不宜过粗或过细。一般选择按天分区，也可指定为tuple()；以单表1亿数据为例，分区大小控制在10-30个为最佳。</li>
+<li>必须指定索引列，clickhouse中的索引列即排序列，通过order by指定，一般在查询条件中经常被用来充当筛选条件的属性被纳入进来；</li>
+<li>可以是单一维度，也可以是组合维度的索引；通常需要满足高基列在前、查询频率大的在前原则；</li>
+<li>还有基数特别大的不适合做索引列，如用户表的userid字段；通常筛选后的数据满足在百万以内为最佳。<br>
+表参数</li>
+<li>index_granularity 是用来控制索引粒度的 默认是8192，如非必须不建议调整。</li>
+<li>如果表中不是必须保留全量历史数据，建议指定TTL，可以免去手动过期历史数据的麻烦。TTL也可以通过ALTER TABLE语句随时修改。</li>
+</ul>
+<h2> clickhouse 创建表等命令</h2>
+<p>启动命令<br>
+systemctl start clickhouse<br>
+systemctl start clickhouse9001</p>
+<p>service clickhouse-server stop</p>
+<p>clickhouse start<br>
+su -s /bin/sh 'clickhouse' -c '/usr/bin/clickhouse-server --config-file /etc/clickhouse-server/config.xml --pid-file /var/run/clickhouse-server/clickhouse-server.pid --daemon'</p>
+<p>su -s /bin/sh 'clickhouse' -c '/usr/bin/clickhouse-server --config-file /etc/clickhouse-server/config9001.xml --pid-file /var/run/clickhouse-server/clickhouse-server9001.pid --daemon'</p>
+<p>su -s /bin/sh 'clickhouse' -c '/usr/bin/clickhouse-server --config-file /etc/clickhouse-server/config.xml --daemon'</p>
+<p>su -s /bin/sh 'clickhouse' -c '/usr/bin/clickhouse-server --config-file /etc/clickhouse-server/config9001.xml --daemon'</p>
+<p>命令行登录<br>
+clickhouse-client -h 127.0.0.1 -u default --password 6lYaUiFx</p>
+<p>一次性在集群每个机器上建立本地表<br>
+CREATE TABLE IF NOT EXISTS default.test_replica ON CLUSTER ck_cluster1<br>
+(<br>
+id Int32,<br>
+age UInt16,<br>
+name String,<br>
+<code>date</code> Date<br>
+)<br>
+ENGINE = ReplicatedMergeTree('/clickhouse/tables/{layer}-{shard}/default_test_replica', '{replica}')<br>
+PARTITION BY date<br>
+PRIMARY KEY (id)<br>
+ORDER BY (id, age)<br>
+SETTINGS index_granularity = 8192;</p>
+<p>一次性在集群的每个机器上面建立分布式表<br>
+CREATE TABLE default.test_dist<br>
+ON CLUSTER ck_cluster1<br>
+AS default.test_replica<br>
+ENGINE = Distributed(ck_cluster1, default, test_replica, rand())</p>
+<p>删除表<br>
+drop TABLE default.test_replica ON CLUSTER ck_cluster1<br>
+drop TABLE default.test_dist ON CLUSTER ck_cluster1</p>
+<p>数据写入分布式表<br>
+INSERT INTO default.test_dist (id, age, name, date) VALUES<br>
+(1, '20','sam', '2017-12-26'),<br>
+(2, '20','sam', '2017-12-26'),<br>
+(3, '20','sam', '2017-12-26'),<br>
+(4, '20','sam', '2017-12-26'),<br>
+(5, '20','sam', '2017-12-27'),<br>
+(6, '20','sam', '2017-12-27'),<br>
+(7, '20','sam', '2017-12-27'),<br>
+(8, '20','sam', '2017-12-27');<br>
+数据会分布到各个节点本地表default.test_replica中，查询时使用分布式表default.test_dist</p>
+<p>删除指定分区<br>
+ALTER TABLE default.test_replica  ON CLUSTER ck_cluster1 DROP PARTITION  '2017-12-27';</p>
+<p>查看表分区<br>
+select database,table,partition,partition_id,name,path from system.parts where table='test_replica';</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>elasticsearch</title>
+      <link>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch.html</link>
+      <guid>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch.html</guid>
+      <source url="https://www.cizai.io/rss.xml">elasticsearch</source>
+      <description>elasticsearch 查看集群状态，修复 GET _cluster/allocation/explain?pretty GET /_cluster/allocation/explain get /_cluster/settings PUT /_cluster/settings { &amp;quot;transient&amp;quot;: { &amp;quot;cluster.routing.allocation.enable&amp;quot;: &amp;quot;none&amp;quot; } } #分片配置 PUT /_cluster/settings { &amp;quot;transient&amp;quot;: { &amp;quot;cluster.routing.allocation.enable&amp;quot;: &amp;quot;all&amp;quot; } } #分片重新均衡分配 PUT /_cluster/settings { &amp;quot;transient&amp;quot;: { &amp;quot;cluster.routing.rebalance.enable&amp;quot;: &amp;quot;all&amp;quot; } } # 设置副本数量 PUT /aabb/_settings { &amp;quot;number_of_replicas&amp;quot; : 2 } get _cluster/health?level=indices GET _cat/nodes?v&amp;amp;h=ip,heap.current,heap.percent,heap.max,ram.max,disk.avail,node.role,m curl http://localhost:9200/_cat/nodes?v&amp;amp;h=ip,heap.current,heap.percent,heap.max,ram.max,disk.avail,node.role,m get _cat/master post /_cluster/reroute { &amp;quot;commands&amp;quot;: [ { &amp;quot;allocate_empty_primary&amp;quot;: { &amp;quot;index&amp;quot;: &amp;quot;wap_yonghu_v1&amp;quot;, &amp;quot;shard&amp;quot;: 2, &amp;quot;node&amp;quot;: &amp;quot;Ee6ubnnmT52LJchcw0P-pQ&amp;quot;, &amp;quot;accept_data_loss&amp;quot;: false } } ] } #数据丢失 post /_cluster/reroute { &amp;quot;commands&amp;quot;: [ { &amp;quot;allocate_empty_primary&amp;quot;: { &amp;quot;index&amp;quot;: &amp;quot;aabb_v2&amp;quot;, &amp;quot;shard&amp;quot;: 0, &amp;quot;node&amp;quot;: &amp;quot;Ee6ubnnmT52LJchcw0P-pQ&amp;quot;, &amp;quot;accept_data_loss&amp;quot;: true } } ] } #数据不丢失 post /_cluster/reroute { &amp;quot;commands&amp;quot; : [ { &amp;quot;allocate_stale_primary&amp;quot; : { &amp;quot;index&amp;quot; : &amp;quot;aabb_v2&amp;quot;, &amp;quot;shard&amp;quot; :0, &amp;quot;node&amp;quot; : &amp;quot;Ee6ubnnmT52LJchcw0P-pQ&amp;quot;, &amp;quot;accept_data_loss&amp;quot; : true } }] } POST /_cluster/reroute?retry_failed=true 手动迁移分片 POST /_cluster/reroute { &amp;quot;commands&amp;quot;: [ { &amp;quot;move&amp;quot;: { &amp;quot;index&amp;quot;: &amp;quot;aabb_v1&amp;quot;, &amp;quot;shard&amp;quot;: 1, &amp;quot;from_node&amp;quot;: &amp;quot;10.10.20.143&amp;quot;, &amp;quot;to_node&amp;quot;: &amp;quot;10.10.20.153&amp;quot; } } ] }</description>
+      <category>数据库</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> elasticsearch</h1>
+<h2> 查看集群状态，修复</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 记录慢日志，重启也生效</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 记录慢查询日志</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 批量按条件更新</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 搜索词分权重</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 统一更改刷新时间</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 优化性能</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 索引复制数据</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 暂时移除一个节点</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 搜索结果返回不一致问题</h2>
+<p>一、背景</p>
+<p>这周在使用Elasticsearch搜索的时候遇到一个，对于同一个搜索请求，会出现top50返回结果和排序不一致的问题。那么为什么会出现这样的问题？<br>
+后来通过百度和google，发现这是因为Elastcisearch的分布式搜索特性导致。Elasticsearch在搜索时，会循环的选择主分片和其副本中的一个来计算和返回搜索结果，而由于主分片和副本中相关统计信息的不同，从而导致了同一个搜索串的评分的不一致，进而导致排序不一样。而造成这种主分片和副本统计信息不一致的具体原因，是因为文档删除时造成的，具体可以参考官方给出的解释：<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/consistent-scoring.html" target="_blank" rel="noopener noreferrer">https://www.elastic.co/guide/en/elasticsearch/reference/current/consistent-scoring.html</a><br>
+二、解决办法<br>
+针对上述问题，Elasticsearch官方也给出了解决方案（<a href="https://www.elastic.co/guide/en/elasticsearch/guide/2.x/_search_options.html#_preference%EF%BC%89%EF%BC%8C%E5%8D%B3%E5%9C%A8%E6%90%9C%E7%B4%A2%E6%97%B6%E8%AE%BE%E7%BD%AEpreference%E7%89%B9%E6%80%A7%E3%80%82%E5%A6%82%E4%B8%8B%EF%BC%9A" target="_blank" rel="noopener noreferrer">https://www.elastic.co/guide/en/elasticsearch/guide/2.x/_search_options.html#_preference），即在搜索时设置preference特性。如下：</a><br>
+SearchRequestBuilder builder = client.prepareSearch(offLin.index)<br>
+.setTypes(offLin.type)<br>
+.setQuery(queryBuilder)<br>
+.setFetchSource(fetchFields, null)<br>
+.setSize(limit)<br>
+.setPreference("_primary_first");<br>
+那么preference可以取哪些值，每个值的含义是什么呢，可以参考下面解释：<br>
+（1）randomizeacross shards：随机选择分片或其副本查询数据，es的默认方式。<br>
+（2）_local：优先在本地节点上的分片查询数据然后再去其他节点上的分片查询，本地节点没有IO问题但有可能造成负载不均问题。<br>
+（3）_primary：搜索只在主分片执行搜索请求，副本不参与搜索；性能会打折扣，达不到性能的水平扩展。<br>
+（4）_primary_first：优先在主分片执行，如果主分片挂掉，会在副本执行请求。<br>
+（5）_only_node:123 ：只在123这个节点执行搜索。<br>
+（6）_prefer_node:123：搜索请求优先在节点123执行。<br>
+（7）_shards:1,2：搜索只在分片2、3执行，可以与_primary参数一起使用如：_shards:2,3;_primary<br>
+（8）随机字符串：指定一个随机字符串，可以保证同样的请求，被分配到同样的副本上面，从而保证同一请求结果的稳定性。我遇到的问题就可以使用这种方式，把搜索串的hash值作为随机字符串，这样可以保证同一个搜索条件的请求的返回结果和排序一致。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>guassdb</title>
+      <link>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/guassdb.html</link>
+      <guid>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/guassdb.html</guid>
+      <source url="https://www.cizai.io/rss.xml">guassdb</source>
+      <description>guassdb 优化 1、删除表dim_shop_sales_target在字段target_date上的索引（注：列存表非必要无需创建索引，如创建，可选用btree索引，不要创建默认的psort索引，贵司当前列存表上，基本都是psort索引） 2、dim_jd_erp_shop表，建议修改为复制表（数据总量较小的维度表，建议调整为复制表） 自动更新时间 CREATE TABLE public.ads_order_city_rank ( pkey varchar(50) NOT NULL, sdate date NOT NULL, shop_code_inner varchar(255) NOT NULL, shop_name varchar(200) NULL DEFAULT NULL::character varying, city varchar(200) NULL DEFAULT NULL::character varying, city_rank int4 NOT NULL, city_rank_last float8 NOT NULL, city_rank_first float8 NOT NULL, avg_city_sales float8 NOT NULL, distance_avg_sales float8 NOT NULL, divided_avg_sales float8 NOT NULL, city_rank_max int4 NOT NULL, distance_max_sales float8 NOT NULL, divided_max_sales float8 NOT NULL, create_time timestamp NULL DEFAULT now()::timestamp without time zone, update_time timestamp DEFAULT current_timestamp ON UPDATE current_timestamp, CONSTRAINT ads_order_city_rank_pkey PRIMARY KEY (pkey) ) WITH ( orientation=row, compression=no ); CREATE INDEX idx_shop_code_inner ON ads_order_city_rank USING btree (shop_code_inner) TABLESPACE pg_default;</description>
+      <category>数据库</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> guassdb</h1>
+<h2> 优化</h2>
+<ul>
+<li>1、删除表dim_shop_sales_target在字段target_date上的索引（注：列存表非必要无需创建索引，如创建，可选用btree索引，不要创建默认的psort索引，贵司当前列存表上，基本都是psort索引）</li>
+<li>2、dim_jd_erp_shop表，建议修改为复制表（数据总量较小的维度表，建议调整为复制表）</li>
+</ul>
+<h2> 自动更新时间</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 常用命令</h2>
+<p>CREATE TABLE T2<br>
+(<br>
+id   int not null default nextval('seq1'),<br>
+name text<br>
+);</p>
+<p>CREATE SEQUENCE seq1 cache 100;</p>
+<p>查看分布式列的分布<br>
+select * from table_skewness('public.ads_order_item_sales','shop_code_inner');</p>
+<p>修改分布式列<br>
+ALTER TABLE public.ads_order_item_sales DISTRIBUTE BY HASH(shop_code_inner);</p>
+<p>查看分布式列<br>
+select pg_get_tabledef('ads_order_sales_dws_row')</p>
+<p>查看数据倾斜<br>
+SELECT a.count,b.node_name FROM (SELECT count(*) AS count,xc_node_id FROM ads_order_item_sales GROUP BY xc_node_id) a, pgxc_node b<br>
+WHERE a.xc_node_id=b.node_id ORDER BY a.count desc;</p>
+<p>查看数据倾斜<br>
+SELECT schemaname,tablename,pg_size_pretty(totalsize),skewratio FROM PGXC_GET_TABLE_SKEWNESS WHERE SKEWRATIO &gt; 0.05 ORDER BY TOTALSIZE DESC;</p>
+<p>查看最耗时的10个sql<br>
+SELECT * FROM pgxc_wlm_session_info<br>
+where start_time &gt;= '2023-03-26 00:00:00'<br>
+and query not like 'delete%'<br>
+and query not like 'select count%'<br>
+and query not like 'CREATE%'<br>
+order by duration desc limit 10;</p>
+<p>-- 查询指定表占用的磁盘存储空间<br>
+select pg_size_pretty(pg_relation_size('public.ads_order_sales'));  -- 99 GB<br>
+-- 查询表的脏页率信息<br>
+select dirty_page_rate from PGXC_GET_STAT_ALL_TABLES where relname = 'ads_order_sales';  -- 64.68<br>
+select * from PGXC_GET_STAT_ALL_TABLES where dirty_page_rate&gt;30;</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>hbase</title>
+      <link>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html</link>
+      <guid>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html</guid>
+      <source url="https://www.cizai.io/rss.xml">hbase</source>
+      <description>hbase HBase 常用Shell命令 hbase shell命令 描述 alter 修改列族（column family）模式 count 统计表中行的数量 create 创建表 describe 显示表相关的详细信息 delete 删除指定对象的值（可以为表，行，列对应的值，另外也可以指定时间戳的值） deleteall 删除指定行的所有元素值 disable 使表无效 drop 删除表 enable 使表有效 exists 测试表是否存在 exit 退出hbase shell get 获取行或单元（cell）的值 incr 增加指定表，行或列的值 list 列出hbase中存在的所有表 put 向指向的表单元添加值 tools 列出hbase所支持的工具 scan 通过对表的扫描来获取对用的值 status 返回hbase集群的状态信息 shutdown 关闭hbase集群（与exit不同） truncate 重新创建指定表 version 返回hbase版本信息</description>
+      <category>数据库</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> hbase</h1>
+<h2> HBase 常用Shell命令</h2>
+<table>
+<thead>
+<tr>
+<th>hbase shell命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alter</td>
+<td>修改列族（column family）模式</td>
+</tr>
+<tr>
+<td>count</td>
+<td>统计表中行的数量</td>
+</tr>
+<tr>
+<td>create</td>
+<td>创建表</td>
+</tr>
+<tr>
+<td>describe</td>
+<td>显示表相关的详细信息</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>删除指定对象的值（可以为表，行，列对应的值，另外也可以指定时间戳的值）</td>
+</tr>
+<tr>
+<td>deleteall</td>
+<td>删除指定行的所有元素值</td>
+</tr>
+<tr>
+<td>disable</td>
+<td>使表无效</td>
+</tr>
+<tr>
+<td>drop</td>
+<td>删除表</td>
+</tr>
+<tr>
+<td>enable</td>
+<td>使表有效</td>
+</tr>
+<tr>
+<td>exists</td>
+<td>测试表是否存在</td>
+</tr>
+<tr>
+<td>exit</td>
+<td>退出hbase shell</td>
+</tr>
+<tr>
+<td>get</td>
+<td>获取行或单元（cell）的值</td>
+</tr>
+<tr>
+<td>incr</td>
+<td>增加指定表，行或列的值</td>
+</tr>
+<tr>
+<td>list</td>
+<td>列出hbase中存在的所有表</td>
+</tr>
+<tr>
+<td>put</td>
+<td>向指向的表单元添加值</td>
+</tr>
+<tr>
+<td>tools</td>
+<td>列出hbase所支持的工具</td>
+</tr>
+<tr>
+<td>scan</td>
+<td>通过对表的扫描来获取对用的值</td>
+</tr>
+<tr>
+<td>status</td>
+<td>返回hbase集群的状态信息</td>
+</tr>
+<tr>
+<td>shutdown</td>
+<td>关闭hbase集群（与exit不同）</td>
+</tr>
+<tr>
+<td>truncate</td>
+<td>重新创建指定表</td>
+</tr>
+<tr>
+<td>version</td>
+<td>返回hbase版本信息</td>
+</tr>
+</tbody>
+</table>
+<h2> hbase scan limit</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> hbase建表</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> hbase启动命令</h2>
+<p><a href="https://blog.csdn.net/kelonsen/article/details/78477152" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/kelonsen/article/details/78477152</a></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>hive</title>
+      <link>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hive.html</link>
+      <guid>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hive.html</guid>
+      <source url="https://www.cizai.io/rss.xml">hive</source>
+      <description>hive hive导数据到csv insert overwrite local directory &amp;apos;/home/hadoop/lijicong/test&amp;apos; row format delimited fields terminated by &amp;apos;,&amp;apos; select * from dw.ol_api_consume_channel_fact where month_num = 201902;</description>
+      <category>数据库</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> hive</h1>
+<h2> hive导数据到csv</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> hive新增字段</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> hive优化</h2>
+<ul>
+<li>1、小表放前面，使用map join</li>
+<li>2、避免数据倾斜</li>
+<li>3、合理设置map、reduce数</li>
+<li>4、优化sql写法减少job数</li>
+<li>5、尽量不对字段进行函数计算</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>mongodb</title>
+      <link>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/mongodb.html</link>
+      <guid>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/mongodb.html</guid>
+      <source url="https://www.cizai.io/rss.xml">mongodb</source>
+      <description>mongodb mongodb远程登录命令 mongo 172.20.3.59:27017/admin -u usvr_bi-p</description>
+      <category>数据库</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> mongodb</h1>
+<h2> mongodb远程登录命令</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
