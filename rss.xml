@@ -6,14 +6,30 @@
     <link>https://www.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 13 Jul 2023 06:14:58 GMT</pubDate>
-    <lastBuildDate>Thu, 13 Jul 2023 06:14:58 GMT</lastBuildDate>
+    <pubDate>Thu, 13 Jul 2023 07:00:47 GMT</pubDate>
+    <lastBuildDate>Thu, 13 Jul 2023 07:00:47 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>算法</category>
     <category>文章</category>
     <category>站点收藏</category>
     <category>每日悦读</category>
     <category>数据库</category>
+    <item>
+      <title>算法</title>
+      <link>https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95.html</link>
+      <guid>https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95.html</guid>
+      <source url="https://www.cizai.io/rss.xml">算法</source>
+      <description>算法 标题 2 这里是内容。 标题 3 这里是内容。</description>
+      <category>算法</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> 算法</h1>
+<h2> 标题 2</h2>
+<p>这里是内容。</p>
+<h3> 标题 3</h3>
+<p>这里是内容。</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>template</title>
       <link>https://www.cizai.io/template.html</link>
@@ -525,18 +541,6 @@ select * from PGXC_GET_STAT_ALL_TABLES where dirty_page_rate&gt;30;</p>
 <li>5、尽量不对字段进行函数计算</li>
 </ul>
 ]]></content:encoded>
-    </item>
-    <item>
-      <title>mongodb</title>
-      <link>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/mongodb.html</link>
-      <guid>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/mongodb.html</guid>
-      <source url="https://www.cizai.io/rss.xml">mongodb</source>
-      <description>mongodb mongodb远程登录命令 mongo 172.20.3.59:27017/admin -u usvr_bi-p</description>
-      <category>数据库</category>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h1> mongodb</h1>
-<h2> mongodb远程登录命令</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
   </channel>
 </rss>
