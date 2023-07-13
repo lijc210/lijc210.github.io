@@ -6,8 +6,8 @@
     <link>https://www.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 13 Jul 2023 03:26:49 GMT</pubDate>
-    <lastBuildDate>Thu, 13 Jul 2023 03:26:49 GMT</lastBuildDate>
+    <pubDate>Thu, 13 Jul 2023 03:52:50 GMT</pubDate>
+    <lastBuildDate>Thu, 13 Jul 2023 03:52:50 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>文章</category>
@@ -31,7 +31,7 @@
       <guid>https://www.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html</guid>
       <source url="https://www.cizai.io/rss.xml">关于本站</source>
       <description>关于本站 一个全栈开发者，从事大数据开发。</description>
-      <pubDate>Thu, 13 Jul 2023 03:24:02 GMT</pubDate>
+      <pubDate>Thu, 13 Jul 2023 03:48:21 GMT</pubDate>
       <content:encoded><![CDATA[<h1> 关于本站</h1>
 <p>一个全栈开发者，从事大数据开发。</p>
 ]]></content:encoded>
