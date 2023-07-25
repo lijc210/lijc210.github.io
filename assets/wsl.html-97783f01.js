@@ -1,0 +1,24 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as a,c as s,e as d}from"./app-2ac72844.js";const n={},i=d(`<h1 id="wsl" tabindex="-1"><a class="header-anchor" href="#wsl" aria-hidden="true">#</a> wsl</h1><h2 id="列出wsl子系统" tabindex="-1"><a class="header-anchor" href="#列出wsl子系统" aria-hidden="true">#</a> 列出WSL子系统</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>wslconfig /list
+wsl --list
+wsl -l -v
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="关闭ubuntu子系统" tabindex="-1"><a class="header-anchor" href="#关闭ubuntu子系统" aria-hidden="true">#</a> 关闭Ubuntu子系统</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>wsl --terminate Ubuntu
+wsl -t Ubuntu
+wsl --shutdown
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="启动wsl" tabindex="-1"><a class="header-anchor" href="#启动wsl" aria-hidden="true">#</a> 启动WSL</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>wsl
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="限制wsl2内存" tabindex="-1"><a class="header-anchor" href="#限制wsl2内存" aria-hidden="true">#</a> 限制wsl2内存</h2><p>C:\\Users\\YourUsername\\.wslconfig</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>[wsl2]
+memory=4GB  # Limits VM memory in WSL 2GB
+swap=4GB
+localhostForwarding=true
+processors=4 # Makes the WSL 2 VM use two virtual processors
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="如何在局域网的其他主机上中访问本机的wsl2" tabindex="-1"><a class="header-anchor" href="#如何在局域网的其他主机上中访问本机的wsl2" aria-hidden="true">#</a> 如何在局域网的其他主机上中访问本机的WSL2</h2><p>listenport 后面跟本机端口（你提供给手机访问的端口），connectaddress 后面跟WSL2的ip地址，connectport 后面跟WSL2里服务使用的端口。</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>netsh interface portproxy add v4tov4 listenport=15603 connectaddress= 172.26.35.90 connectport=15603 listenaddress=0.0.0.0 protocol=tcp
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="wsl2文件迁移到d盘" tabindex="-1"><a class="header-anchor" href="#wsl2文件迁移到d盘" aria-hidden="true">#</a> WSL2文件迁移到D盘</h2><h3 id="查看当前wsl" tabindex="-1"><a class="header-anchor" href="#查看当前wsl" aria-hidden="true">#</a> 查看当前wsl</h3><p>通过输出看到当前的wsl名称是Ubuntu</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>wsl -l
+
+适用于 Linux 的 Windows 子系统分发版:
+Ubuntu (默认)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="导出" tabindex="-1"><a class="header-anchor" href="#导出" aria-hidden="true">#</a> 导出</h3><p>导出到D盘，文件名为ubuntu.tar，这里需要等一段时间。</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>wsl --export Ubuntu d://ubuntu.tar
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="注销原wsl" tabindex="-1"><a class="header-anchor" href="#注销原wsl" aria-hidden="true">#</a> 注销原wsl</h3><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>wsl --unregister Ubuntu
+正在注销...
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="导入" tabindex="-1"><a class="header-anchor" href="#导入" aria-hidden="true">#</a> 导入</h3><p>先在D盘新建文件夹存放wls文件，然后将上面导出的ubuntu.tar文件，通过wsl的import命令导入，指定导入的wsl文件夹和上面导出的tar文件。导入也需要等待。</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>wsl --import Ubuntu d:\\wsl\\Ubuntu D:\\ubuntu.tar
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>导入成功后，启动</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>wsl
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>发现是root用户登陆的，在powershell中执行命令，修改默认登陆账户</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>Ubuntu config --default-user ubuntu
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,29),t=[i];function l(r,u){return a(),s("div",null,t)}const v=e(n,[["render",l],["__file","wsl.html.vue"]]);export{v as default};
