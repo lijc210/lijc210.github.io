@@ -3,15 +3,37 @@
   <id>https://www.cizai.io/</id>
   <title>此在笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
-  <updated>2023-07-30T01:13:29.399Z</updated>
+  <updated>2023-08-07T06:04:08.522Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://www.cizai.io/atom.xml"/>
   <link rel="alternate" href="https://www.cizai.io/"/>
+  <category term="工具"/>
   <category term="算法"/>
   <category term="文章"/>
   <category term="站点收藏"/>
   <category term="每日悦读"/>
   <category term="数据库"/>
+  <entry>
+    <title type="text">dbeaver</title>
+    <id>https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/dbeaver.html</id>
+    <link href="https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/dbeaver.html"/>
+    <updated>2023-07-31T10:04:56.000Z</updated>
+    <summary type="html"><![CDATA[<h1> dbeaver</h1>
+<h2> dbeaver 设置maven</h2>
+<p>dbeaver 官方下载地址&nbsp;<a href="https://dbeaver.io/download/" target="_blank" rel="noopener noreferrer">https://dbeaver.io/download/</a>&nbsp; 免费版，收费版</p>
+<p>1,窗口----首选项</p>
+<figure><img src="https://image.cha138.com/20230314/c779870fca584a85a887a535089726b3.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>]]></summary>
+    <content type="html"><![CDATA[<h1> dbeaver</h1>
+<h2> dbeaver 设置maven</h2>
+<p>dbeaver 官方下载地址&nbsp;<a href="https://dbeaver.io/download/" target="_blank" rel="noopener noreferrer">https://dbeaver.io/download/</a>&nbsp; 免费版，收费版</p>
+<p>1,窗口----首选项</p>
+<figure><img src="https://image.cha138.com/20230314/c779870fca584a85a887a535089726b3.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>2，添加一个阿里仓库源<a href="http://maven.aliyun.com/nexus/content/groups/public/" target="_blank" rel="noopener noreferrer">http://maven.aliyun.com/nexus/content/groups/public/</a></p>
+<figure><img src="https://image.cha138.com/20230314/5ef424d38f034aedafd44cb4911ea785.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+]]></content>
+    <category term="工具"/>
+    <published>2022-01-01T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">算法</title>
     <id>https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95.html</id>
@@ -643,46 +665,24 @@ SearchRequestBuilder builder = client.prepareSearch(offLin.index)<br>
     <title type="text">guassdb</title>
     <id>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/guassdb.html</id>
     <link href="https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/guassdb.html"/>
-    <updated>2023-07-13T06:58:32.000Z</updated>
+    <updated>2023-08-07T03:20:33.000Z</updated>
     <summary type="html"><![CDATA[<h1> guassdb</h1>
 <h2> 优化</h2>
 <ul>
 <li>1、删除表dim_shop_sales_target在字段target_date上的索引（注：列存表非必要无需创建索引，如创建，可选用btree索引，不要创建默认的psort索引，贵司当前列存表上，基本都是psort索引）</li>
 <li>2、dim_jd_erp_shop表，建议修改为复制表（数据总量较小的维度表，建议调整为复制表）</li>
 </ul>
-<h2> 自动更新时间</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>CREATE TABLE public.ads_order_city_rank (
-pkey varchar(50) NOT NULL,
-sdate date NOT NULL,
-shop_code_inner varchar(255) NOT NULL,
-shop_name varchar(200) NULL DEFAULT NULL::character varying,
-city varchar(200) NULL DEFAULT NULL::character varying,
-city_rank int4 NOT NULL,
-city_rank_last float8 NOT NULL,
-city_rank_first float8 NOT NULL,
-avg_city_sales float8 NOT NULL,
-distance_avg_sales float8 NOT NULL,
-divided_avg_sales float8 NOT NULL,
-city_rank_max int4 NOT NULL,
-distance_max_sales float8 NOT NULL,
-divided_max_sales float8 NOT NULL,
-create_time timestamp NULL DEFAULT now()::timestamp without time zone,
-update_time timestamp DEFAULT current_timestamp ON UPDATE current_timestamp,
-CONSTRAINT ads_order_city_rank_pkey PRIMARY KEY (pkey)
-)
-WITH (
-orientation=row,
-compression=no
-);
-CREATE INDEX idx_shop_code_inner ON ads_order_city_rank USING btree (shop_code_inner) TABLESPACE pg_default;
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>在各DN的数据分布倾斜
+select table_skewness('ads_sales_shop_notdis');
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
     <content type="html"><![CDATA[<h1> guassdb</h1>
 <h2> 优化</h2>
 <ul>
 <li>1、删除表dim_shop_sales_target在字段target_date上的索引（注：列存表非必要无需创建索引，如创建，可选用btree索引，不要创建默认的psort索引，贵司当前列存表上，基本都是psort索引）</li>
 <li>2、dim_jd_erp_shop表，建议修改为复制表（数据总量较小的维度表，建议调整为复制表）</li>
 </ul>
-<h2> 自动更新时间</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 自动更新时间</h2>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 常用命令</h2>
 <p>CREATE TABLE T2<br>
 (<br>
@@ -919,30 +919,6 @@ select * from PGXC_GET_STAT_ALL_TABLES where dirty_page_rate&gt;30;</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> hbase启动命令</h2>
 <p><a href="https://blog.csdn.net/kelonsen/article/details/78477152" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/kelonsen/article/details/78477152</a></p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
-    <category term="数据库"/>
-    <published>2022-01-01T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">hive</title>
-    <id>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hive.html</id>
-    <link href="https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hive.html"/>
-    <updated>2023-07-13T06:58:32.000Z</updated>
-    <summary type="html"><![CDATA[<h1> hive</h1>
-<h2> hive导数据到csv</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>insert overwrite local directory '/home/hadoop/lijicong/test' row format delimited fields terminated by ',' select * from dw.ol_api_consume_channel_fact where month_num = 201902;
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></summary>
-    <content type="html"><![CDATA[<h1> hive</h1>
-<h2> hive导数据到csv</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> hive新增字段</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> hive优化</h2>
-<ul>
-<li>1、小表放前面，使用map join</li>
-<li>2、避免数据倾斜</li>
-<li>3、合理设置map、reduce数</li>
-<li>4、优化sql写法减少job数</li>
-<li>5、尽量不对字段进行函数计算</li>
-</ul>
-]]></content>
     <category term="数据库"/>
     <published>2022-01-01T00:00:00.000Z</published>
   </entry>
