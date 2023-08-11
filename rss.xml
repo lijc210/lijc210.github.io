@@ -6,8 +6,8 @@
     <link>https://www.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 09 Aug 2023 16:13:28 GMT</pubDate>
-    <lastBuildDate>Wed, 09 Aug 2023 16:13:28 GMT</lastBuildDate>
+    <pubDate>Fri, 11 Aug 2023 09:59:56 GMT</pubDate>
+    <lastBuildDate>Fri, 11 Aug 2023 09:59:56 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
@@ -16,6 +16,19 @@
     <category>站点收藏</category>
     <category>每日悦读</category>
     <category>数据库</category>
+    <item>
+      <title>excel</title>
+      <link>https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/excel.html</link>
+      <guid>https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/excel.html</guid>
+      <source url="https://www.cizai.io/rss.xml">excel</source>
+      <description>excel A列中的值是否在B列中存在 在第三列中输入以下函数，拉到最底下。 =VLOOKUP(A1,B:B,1,FALSE)</description>
+      <category>工具</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> excel</h1>
+<h2> A列中的值是否在B列中存在</h2>
+<p>在第三列中输入以下函数，拉到最底下。</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
     <item>
       <title>dbeaver</title>
       <link>https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/dbeaver.html</link>
@@ -430,116 +443,6 @@ select pg_size_pretty(pg_relation_size('public.ads_order_sales'));  -- 99 GB<br>
 select dirty_page_rate from PGXC_GET_STAT_ALL_TABLES where relname = 'ads_order_sales';  -- 64.68<br>
 select * from PGXC_GET_STAT_ALL_TABLES where dirty_page_rate&gt;30;</p>
 ]]></content:encoded>
-    </item>
-    <item>
-      <title>hbase</title>
-      <link>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html</link>
-      <guid>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html</guid>
-      <source url="https://www.cizai.io/rss.xml">hbase</source>
-      <description>hbase HBase 常用Shell命令 hbase shell命令 描述 alter 修改列族（column family）模式 count 统计表中行的数量 create 创建表 describe 显示表相关的详细信息 delete 删除指定对象的值（可以为表，行，列对应的值，另外也可以指定时间戳的值） deleteall 删除指定行的所有元素值 disable 使表无效 drop 删除表 enable 使表有效 exists 测试表是否存在 exit 退出hbase shell get 获取行或单元（cell）的值 incr 增加指定表，行或列的值 list 列出hbase中存在的所有表 put 向指向的表单元添加值 tools 列出hbase所支持的工具 scan 通过对表的扫描来获取对用的值 status 返回hbase集群的状态信息 shutdown 关闭hbase集群（与exit不同） truncate 重新创建指定表 version 返回hbase版本信息</description>
-      <category>数据库</category>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h1> hbase</h1>
-<h2> HBase 常用Shell命令</h2>
-<table>
-<thead>
-<tr>
-<th>hbase shell命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>alter</td>
-<td>修改列族（column family）模式</td>
-</tr>
-<tr>
-<td>count</td>
-<td>统计表中行的数量</td>
-</tr>
-<tr>
-<td>create</td>
-<td>创建表</td>
-</tr>
-<tr>
-<td>describe</td>
-<td>显示表相关的详细信息</td>
-</tr>
-<tr>
-<td>delete</td>
-<td>删除指定对象的值（可以为表，行，列对应的值，另外也可以指定时间戳的值）</td>
-</tr>
-<tr>
-<td>deleteall</td>
-<td>删除指定行的所有元素值</td>
-</tr>
-<tr>
-<td>disable</td>
-<td>使表无效</td>
-</tr>
-<tr>
-<td>drop</td>
-<td>删除表</td>
-</tr>
-<tr>
-<td>enable</td>
-<td>使表有效</td>
-</tr>
-<tr>
-<td>exists</td>
-<td>测试表是否存在</td>
-</tr>
-<tr>
-<td>exit</td>
-<td>退出hbase shell</td>
-</tr>
-<tr>
-<td>get</td>
-<td>获取行或单元（cell）的值</td>
-</tr>
-<tr>
-<td>incr</td>
-<td>增加指定表，行或列的值</td>
-</tr>
-<tr>
-<td>list</td>
-<td>列出hbase中存在的所有表</td>
-</tr>
-<tr>
-<td>put</td>
-<td>向指向的表单元添加值</td>
-</tr>
-<tr>
-<td>tools</td>
-<td>列出hbase所支持的工具</td>
-</tr>
-<tr>
-<td>scan</td>
-<td>通过对表的扫描来获取对用的值</td>
-</tr>
-<tr>
-<td>status</td>
-<td>返回hbase集群的状态信息</td>
-</tr>
-<tr>
-<td>shutdown</td>
-<td>关闭hbase集群（与exit不同）</td>
-</tr>
-<tr>
-<td>truncate</td>
-<td>重新创建指定表</td>
-</tr>
-<tr>
-<td>version</td>
-<td>返回hbase版本信息</td>
-</tr>
-</tbody>
-</table>
-<h2> hbase scan limit</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> hbase建表</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> hbase启动命令</h2>
-<p><a href="https://blog.csdn.net/kelonsen/article/details/78477152" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/kelonsen/article/details/78477152</a></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
   </channel>
 </rss>
