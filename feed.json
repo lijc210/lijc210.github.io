@@ -23,10 +23,10 @@
       "url": "https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/dbeaver.html",
       "id": "https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/dbeaver.html",
       "summary": "dbeaver dbeaver 设置maven dbeaver 官方下载地址&nbsp;https://dbeaver.io/download/&nbsp; 免费版，收费版 1,窗口----首选项",
-      "content_html": "<h1> dbeaver</h1>\n<h2> dbeaver 设置maven</h2>\n<p>dbeaver 官方下载地址&nbsp;<a href=\"https://dbeaver.io/download/\" target=\"_blank\" rel=\"noopener noreferrer\">https://dbeaver.io/download/</a>&nbsp; 免费版，收费版</p>\n<p>1,窗口----首选项</p>\n<figure><img src=\"https://image.cha138.com/20230314/c779870fca584a85a887a535089726b3.jpg\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<p>2，添加一个阿里仓库源<a href=\"http://maven.aliyun.com/nexus/content/groups/public/\" target=\"_blank\" rel=\"noopener noreferrer\">http://maven.aliyun.com/nexus/content/groups/public/</a></p>\n<figure><img src=\"https://image.cha138.com/20230314/5ef424d38f034aedafd44cb4911ea785.jpg\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n",
+      "content_html": "<h1> dbeaver</h1>\n<h2> dbeaver 设置maven</h2>\n<p>dbeaver 官方下载地址&nbsp;<a href=\"https://dbeaver.io/download/\" target=\"_blank\" rel=\"noopener noreferrer\">https://dbeaver.io/download/</a>&nbsp; 免费版，收费版</p>\n<p>1,窗口----首选项</p>\n<figure><img src=\"https://image.cha138.com/20230314/c779870fca584a85a887a535089726b3.jpg\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<p>2，添加一个阿里仓库源<a href=\"http://maven.aliyun.com/nexus/content/groups/public/\" target=\"_blank\" rel=\"noopener noreferrer\">http://maven.aliyun.com/nexus/content/groups/public/</a></p>\n<figure><img src=\"https://image.cha138.com/20230314/5ef424d38f034aedafd44cb4911ea785.jpg\" alt=\"\" tabindex=\"0\" loading=\"lazy\"><figcaption></figcaption></figure>\n<h2> dbeaver 的默认保存路径查看</h2>\n<p>文件--&gt; 切换工作空间 --&gt; 其他</p>\n",
       "image": "https://image.cha138.com/20230314/c779870fca584a85a887a535089726b3.jpg",
       "date_published": "2022-01-01T00:00:00.000Z",
-      "date_modified": "2023-07-31T10:04:56.000Z",
+      "date_modified": "2023-08-14T03:29:29.000Z",
       "authors": [],
       "tags": [
         "工具"

@@ -3,7 +3,7 @@
   <id>https://www.cizai.io/</id>
   <title>此在笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
-  <updated>2023-08-14T02:14:22.893Z</updated>
+  <updated>2023-08-14T03:32:19.164Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://www.cizai.io/atom.xml"/>
   <link rel="alternate" href="https://www.cizai.io/"/>
@@ -34,7 +34,7 @@
     <title type="text">dbeaver</title>
     <id>https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/dbeaver.html</id>
     <link href="https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/dbeaver.html"/>
-    <updated>2023-07-31T10:04:56.000Z</updated>
+    <updated>2023-08-14T03:29:29.000Z</updated>
     <summary type="html"><![CDATA[<h1> dbeaver</h1>
 <h2> dbeaver 设置maven</h2>
 <p>dbeaver 官方下载地址&nbsp;<a href="https://dbeaver.io/download/" target="_blank" rel="noopener noreferrer">https://dbeaver.io/download/</a>&nbsp; 免费版，收费版</p>
@@ -47,6 +47,8 @@
 <figure><img src="https://image.cha138.com/20230314/c779870fca584a85a887a535089726b3.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>2，添加一个阿里仓库源<a href="http://maven.aliyun.com/nexus/content/groups/public/" target="_blank" rel="noopener noreferrer">http://maven.aliyun.com/nexus/content/groups/public/</a></p>
 <figure><img src="https://image.cha138.com/20230314/5ef424d38f034aedafd44cb4911ea785.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2> dbeaver 的默认保存路径查看</h2>
+<p>文件--&gt; 切换工作空间 --&gt; 其他</p>
 ]]></content>
     <category term="工具"/>
     <published>2022-01-01T00:00:00.000Z</published>

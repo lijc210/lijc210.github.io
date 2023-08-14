@@ -6,8 +6,8 @@
     <link>https://www.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 14 Aug 2023 02:14:22 GMT</pubDate>
-    <lastBuildDate>Mon, 14 Aug 2023 02:14:22 GMT</lastBuildDate>
+    <pubDate>Mon, 14 Aug 2023 03:32:19 GMT</pubDate>
+    <lastBuildDate>Mon, 14 Aug 2023 03:32:19 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
@@ -44,6 +44,8 @@
 <figure><img src="https://image.cha138.com/20230314/c779870fca584a85a887a535089726b3.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>2，添加一个阿里仓库源<a href="http://maven.aliyun.com/nexus/content/groups/public/" target="_blank" rel="noopener noreferrer">http://maven.aliyun.com/nexus/content/groups/public/</a></p>
 <figure><img src="https://image.cha138.com/20230314/5ef424d38f034aedafd44cb4911ea785.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2> dbeaver 的默认保存路径查看</h2>
+<p>文件--&gt; 切换工作空间 --&gt; 其他</p>
 ]]></content:encoded>
       <enclosure url="https://image.cha138.com/20230314/c779870fca584a85a887a535089726b3.jpg" type="image/jpeg"/>
     </item>
