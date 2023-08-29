@@ -1,6 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as a,c as i,e as d}from"./app-58573cbe.js";const n={},t=d(`<h1 id="tidb" tabindex="-1"><a class="header-anchor" href="#tidb" aria-hidden="true">#</a> tidb</h1><h2 id="查看表大小" tabindex="-1"><a class="header-anchor" href="#查看表大小" aria-hidden="true">#</a> 查看表大小</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>SELECT TABLE_NAME,TABLE_ROWS FROM information_schema.TABLES
-    where TABLE_SCHEMA  = &#39;rt&#39;
-    order by TABLE_ROWS desc
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="限制tidb内存使用" tabindex="-1"><a class="header-anchor" href="#限制tidb内存使用" aria-hidden="true">#</a> 限制tidb内存使用</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>show config where name like &#39;%cache%&#39; and name like &#39;%block%&#39; and name like &#39;%capacity%&#39;
-set config tikv \`storage.block-cache.capacity\`=&#39;10240MiB&#39;
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,5),r=[t];function c(s,l){return a(),i("div",null,r)}const m=e(n,[["render",c],["__file","tidb.html.vue"]]);export{m as default};
