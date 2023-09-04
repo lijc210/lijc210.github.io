@@ -3,14 +3,13 @@
   <id>https://www.cizai.io/</id>
   <title>此在笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
-  <updated>2023-09-04T05:57:55.207Z</updated>
+  <updated>2023-09-04T05:59:16.481Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://www.cizai.io/atom.xml"/>
   <link rel="alternate" href="https://www.cizai.io/"/>
   <category term="每日悦读"/>
   <category term="工具"/>
   <category term="算法"/>
-  <category term="文章"/>
   <category term="站点收藏"/>
   <category term="数据库"/>
   <entry>
@@ -94,18 +93,6 @@
 <p>这里是内容。</p>
 ]]></content>
     <category term="算法"/>
-    <published>2022-01-01T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">template</title>
-    <id>https://www.cizai.io/template.html</id>
-    <link href="https://www.cizai.io/template.html"/>
-    <updated>2023-07-13T07:56:00.000Z</updated>
-    <summary type="html"><![CDATA[<h1> template</h1>
-]]></summary>
-    <content type="html"><![CDATA[<h1> template</h1>
-]]></content>
-    <category term="文章"/>
     <published>2022-01-01T00:00:00.000Z</published>
   </entry>
   <entry>
@@ -681,6 +668,211 @@ select pg_size_pretty(pg_relation_size('public.ads_order_sales'));  -- 99 GB<br>
 select dirty_page_rate from PGXC_GET_STAT_ALL_TABLES where relname = 'ads_order_sales';  -- 64.68<br>
 select * from PGXC_GET_STAT_ALL_TABLES where dirty_page_rate&gt;30;</p>
 ]]></content>
+    <category term="数据库"/>
+    <published>2022-01-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">hbase</title>
+    <id>https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html</id>
+    <link href="https://www.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html"/>
+    <updated>2023-07-13T06:58:32.000Z</updated>
+    <summary type="html"><![CDATA[<h1> hbase</h1>
+<h2> HBase 常用Shell命令</h2>
+<table>
+<thead>
+<tr>
+<th>hbase shell命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alter</td>
+<td>修改列族（column family）模式</td>
+</tr>
+<tr>
+<td>count</td>
+<td>统计表中行的数量</td>
+</tr>
+<tr>
+<td>create</td>
+<td>创建表</td>
+</tr>
+<tr>
+<td>describe</td>
+<td>显示表相关的详细信息</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>删除指定对象的值（可以为表，行，列对应的值，另外也可以指定时间戳的值）</td>
+</tr>
+<tr>
+<td>deleteall</td>
+<td>删除指定行的所有元素值</td>
+</tr>
+<tr>
+<td>disable</td>
+<td>使表无效</td>
+</tr>
+<tr>
+<td>drop</td>
+<td>删除表</td>
+</tr>
+<tr>
+<td>enable</td>
+<td>使表有效</td>
+</tr>
+<tr>
+<td>exists</td>
+<td>测试表是否存在</td>
+</tr>
+<tr>
+<td>exit</td>
+<td>退出hbase shell</td>
+</tr>
+<tr>
+<td>get</td>
+<td>获取行或单元（cell）的值</td>
+</tr>
+<tr>
+<td>incr</td>
+<td>增加指定表，行或列的值</td>
+</tr>
+<tr>
+<td>list</td>
+<td>列出hbase中存在的所有表</td>
+</tr>
+<tr>
+<td>put</td>
+<td>向指向的表单元添加值</td>
+</tr>
+<tr>
+<td>tools</td>
+<td>列出hbase所支持的工具</td>
+</tr>
+<tr>
+<td>scan</td>
+<td>通过对表的扫描来获取对用的值</td>
+</tr>
+<tr>
+<td>status</td>
+<td>返回hbase集群的状态信息</td>
+</tr>
+<tr>
+<td>shutdown</td>
+<td>关闭hbase集群（与exit不同）</td>
+</tr>
+<tr>
+<td>truncate</td>
+<td>重新创建指定表</td>
+</tr>
+<tr>
+<td>version</td>
+<td>返回hbase版本信息</td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<h1> hbase</h1>
+<h2> HBase 常用Shell命令</h2>
+<table>
+<thead>
+<tr>
+<th>hbase shell命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alter</td>
+<td>修改列族（column family）模式</td>
+</tr>
+<tr>
+<td>count</td>
+<td>统计表中行的数量</td>
+</tr>
+<tr>
+<td>create</td>
+<td>创建表</td>
+</tr>
+<tr>
+<td>describe</td>
+<td>显示表相关的详细信息</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>删除指定对象的值（可以为表，行，列对应的值，另外也可以指定时间戳的值）</td>
+</tr>
+<tr>
+<td>deleteall</td>
+<td>删除指定行的所有元素值</td>
+</tr>
+<tr>
+<td>disable</td>
+<td>使表无效</td>
+</tr>
+<tr>
+<td>drop</td>
+<td>删除表</td>
+</tr>
+<tr>
+<td>enable</td>
+<td>使表有效</td>
+</tr>
+<tr>
+<td>exists</td>
+<td>测试表是否存在</td>
+</tr>
+<tr>
+<td>exit</td>
+<td>退出hbase shell</td>
+</tr>
+<tr>
+<td>get</td>
+<td>获取行或单元（cell）的值</td>
+</tr>
+<tr>
+<td>incr</td>
+<td>增加指定表，行或列的值</td>
+</tr>
+<tr>
+<td>list</td>
+<td>列出hbase中存在的所有表</td>
+</tr>
+<tr>
+<td>put</td>
+<td>向指向的表单元添加值</td>
+</tr>
+<tr>
+<td>tools</td>
+<td>列出hbase所支持的工具</td>
+</tr>
+<tr>
+<td>scan</td>
+<td>通过对表的扫描来获取对用的值</td>
+</tr>
+<tr>
+<td>status</td>
+<td>返回hbase集群的状态信息</td>
+</tr>
+<tr>
+<td>shutdown</td>
+<td>关闭hbase集群（与exit不同）</td>
+</tr>
+<tr>
+<td>truncate</td>
+<td>重新创建指定表</td>
+</tr>
+<tr>
+<td>version</td>
+<td>返回hbase版本信息</td>
+</tr>
+</tbody>
+</table>
+<h2> hbase scan limit</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> hbase建表</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> hbase启动命令</h2>
+<p><a href="https://blog.csdn.net/kelonsen/article/details/78477152" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/kelonsen/article/details/78477152</a></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
     <category term="数据库"/>
     <published>2022-01-01T00:00:00.000Z</published>
   </entry>
