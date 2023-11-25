@@ -20,10 +20,10 @@
       "title": "笔记软件",
       "url": "https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6.html",
       "id": "https://www.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6.html",
-      "summary": "笔记软件 AppFlowy 使用rust和flutter开发，性能非常好，安装包体积小，缺点是存储格式非md，功能有限，对某些md文件支持有问题。 Obsidian 必备插件：",
-      "content_html": "<h1> 笔记软件</h1>\n<h2> AppFlowy</h2>\n<p>使用rust和flutter开发，性能非常好，安装包体积小，缺点是存储格式非md，功能有限，对某些md文件支持有问题。</p>\n<h2> Obsidian</h2>\n<p>必备插件：</p>\n",
+      "summary": "笔记软件 AppFlowy 使用rust和flutter开发，性能非常好，安装包体积小，缺点是存储格式非md，功能有限，对某些md文件支持有问题。 Obsidian 功能强大，插件丰富，使用 VSCode vscode-office插件 能实现所见即所得，简单干净",
+      "content_html": "<h1> 笔记软件</h1>\n<h2> AppFlowy</h2>\n<p>使用rust和flutter开发，性能非常好，安装包体积小，缺点是存储格式非md，功能有限，对某些md文件支持有问题。</p>\n<h2> Obsidian</h2>\n<p>功能强大，插件丰富，使用</p>\n<h2> VSCode vscode-office插件</h2>\n<p>能实现所见即所得，简单干净</p>\n",
       "date_published": "2022-01-01T00:00:00.000Z",
-      "date_modified": "2023-11-23T06:26:26.000Z",
+      "date_modified": "2023-11-25T09:59:14.000Z",
       "authors": [],
       "tags": [
         "工具"
