@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://blog.cizai.io/en/atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+  <id>https://blog.cizai.io/en/</id>
+  <title>Blog Demo</title>
+  <subtitle>A blog demo for vuepress-theme-hope</subtitle>
+  <updated>2024-03-17T17:59:02.339Z</updated>
+  <generator>@vuepress/plugin-feed</generator>
+  <link rel="self" href="https://blog.cizai.io/en/atom.xml"/>
+  <link rel="alternate" href="https://blog.cizai.io/en/"/>
+</feed>

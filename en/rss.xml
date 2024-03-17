@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://blog.cizai.io/en/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://blog.cizai.io/en/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>Blog Demo</title>
+    <link>https://blog.cizai.io/en/</link>
+    <description>A blog demo for vuepress-theme-hope</description>
+    <language>en-US</language>
+    <pubDate>Sun, 17 Mar 2024 17:59:02 GMT</pubDate>
+    <lastBuildDate>Sun, 17 Mar 2024 17:59:02 GMT</lastBuildDate>
+    <generator>@vuepress/plugin-feed</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+  </channel>
+</rss>
