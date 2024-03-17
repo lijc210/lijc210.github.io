@@ -1,0 +1,8 @@
+https://sspai.com/feed	少数派
+https://rustcc.cn/rss	Rust.cc
+https://www.infoq.cn/feed.xml	InfoQ - 促进软件开发领域知识与创新的传播
+https://newzone.top/rss.xml	LearnData-开源笔记
+https://rsshub.app/zhihu/daily	知乎日报
+https://rsshub.app/douban/book/latest	豆瓣新书速递
+http://marxists.anu.edu.au/chinese/feed.xml	中文马克思主义文库
+

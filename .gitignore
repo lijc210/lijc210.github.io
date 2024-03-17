@@ -1,0 +1,17 @@
+# Node modules
+**/node_modules/**
+
+# Cache
+**/.vuepress/.cache/**
+# Temp
+**/.vuepress/.temp/**
+# Output
+**/.vuepress/dist/**
+
+.history
+.DS_Store
+__pycache__
+.vscode/launch.json
+*.log
+
+
