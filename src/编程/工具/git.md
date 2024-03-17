@@ -42,7 +42,7 @@ Type:
 * revert: 回滚到上一个版本
 
 ## git 设置代理和取消
-```
+```shell
 git config --global http.proxy http://127.0.0.1:4455
 git config --global https.proxy https://127.0.0.1:4455
 
@@ -53,7 +53,7 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
 ## git 初次提交到远程空的仓库
-```
+```shell
 git init
 git remote add origin [仓库地址]
 git add .
@@ -82,6 +82,11 @@ main覆盖本地
 git fetch --all && git reset --hard origin/main && git pull
 master
 git fetch --all && git reset --hard origin/master && git pull
+
+## git强制提交本地分支覆盖远程分支
+```
+git push origin 分支名 --force
+```
 
 ## git 删除历史记录
 ```
