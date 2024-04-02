@@ -3,7 +3,7 @@
   <id>https://blog.cizai.io/</id>
   <title>此在笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</subtitle>
-  <updated>2024-04-02T07:17:41.646Z</updated>
+  <updated>2024-04-02T07:51:18.995Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.cizai.io/atom.xml"/>
   <link rel="alternate" href="https://blog.cizai.io/"/>
@@ -15,15 +15,51 @@
     <title type="text">内网穿透</title>
     <id>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</id>
     <link href="https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html"/>
-    <updated>2024-04-02T07:13:33.000Z</updated>
+    <updated>2024-04-02T07:47:11.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>serveo</h2>
 <p>ssh -R 80:localhost:3000 serveo.net</p>
-]]></summary>
+<h2>ngrok</h2>
+<h3>启动时需要验证</h3>
+<p>ngrok http 3000</p>
+<h2>localtunnel</h2>
+<h3>访问时需要验证</h3>
+<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>快速开始
+npx localtunnel <span class="token parameter variable">--subdomain</span> cizai <span class="token parameter variable">--port</span> <span class="token number">3000</span>
+
+全局安装
+<span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> localtunnel
+lt <span class="token parameter variable">--port</span> <span class="token number">3000</span>
+
+自定义个性前缀
+lt <span class="token parameter variable">--subdomain</span> <span class="token operator">&lt;</span>个性前缀<span class="token operator">&gt;</span> <span class="token parameter variable">--port</span> <span class="token operator">&lt;</span>要映射的端口<span class="token operator">&gt;</span>
+
+<span class="token comment"># 获取访问密码</span>
+<span class="token function">wget</span> <span class="token parameter variable">-q</span> <span class="token parameter variable">-O</span> - https://loca.lt/mytunnelpassword
+
+</code></pre></div>]]></summary>
     <content type="html"><![CDATA[
 <h2>serveo</h2>
 <p>ssh -R 80:localhost:3000 serveo.net</p>
-]]></content>
+<h2>ngrok</h2>
+<h3>启动时需要验证</h3>
+<p>ngrok http 3000</p>
+<h2>localtunnel</h2>
+<h3>访问时需要验证</h3>
+<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>快速开始
+npx localtunnel <span class="token parameter variable">--subdomain</span> cizai <span class="token parameter variable">--port</span> <span class="token number">3000</span>
+
+全局安装
+<span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> localtunnel
+lt <span class="token parameter variable">--port</span> <span class="token number">3000</span>
+
+自定义个性前缀
+lt <span class="token parameter variable">--subdomain</span> <span class="token operator">&lt;</span>个性前缀<span class="token operator">&gt;</span> <span class="token parameter variable">--port</span> <span class="token operator">&lt;</span>要映射的端口<span class="token operator">&gt;</span>
+
+<span class="token comment"># 获取访问密码</span>
+<span class="token function">wget</span> <span class="token parameter variable">-q</span> <span class="token parameter variable">-O</span> - https://loca.lt/mytunnelpassword
+
+</code></pre></div>]]></content>
     <category term="工具"/>
     <published>2024-04-02T00:00:00.000Z</published>
   </entry>
