@@ -6,6 +6,19 @@
   "description": "开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。",
   "items": [
     {
+      "title": "内网穿透",
+      "url": "https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html",
+      "id": "https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html",
+      "summary": "内网穿透 serveo ssh -R 80:localhost:3000 serveo.net",
+      "content_html": "\n<h2>serveo</h2>\n<p>ssh -R 80:localhost:3000 serveo.net</p>\n",
+      "date_published": "2024-04-02T00:00:00.000Z",
+      "date_modified": "2024-04-02T07:13:33.000Z",
+      "authors": [],
+      "tags": [
+        "工具"
+      ]
+    },
+    {
       "title": "关于本站",
       "url": "https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html",
       "id": "https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html",
@@ -114,19 +127,6 @@
       "id": "https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html",
       "summary": "hbase HBase 常用Shell命令 hbase scan limit hbase建表 hbase启动命令 https://blog.csdn.net/kelonsen/article/details/78477152",
       "content_html": "\n<h2>HBase 常用Shell命令</h2>\n<p>| hbase shell命令 | 描述                                                                   |\n|</p>\n",
-      "date_published": "2022-01-01T00:00:00.000Z",
-      "date_modified": "2024-03-17T17:45:45.000Z",
-      "authors": [],
-      "tags": [
-        "数据库"
-      ]
-    },
-    {
-      "title": "hive",
-      "url": "https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hive.html",
-      "id": "https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hive.html",
-      "summary": "hive hive 写入分区 hive导数据到csv hive新增字段 hive优化 1、小表放前面，使用map join 2、避免数据倾斜 3、合理设置map、reduce数 4、优化sql写法减少job数 5、尽量不对字段进行函数计算",
-      "content_html": "\n<h2>hive 写入分区</h2>\n<div class=\"language-text\" data-ext=\"text\" data-title=\"text\"><pre class=\"language-text\"><code>insert overwrite table dws_jd_erp_purchase_transfer partition(dt)\nselect * from\ndata_kezhi.dws_jd_erp_purchase_transfer\nwhere dt = '${bizdate}'\n</code></pre></div><h2>hive导数据到csv</h2>\n<div class=\"language-text\" data-ext=\"text\" data-title=\"text\"><pre class=\"language-text\"><code>insert overwrite local directory '/home/hadoop/lijicong/test' row format delimited fields terminated by ',' select * from dw.ol_api_consume_channel_fact where month_num = 201902;\n</code></pre></div><h2>hive新增字段</h2>\n<div class=\"language-text\" data-ext=\"text\" data-title=\"text\"><pre class=\"language-text\"><code>alter table dw.ods_aabb_v9_design add columns(status int);\n\n\nalter table detail_flow_test add columns(original_union_id string);\n\n\nalter table dw. ods_aabb_v9_mp_account add columns(is_quality int);\n\n\nalter table dw.ods_traf_already_recommended add columns(version string);\n\n\nalter table dw.ods_aabb_v9_picture_page add columns(recommend int);\n</code></pre></div><h2>hive优化</h2>\n<ul>\n<li>1、小表放前面，使用map join</li>\n<li>2、避免数据倾斜</li>\n<li>3、合理设置map、reduce数</li>\n<li>4、优化sql写法减少job数</li>\n<li>5、尽量不对字段进行函数计算</li>\n</ul>\n",
       "date_published": "2022-01-01T00:00:00.000Z",
       "date_modified": "2024-03-17T17:45:45.000Z",
       "authors": [],

@@ -3,13 +3,30 @@
   <id>https://blog.cizai.io/</id>
   <title>此在笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</subtitle>
-  <updated>2024-03-26T10:09:11.979Z</updated>
+  <updated>2024-04-02T07:17:41.646Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.cizai.io/atom.xml"/>
   <link rel="alternate" href="https://blog.cizai.io/"/>
+  <category term="工具"/>
   <category term="站点收藏"/>
   <category term="每日悦读"/>
   <category term="数据库"/>
+  <entry>
+    <title type="text">内网穿透</title>
+    <id>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</id>
+    <link href="https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html"/>
+    <updated>2024-04-02T07:13:33.000Z</updated>
+    <summary type="html"><![CDATA[
+<h2>serveo</h2>
+<p>ssh -R 80:localhost:3000 serveo.net</p>
+]]></summary>
+    <content type="html"><![CDATA[
+<h2>serveo</h2>
+<p>ssh -R 80:localhost:3000 serveo.net</p>
+]]></content>
+    <category term="工具"/>
+    <published>2024-04-02T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">关于本站</title>
     <id>https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html</id>
@@ -1096,54 +1113,6 @@ WHERE sdate = '2023-11-16'
 <h2>HBase 常用Shell命令</h2>
 <p>| hbase shell命令 | 描述                                                                   |
 |</p>
-]]></content>
-    <category term="数据库"/>
-    <published>2022-01-01T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">hive</title>
-    <id>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hive.html</id>
-    <link href="https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hive.html"/>
-    <updated>2024-03-17T17:45:45.000Z</updated>
-    <summary type="html"><![CDATA[
-<h2>hive 写入分区</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>insert overwrite table dws_jd_erp_purchase_transfer partition(dt)
-select * from
-data_kezhi.dws_jd_erp_purchase_transfer
-where dt = '${bizdate}'
-</code></pre></div><h2>hive导数据到csv</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>insert overwrite local directory '/home/hadoop/lijicong/test' row format delimited fields terminated by ',' select * from dw.ol_api_consume_channel_fact where month_num = 201902;
-</code></pre></div>]]></summary>
-    <content type="html"><![CDATA[
-<h2>hive 写入分区</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>insert overwrite table dws_jd_erp_purchase_transfer partition(dt)
-select * from
-data_kezhi.dws_jd_erp_purchase_transfer
-where dt = '${bizdate}'
-</code></pre></div><h2>hive导数据到csv</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>insert overwrite local directory '/home/hadoop/lijicong/test' row format delimited fields terminated by ',' select * from dw.ol_api_consume_channel_fact where month_num = 201902;
-</code></pre></div><h2>hive新增字段</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>alter table dw.ods_aabb_v9_design add columns(status int);
-
-
-alter table detail_flow_test add columns(original_union_id string);
-
-
-alter table dw. ods_aabb_v9_mp_account add columns(is_quality int);
-
-
-alter table dw.ods_traf_already_recommended add columns(version string);
-
-
-alter table dw.ods_aabb_v9_picture_page add columns(recommend int);
-</code></pre></div><h2>hive优化</h2>
-<ul>
-<li>1、小表放前面，使用map join</li>
-<li>2、避免数据倾斜</li>
-<li>3、合理设置map、reduce数</li>
-<li>4、优化sql写法减少job数</li>
-<li>5、尽量不对字段进行函数计算</li>
-</ul>
 ]]></content>
     <category term="数据库"/>
     <published>2022-01-01T00:00:00.000Z</published>
