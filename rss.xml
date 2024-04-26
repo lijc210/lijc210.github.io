@@ -6,8 +6,8 @@
     <link>https://blog.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 02 Apr 2024 07:51:18 GMT</pubDate>
-    <lastBuildDate>Tue, 02 Apr 2024 07:51:18 GMT</lastBuildDate>
+    <pubDate>Fri, 26 Apr 2024 11:31:54 GMT</pubDate>
+    <lastBuildDate>Fri, 26 Apr 2024 11:31:54 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
@@ -19,7 +19,7 @@
       <link>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</link>
       <guid>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</guid>
       <source url="https://blog.cizai.io/rss.xml">内网穿透</source>
-      <description>内网穿透 serveo ssh -R 80:localhost:3000 serveo.net ngrok 启动时需要验证 ngrok http 3000 localtunnel 访问时需要验证</description>
+      <description>内网穿透 serveo ssh -R 80:localhost:3000 serveo.net ngrok 启动时需要验证 ngrok http 3000 localtunnel 访问时需要验证 cloudflare tunnel vscode 端口转发 WireGuard frp 免费域名 https://iyideng.net/welfare/be...</description>
       <category>工具</category>
       <pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -43,7 +43,16 @@ lt <span class="token parameter variable">--subdomain</span> <span class="token 
 <span class="token comment"># 获取访问密码</span>
 <span class="token function">wget</span> <span class="token parameter variable">-q</span> <span class="token parameter variable">-O</span> - https://loca.lt/mytunnelpassword
 
-</code></pre></div>]]></content:encoded>
+</code></pre></div><h2>cloudflare tunnel</h2>
+<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>
+https://bra.live/setup-home-server-with-cloudflare-tunnel/
+
+</code></pre></div><h2>vscode 端口转发</h2>
+<h2>WireGuard</h2>
+<h2>frp</h2>
+<h2>免费域名</h2>
+<p>https://iyideng.net/welfare/best-free-domain-name-registration-platform.html</p>
+]]></content:encoded>
     </item>
     <item>
       <title>关于本站</title>
