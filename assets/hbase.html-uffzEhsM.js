@@ -1,0 +1,80 @@
+import{_ as e}from"./plugin-vue_export-helper-DlAUqK2U.js";import{o as t,c as n,e as i}from"./app-IOBR1Nuq.js";const s={},d=i(`<h1 id="hbase" tabindex="-1"><a class="header-anchor" href="#hbase"><span>hbase</span></a></h1><h2 id="hbase-常用shell命令" tabindex="-1"><a class="header-anchor" href="#hbase-常用shell命令"><span>HBase 常用Shell命令</span></a></h2><table><thead><tr><th>hbase shell命令</th><th>描述</th></tr></thead><tbody><tr><td>alter</td><td>修改列族（column family）模式</td></tr><tr><td>count</td><td>统计表中行的数量</td></tr><tr><td>create</td><td>创建表</td></tr><tr><td>describe</td><td>显示表相关的详细信息</td></tr><tr><td>delete</td><td>删除指定对象的值（可以为表，行，列对应的值，另外也可以指定时间戳的值）</td></tr><tr><td>deleteall</td><td>删除指定行的所有元素值</td></tr><tr><td>disable</td><td>使表无效</td></tr><tr><td>drop</td><td>删除表</td></tr><tr><td>enable</td><td>使表有效</td></tr><tr><td>exists</td><td>测试表是否存在</td></tr><tr><td>exit</td><td>退出hbase shell</td></tr><tr><td>get</td><td>获取行或单元（cell）的值</td></tr><tr><td>incr</td><td>增加指定表，行或列的值</td></tr><tr><td>list</td><td>列出hbase中存在的所有表</td></tr><tr><td>put</td><td>向指向的表单元添加值</td></tr><tr><td>tools</td><td>列出hbase所支持的工具</td></tr><tr><td>scan</td><td>通过对表的扫描来获取对用的值</td></tr><tr><td>status</td><td>返回hbase集群的状态信息</td></tr><tr><td>shutdown</td><td>关闭hbase集群（与exit不同）</td></tr><tr><td>truncate</td><td>重新创建指定表</td></tr><tr><td>version</td><td>返回hbase版本信息</td></tr></tbody></table><h2 id="hbase-scan-limit" tabindex="-1"><a class="header-anchor" href="#hbase-scan-limit"><span>hbase scan limit</span></a></h2><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>scan &#39;user_info&#39;,{LIMIT=&gt;5}
+scan &#39;city_code_yzh&#39;,{LIMIT=&gt;5}
+scan &#39;user_base_info_new&#39;,{LIMIT=&gt;5}
+scan &#39;cookie_userid&#39;,{LIMIT=&gt;5}
+
+扫描一段时间内的
+scan &#39;route:zto_route_cross_center_time_come&#39;,{TIMERANGE =&gt;[1517958000000,1517961600000]}
+
+scan &#39;basescan:zto_order_no_finish&#39;,{TIMERANGE =&gt;[1518062463000,1518063003000]}
+
+
+scan &#39;bls_organization:company_lock_order&#39;,{TIMERANGE =&gt;[1556000243000,1556003843000]}
+
+
+scan &#39;crm_job&#39; 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="hbase建表" tabindex="-1"><a class="header-anchor" href="#hbase建表"><span>hbase建表</span></a></h2><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>create &#39;user_mobile_userid_tmp&#39;,&#39;info&#39;
+
+删除某条记录
+deleteall &#39;ods_decoration_build_ana_new&#39;,&#39;xxxxxx&#39;
+清空表
+truncate  &#39;kn1_ana_tg_sign_up_new&#39;
+truncate  &#39;user_base_info_new&#39;
+truncate  &#39;userid_cookie&#39;
+truncate  &#39;cookie_userid&#39;
+truncate  &#39;simresult:total&#39;
+truncate  &#39;recresult:total&#39;
+
+列出所有命名空间
+list_namespace
+新建命名空间
+create_namespace &#39;ns1&#39;
+删除命名空间
+drop_namespace &#39;ns1&#39;
+修改命名空间
+alter_namespace &#39;ns&#39;, {METHOD =&gt; &#39;set&#39;, &#39;PROPERTY_NAME&#39; =&gt; &#39;PROPERTY_VALUE&#39;}
+新建表
+create &#39;recresult:quality_v9_special&#39;, &#39;info&#39;
+create &#39;recresult:total&#39;, &#39;info&#39;
+删除表
+drop &#39;features:top_ite&#39;
+create_namespace &#39;attrresult&#39;
+create &#39;attrresult:tagsresult&#39;, &#39;info&#39;
+drop_namespace &#39;hotresult&#39;
+create &#39;features:user&#39;, &#39;info&#39;
+
+type_list = [(&quot;/user/hadoop/rec/simresult/quality_v9_news/&quot;, &quot;simresult:quality_v9_news&quot;),
+(&quot;/user/hadoop/rec/simresult/quality_v9_video/&quot;, &quot;simresult:quality_v9_video&quot;),
+(&quot;/user/hadoop/rec/simresult/quality_note_new/&quot;, &quot;simresult:quality_note_new&quot;),
+(&quot;/user/hadoop/rec/simresult/quality_design_case/&quot;, &quot;simresult:quality_design_case&quot;),
+(&quot;/user/hadoop/rec/simresult/quality_question/&quot;, &quot;simresult:quality_question&quot;),
+(&quot;/user/hadoop/rec/simresult/quality_v9_design/&quot;, &quot;simresult:quality_v9_design&quot;),
+(&quot;/user/hadoop/rec/simresult/quality_v9_special/&quot;, &quot;simresult:quality_v9_special&quot;)]
+
+create &#39;simresult:quality_note_new&#39;, &#39;info&#39;
+create &#39;simresult:quality_question&#39;, &#39;info&#39;
+create &#39;simresult:quality_v9_design&#39;, &#39;info&#39;
+create &#39;simresult:quality_v9_special&#39;, &#39;info&#39;
+create &#39;simresult:quality_v9_news&#39;, &#39;info&#39;
+create &#39;simresult:quality_v9_video&#39;, &#39;info&#39;
+
+create &#39;features:item&#39;, &#39;info&#39;
+
+create_namespace &#39;recresult&#39;
+create_namespace &#39;simresult&#39;
+
+create &#39;features_data&#39;,&#39;info&#39;
+
+
+create &#39;simresult:total&#39;, &#39;info&#39;
+
+
+create &#39;attrresult:qltyresult&#39;, &#39;info&#39;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="hbase启动命令" tabindex="-1"><a class="header-anchor" href="#hbase启动命令"><span>hbase启动命令</span></a></h2><p>https://blog.csdn.net/kelonsen/article/details/78477152</p><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>cd /opt/cloudera/parcels/CDH-5.11.1-1.cdh5.11.1.p0.4/lib/hbase/bin/
+./hbase-daemon.sh start thrift2 --infoport 9096 -p 9091
+
+cd /opt/cloudera/parcels/CDH-5.12.1-1.cdh5.12.1.p0.3/lib/hbase/bin/
+./hbase-daemon.sh start thrift2 --infoport 9096 -p 9091
+
+hbase-daemon.sh start thrift2 --infoport 9096 -p 9091
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,10),a=[d];function l(r,c){return t(),n("div",null,a)}const v=e(s,[["render",l],["__file","hbase.html.vue"]]),m=JSON.parse('{"path":"/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html","title":"hbase","lang":"zh-CN","frontmatter":{"icon":"edit","date":"2022-01-01T00:00:00.000Z","category":["数据库"],"tag":["hbase"],"description":"hbase HBase 常用Shell命令 hbase scan limit hbase建表 hbase启动命令 https://blog.csdn.net/kelonsen/article/details/78477152","head":[["meta",{"property":"og:url","content":"https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html"}],["meta",{"property":"og:site_name","content":"此在笔记"}],["meta",{"property":"og:title","content":"hbase"}],["meta",{"property":"og:description","content":"hbase HBase 常用Shell命令 hbase scan limit hbase建表 hbase启动命令 https://blog.csdn.net/kelonsen/article/details/78477152"}],["meta",{"property":"og:type","content":"article"}],["meta",{"property":"og:locale","content":"zh-CN"}],["meta",{"property":"og:updated_time","content":"2024-03-17T17:45:45.000Z"}],["meta",{"property":"article:author","content":"cizai"}],["meta",{"property":"article:tag","content":"hbase"}],["meta",{"property":"article:published_time","content":"2022-01-01T00:00:00.000Z"}],["meta",{"property":"article:modified_time","content":"2024-03-17T17:45:45.000Z"}],["script",{"type":"application/ld+json"},"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"Article\\",\\"headline\\":\\"hbase\\",\\"image\\":[\\"\\"],\\"datePublished\\":\\"2022-01-01T00:00:00.000Z\\",\\"dateModified\\":\\"2024-03-17T17:45:45.000Z\\",\\"author\\":[{\\"@type\\":\\"Person\\",\\"name\\":\\"cizai\\",\\"url\\":\\"https://blog.cizai.io\\"}]}"],["link",{"rel":"alternate","type":"application/atom+xml","href":"https://blog.cizai.io/atom.xml","title":"此在笔记 Atom Feed"}],["link",{"rel":"alternate","type":"application/json","href":"https://blog.cizai.io/feed.json","title":"此在笔记 JSON Feed"}],["link",{"rel":"alternate","type":"application/rss+xml","href":"https://blog.cizai.io/rss.xml","title":"此在笔记 RSS Feed"}]]},"headers":[{"level":2,"title":"HBase 常用Shell命令","slug":"hbase-常用shell命令","link":"#hbase-常用shell命令","children":[]},{"level":2,"title":"hbase scan limit","slug":"hbase-scan-limit","link":"#hbase-scan-limit","children":[]},{"level":2,"title":"hbase建表","slug":"hbase建表","link":"#hbase建表","children":[]},{"level":2,"title":"hbase启动命令","slug":"hbase启动命令","link":"#hbase启动命令","children":[]}],"git":{"createdTime":1710697545000,"updatedTime":1710697545000,"contributors":[{"name":"sampan","email":"lijc210@163.com","commits":1}]},"readingTime":{"minutes":1.61,"words":482},"filePathRelative":"大数据/数据库/hbase.md","localizedDate":"2022年1月1日","excerpt":"\\n<h2>HBase 常用Shell命令</h2>\\n<table>\\n<thead>\\n<tr>\\n<th>hbase shell命令</th>\\n<th>描述</th>\\n</tr>\\n</thead>\\n<tbody>\\n<tr>\\n<td>alter</td>\\n<td>修改列族（column family）模式</td>\\n</tr>\\n<tr>\\n<td>count</td>\\n<td>统计表中行的数量</td>\\n</tr>\\n<tr>\\n<td>create</td>\\n<td>创建表</td>\\n</tr>\\n<tr>\\n<td>describe</td>\\n<td>显示表相关的详细信息</td>\\n</tr>\\n<tr>\\n<td>delete</td>\\n<td>删除指定对象的值（可以为表，行，列对应的值，另外也可以指定时间戳的值）</td>\\n</tr>\\n<tr>\\n<td>deleteall</td>\\n<td>删除指定行的所有元素值</td>\\n</tr>\\n<tr>\\n<td>disable</td>\\n<td>使表无效</td>\\n</tr>\\n<tr>\\n<td>drop</td>\\n<td>删除表</td>\\n</tr>\\n<tr>\\n<td>enable</td>\\n<td>使表有效</td>\\n</tr>\\n<tr>\\n<td>exists</td>\\n<td>测试表是否存在</td>\\n</tr>\\n<tr>\\n<td>exit</td>\\n<td>退出hbase shell</td>\\n</tr>\\n<tr>\\n<td>get</td>\\n<td>获取行或单元（cell）的值</td>\\n</tr>\\n<tr>\\n<td>incr</td>\\n<td>增加指定表，行或列的值</td>\\n</tr>\\n<tr>\\n<td>list</td>\\n<td>列出hbase中存在的所有表</td>\\n</tr>\\n<tr>\\n<td>put</td>\\n<td>向指向的表单元添加值</td>\\n</tr>\\n<tr>\\n<td>tools</td>\\n<td>列出hbase所支持的工具</td>\\n</tr>\\n<tr>\\n<td>scan</td>\\n<td>通过对表的扫描来获取对用的值</td>\\n</tr>\\n<tr>\\n<td>status</td>\\n<td>返回hbase集群的状态信息</td>\\n</tr>\\n<tr>\\n<td>shutdown</td>\\n<td>关闭hbase集群（与exit不同）</td>\\n</tr>\\n<tr>\\n<td>truncate</td>\\n<td>重新创建指定表</td>\\n</tr>\\n<tr>\\n<td>version</td>\\n<td>返回hbase版本信息</td>\\n</tr>\\n</tbody>\\n</table>","autoDesc":true}');export{v as comp,m as data};

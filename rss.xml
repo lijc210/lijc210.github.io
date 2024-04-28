@@ -6,8 +6,8 @@
     <link>https://blog.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 26 Apr 2024 11:31:54 GMT</pubDate>
-    <lastBuildDate>Fri, 26 Apr 2024 11:31:54 GMT</lastBuildDate>
+    <pubDate>Sun, 28 Apr 2024 11:26:59 GMT</pubDate>
+    <lastBuildDate>Sun, 28 Apr 2024 11:26:59 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
@@ -15,11 +15,126 @@
     <category>每日悦读</category>
     <category>数据库</category>
     <item>
+      <title>反向代理应用frp</title>
+      <link>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/frp.html</link>
+      <guid>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/frp.html</guid>
+      <source url="https://blog.cizai.io/rss.xml">反向代理应用frp</source>
+      <description>反向代理应用frp 拥有公网IP的情况下，可以使用frp来实现内网机器的端口映射和访问。 安装 linux mac 通过tcp访问内网机器端口 通过自定义域名访问内网的 Web 服务 代理上网 （无法打开被强的网站）</description>
+      <category>工具</category>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>拥有公网IP的情况下，可以使用frp来实现内网机器的端口映射和访问。</p>
+<h2>安装</h2>
+<p>linux</p>
+<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>wget https://github.com/fatedier/frp/releases/download/v0.57.0/frp_0.57.0_linux_amd64.tar.gz
+tar -zxvf frp_0.57.0_linux_amd64.tar.gz
+</code></pre></div><p>mac</p>
+<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>wget https://github.com/fatedier/frp/releases/download/v0.57.0/frp_0.57.0_darwin_arm64.tar.gz
+tar -zxvf frp_0.57.0_darwin_arm64.tar.gz
+</code></pre></div><h2>通过tcp访问内网机器端口</h2>
+<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>公网服务器上编辑frps.toml
+bindPort <span class="token operator">=</span> <span class="token number">7000</span>
+
+内网服务器上编辑frpc.toml
+serverAddr <span class="token operator">=</span> <span class="token string">"x.x.x.x"</span> <span class="token comment"># 公网服务器的 IP 地址</span>
+serverPort <span class="token operator">=</span> <span class="token number">7000</span>
+
+<span class="token punctuation">[</span><span class="token punctuation">[</span>proxies<span class="token punctuation">]</span><span class="token punctuation">]</span>
+name <span class="token operator">=</span> <span class="token string">"ssh"</span>
+<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"tcp"</span>
+localIP <span class="token operator">=</span> <span class="token string">"127.0.0.1"</span>
+localPort <span class="token operator">=</span> <span class="token number">22</span>
+remotePort <span class="token operator">=</span> <span class="token number">2222</span>
+
+<span class="token punctuation">[</span><span class="token punctuation">[</span>proxies<span class="token punctuation">]</span><span class="token punctuation">]</span>
+name <span class="token operator">=</span> <span class="token string">"web"</span>
+<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"tcp"</span>
+localIP <span class="token operator">=</span> <span class="token string">"127.0.0.1"</span>
+localPort <span class="token operator">=</span> <span class="token number">5500</span>
+remotePort <span class="token operator">=</span> <span class="token number">5555</span>
+
+<span class="token comment"># localIP 和 localPort 配置为需要从公网访问的内网服务的地址和端口。</span>
+<span class="token comment"># remotePort 表示在 frp 服务端监听的端口，访问此端口的流量将被转发到本地服务的相应端口。</span>
+
+启动 frps 和 frpc
+./frps <span class="token parameter variable">-c</span> frps.toml
+./frpc <span class="token parameter variable">-c</span> frpc.toml
+
+使用以下命令通过 SSH 访问内网机器，假设用户名为 test：
+<span class="token function">ssh</span> <span class="token parameter variable">-o</span> <span class="token assign-left variable">Port</span><span class="token operator">=</span><span class="token number">2222</span> test@x.x.x.x
+
+使用以下命令通过 Web 服务访问内网机器，假设服务运行在 <span class="token number">5555</span> 端口：
+<span class="token function">curl</span> http://x.x.x.x:5555
+
+</code></pre></div><h2>通过自定义域名访问内网的 Web 服务</h2>
+<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>公网服务器上编辑frps.toml
+bindPort <span class="token operator">=</span> <span class="token number">7000</span>
+
+内网服务器上编辑frpc.toml
+serverAddr <span class="token operator">=</span> <span class="token string">"x.x.x.x"</span> <span class="token comment"># 公网服务器的 IP 地址</span>
+serverPort <span class="token operator">=</span> <span class="token number">7000</span>
+
+<span class="token punctuation">[</span><span class="token punctuation">[</span>proxies<span class="token punctuation">]</span><span class="token punctuation">]</span>
+name <span class="token operator">=</span> <span class="token string">"web"</span>
+<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"http"</span>
+localIP <span class="token operator">=</span> <span class="token string">"127.0.0.1"</span>
+localPort <span class="token operator">=</span> <span class="token number">80</span>
+customDomains <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"www.yourdomain.com"</span><span class="token punctuation">]</span>
+
+启动 frps 和 frpc
+./frps <span class="token parameter variable">-c</span> frps.toml
+./frpc <span class="token parameter variable">-c</span> frpc.toml
+
+将 www.yourdomain.com的域名 A 记录解析到服务器的 IP 地址 x.x.x.x
+
+访问 http://www.yourdomain.com 即可访问内网的 Web 服务
+</code></pre></div><h2>代理上网 （无法打开被强的网站）</h2>
+<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>公网服务器上编辑frps.toml
+bindPort <span class="token operator">=</span> <span class="token number">7000</span>
+
+内网服务器上编辑frpc.toml
+serverAddr <span class="token operator">=</span> <span class="token string">"x.x.x.x"</span> <span class="token comment"># 公网服务器的 IP 地址</span>
+server_port <span class="token operator">=</span> <span class="token number">7000</span> 
+
+<span class="token punctuation">[</span><span class="token punctuation">[</span>proxies<span class="token punctuation">]</span><span class="token punctuation">]</span>
+name <span class="token operator">=</span> <span class="token string">"plugin_http_proxy"</span>
+<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"tcp"</span>
+remotePort <span class="token operator">=</span> <span class="token number">6004</span>
+<span class="token punctuation">[</span>proxies.plugin<span class="token punctuation">]</span>
+<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"http_proxy"</span>
+httpUser <span class="token operator">=</span> <span class="token string">"abc"</span>
+httpPassword <span class="token operator">=</span> <span class="token string">"abc"</span>
+
+<span class="token punctuation">[</span><span class="token punctuation">[</span>proxies<span class="token punctuation">]</span><span class="token punctuation">]</span>
+name <span class="token operator">=</span> <span class="token string">"plugin_socks5"</span>
+<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"tcp"</span>
+remotePort <span class="token operator">=</span> <span class="token number">6005</span>
+<span class="token punctuation">[</span>proxies.plugin<span class="token punctuation">]</span>
+<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"socks5"</span>
+username <span class="token operator">=</span> <span class="token string">"abc"</span>
+password <span class="token operator">=</span> <span class="token string">"abc"</span>
+
+启动 frps 和 frpc
+./frps <span class="token parameter variable">-c</span> frps.toml
+./frpc <span class="token parameter variable">-c</span> frpc.toml
+
+<span class="token comment"># 设置代理</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">http_proxy</span><span class="token operator">=</span>http://abc:abc@x.x.x.x:6004
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">https_proxy</span><span class="token operator">=</span><span class="token variable">$http_proxy</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">all_proxy</span><span class="token operator">=</span>socks5://abc:abc@x.x.x.x:6005
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">no_proxy</span><span class="token operator">=</span><span class="token string">"localhost,127.0.0.1,x.x.x.x"</span>
+
+<span class="token function">wget</span> https://www.baidu.com 可以代理访问
+<span class="token function">wget</span> https://www.google.com 无法打开被强的网站，因为没有伪装加密
+
+</code></pre></div>]]></content:encoded>
+    </item>
+    <item>
       <title>内网穿透</title>
       <link>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</link>
       <guid>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</guid>
       <source url="https://blog.cizai.io/rss.xml">内网穿透</source>
-      <description>内网穿透 serveo ssh -R 80:localhost:3000 serveo.net ngrok 启动时需要验证 ngrok http 3000 localtunnel 访问时需要验证 cloudflare tunnel vscode 端口转发 WireGuard frp 免费域名 https://iyideng.net/welfare/be...</description>
+      <description>内网穿透 serveo ssh -R 80:localhost:3000 serveo.net ngrok 启动时需要验证 ngrok http 3000 localtunnel 访问时需要验证 cloudflare tunnel vscode 端口转发 WireGuard frp https://github.com/fatedier/frp 免费域...</description>
       <category>工具</category>
       <pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -50,6 +165,7 @@ https://bra.live/setup-home-server-with-cloudflare-tunnel/
 </code></pre></div><h2>vscode 端口转发</h2>
 <h2>WireGuard</h2>
 <h2>frp</h2>
+<p>https://github.com/fatedier/frp</p>
 <h2>免费域名</h2>
 <p>https://iyideng.net/welfare/best-free-domain-name-registration-platform.html</p>
 ]]></content:encoded>
@@ -786,20 +902,6 @@ FROM tmp.member_order_bitmap
 WHERE sdate = '2023-11-16'
 ) AS r2;
 </code></pre></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>hbase</title>
-      <link>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html</link>
-      <guid>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/hbase.html</guid>
-      <source url="https://blog.cizai.io/rss.xml">hbase</source>
-      <description>hbase HBase 常用Shell命令 hbase scan limit hbase建表 hbase启动命令 https://blog.csdn.net/kelonsen/article/details/78477152</description>
-      <category>数据库</category>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[
-<h2>HBase 常用Shell命令</h2>
-<p>| hbase shell命令 | 描述                                                                   |
-|</p>
-]]></content:encoded>
     </item>
   </channel>
 </rss>
