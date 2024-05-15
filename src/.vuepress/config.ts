@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
+import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   base: "/",
@@ -18,7 +19,7 @@ export default defineUserConfig({
   },
 
   theme,
-
+  
   // 是否开启页面预拉取，如果服务器宽带足够，可改为 true，会提升其他页面加载速度
   // Enable it with pwa
   // shouldPrefetch: false,
@@ -37,5 +38,22 @@ export default defineUserConfig({
     "!en",
   ],
 
-  
+    bundler: viteBundler({
+    viteOptions: {
+      server: {
+        proxy: {
+          '/api': {
+            target: 'https://zeabur.cizai.io',
+            changeOrigin: true,
+            rewrite: (path) => path.replace(/^\/api/, '/api'),
+          },
+        },
+      },
+    },
+    vuePluginOptions: {},
+  }),
+
+
 });
+
+

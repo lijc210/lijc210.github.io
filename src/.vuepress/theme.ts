@@ -4,6 +4,7 @@ import { enSidebar, zhSidebar } from "./sidebar/index.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
+  
   hostname: "https://blog.cizai.io",
 
   author: {

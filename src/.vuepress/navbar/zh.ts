@@ -80,7 +80,7 @@ export const zhNavbar = navbar([
     children: [
       // { text: "微信", icon: "wechat", link: "https://theme-hope.vuejs.press/" },
       { text: "Email", icon: "alias", link: "mailto:lijc210@163.com" },
-      { text: "RSS", icon: "rss", link: "https://lijc210.gitee.io/rss.xml" }
+      { text: "RSS", icon: "rss", link: "https://blog.cizai.io/rss.xml" }
     ],
   }
 ]);
