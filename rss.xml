@@ -6,8 +6,8 @@
     <link>https://blog.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 28 Apr 2024 11:26:59 GMT</pubDate>
-    <lastBuildDate>Sun, 28 Apr 2024 11:26:59 GMT</lastBuildDate>
+    <pubDate>Wed, 15 May 2024 11:01:07 GMT</pubDate>
+    <lastBuildDate>Wed, 15 May 2024 11:01:07 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
@@ -175,12 +175,14 @@ https://bra.live/setup-home-server-with-cloudflare-tunnel/
       <link>https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html</link>
       <guid>https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html</guid>
       <source url="https://blog.cizai.io/rss.xml">关于本站</source>
-      <description>关于本站 一个全栈开发者，从事大数据开发。 本站桌面端安装包，支持windows，linux，mac。下载地址</description>
+      <description>关于本站 一个全栈开发者，从事大数据开发。 本站桌面端安装包，支持windows，linux，mac。下载地址 Loading...</description>
       <pubDate>Sun, 17 Mar 2024 17:45:45 GMT</pubDate>
       <content:encoded><![CDATA[
 <p>一个全栈开发者，从事大数据开发。</p>
 <p>本站桌面端安装包，支持windows，linux，mac。<a href="https://file.cizai.io/wooapp.json" target="_blank" rel="noopener noreferrer">下载地址</a></p>
-]]></content:encoded>
+<div id="dynamic-content">
+  <p>Loading...</p>
+</div>]]></content:encoded>
       <enclosure url="https://blog.cizai.io/assets/images/cover3.jpg" type="image/jpeg"/>
     </item>
     <item>
