@@ -38,20 +38,20 @@ export default defineUserConfig({
     "!en",
   ],
 
-    bundler: viteBundler({
-    viteOptions: {
-      server: {
-        proxy: {
-          '/api': {
-            target: 'https://zeabur.cizai.io',
-            changeOrigin: true,
-            rewrite: (path) => path.replace(/^\/api/, '/api'),
-          },
-        },
-      },
-    },
-    vuePluginOptions: {},
-  }),
+  //   bundler: viteBundler({
+  //   viteOptions: {
+  //     server: {
+  //       proxy: {
+  //         '/api': {
+  //           target: 'https://zeabur.cizai.io',
+  //           changeOrigin: true,
+  //           rewrite: (path) => path.replace(/^\/api/, '/api'),
+  //         },
+  //       },
+  //     },
+  //   },
+  //   vuePluginOptions: {},
+  // }),
 
 
 });

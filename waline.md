@@ -5,9 +5,11 @@
 git clone https://github.com/walinejs/waline.git
 
 修改packages/server/Dockerfile文件，添加以下内容：
-RUN echo "module.exports["port"] = 9000;" >> node_modules/@waline/vercel/src/config/config.js
+RUN echo "module.exports.port = 9000;" >> node_modules/@waline/vercel/src/config/config.js
 
-docker build -t lizheming/waline -f packages/server/Dockerfile .
+docker build -t waline -f packages/server/Dockerfile .
+# 腾讯云函数不支持arm架构，在mac环境下构建docker镜像
+docker buildx build --platform linux/amd64 -t waline -f packages/server/Dockerfile .
 
 ## 运行docker容器，腾讯云函数必须要9000端口
 

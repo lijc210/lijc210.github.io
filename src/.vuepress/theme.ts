@@ -118,7 +118,7 @@ export default hopeTheme({
     comment: {
       provider: "Waline",
       // serverURL: "https://waline-536c1pw9e-lijc210-gmailcom.vercel.app/",
-      serverURL: "https://zeabur.cizai.io/",
+      serverURL: "https://waline.cizai.net/",
       // reaction: [
       //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44d.png",
       //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44f.png",
