@@ -115,47 +115,50 @@ export default hopeTheme({
     //   provider: "Waline",
     //   serverURL: "https://waline-comment.vuejs.press",
     // },
-    comment: {
-      provider: "Waline",
-      // serverURL: "https://waline-536c1pw9e-lijc210-gmailcom.vercel.app/",
-      serverURL: "https://waline.cizai.net/",
-      // reaction: [
-      //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44d.png",
-      //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44f.png",
-      //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f60e.png",
-      //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f602.png",
-      //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f635-200d-1f4ab.png",
-      // ],
-      // 部署 Waline：https://waline.js.org/guide/get-started.html
-      pageview: true, // 浏览量统计
-      locales: {
-        "/": {
-          // 表情互动提示文字
-          reactionTitle: "已到达文章底部，欢迎留言、表情互动~",
-          reaction0: "赞一个",
-          reaction1: "支持下",
-          reaction2: "有点酷",
-          reaction3: "啥玩意",
-          reaction4: "看不懂",
-          // Waline 等级标签
-          admin: "盛年不重来，一日难再晨",
-          level0: "锻体",
-          level1: "炼气",
-          level2: "筑基",
-          level3: "金丹",
-          level4: "元婴",
-          level5: "化神",
-        },
-      },
 
-      // Giscus 备用配置
-      /*
-      provider: "Giscus",
-      repo: "rockbenben/LearnData",
-      repoId: "R_kgDOHdfk6Q",
-      category: "Comments",
-      categoryId: "DIC_kwDOHdfk6c4CQYNn",
-      */
+    
+
+    comment: {
+
+      // Waline 配置
+
+      // provider: "Waline",
+      // // serverURL: "https://waline-536c1pw9e-lijc210-gmailcom.vercel.app/",
+      // serverURL: "https://waline.cizai.net/",
+      // // reaction: [
+      // //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44d.png",
+      // //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44f.png",
+      // //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f60e.png",
+      // //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f602.png",
+      // //   "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f635-200d-1f4ab.png",
+      // // ],
+      // // 部署 Waline：https://waline.js.org/guide/get-started.html
+      // pageview: true, // 浏览量统计
+      // locales: {
+      //   "/": {
+      //     // 表情互动提示文字
+      //     reactionTitle: "已到达文章底部，欢迎留言、表情互动~",
+      //     reaction0: "赞一个",
+      //     reaction1: "支持下",
+      //     reaction2: "有点酷",
+      //     reaction3: "啥玩意",
+      //     reaction4: "看不懂",
+      //     // Waline 等级标签
+      //     admin: "盛年不重来，一日难再晨",
+      //     level0: "锻体",
+      //     level1: "炼气",
+      //     level2: "筑基",
+      //     level3: "金丹",
+      //     level4: "元婴",
+      //     level5: "化神",
+      //   },
+      // },
+
+      // Artalk 配置
+      
+      provider: "Artalk",
+      server: "http://127.0.0.1:8080",
+      
     },
     components: {
       components: ["Badge", "VPCard"],
