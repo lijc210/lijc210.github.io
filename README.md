@@ -36,7 +36,7 @@ pnpm add -D reveal.js
 pnpm add -D @vuepress/plugin-feed
 pnpm add -D @vuepress/plugin-shiki@next
 pnpm add -D @vuepress/plugin-docsearch@next
-
+pnpm add -D artalk
 ```
 
 # Markdown 教程
