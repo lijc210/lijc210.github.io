@@ -3,7 +3,7 @@
   <id>https://blog.cizai.io/</id>
   <title>此在笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</subtitle>
-  <updated>2024-05-16T09:10:34.985Z</updated>
+  <updated>2024-05-17T11:30:11.406Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.cizai.io/atom.xml"/>
   <link rel="alternate" href="https://blog.cizai.io/"/>
@@ -198,19 +198,21 @@ https://bra.live/setup-home-server-with-cloudflare-tunnel/
     <title type="text">关于本站</title>
     <id>https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html</id>
     <link href="https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html"/>
-    <updated>2024-05-15T10:57:15.000Z</updated>
+    <updated>2024-05-17T11:26:17.000Z</updated>
     <summary type="html"><![CDATA[
 <p>一个全栈开发者，从事大数据开发。</p>
 <p>本站桌面端安装包，支持windows，linux，mac。<a href="https://file.cizai.io/wooapp.json" target="_blank" rel="noopener noreferrer">下载地址</a></p>
 <div id="dynamic-content">
   <p>Loading...</p>
-</div>]]></summary>
+</div>
+]]></summary>
     <content type="html"><![CDATA[
 <p>一个全栈开发者，从事大数据开发。</p>
 <p>本站桌面端安装包，支持windows，linux，mac。<a href="https://file.cizai.io/wooapp.json" target="_blank" rel="noopener noreferrer">下载地址</a></p>
 <div id="dynamic-content">
   <p>Loading...</p>
-</div>]]></content>
+</div>
+]]></content>
     <published>2024-03-17T17:45:45.000Z</published>
   </entry>
   <entry>

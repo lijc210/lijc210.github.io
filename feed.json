@@ -36,10 +36,10 @@
       "url": "https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html",
       "id": "https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html",
       "summary": "关于本站 一个全栈开发者，从事大数据开发。 本站桌面端安装包，支持windows，linux，mac。下载地址 Loading...",
-      "content_html": "\n<p>一个全栈开发者，从事大数据开发。</p>\n<p>本站桌面端安装包，支持windows，linux，mac。<a href=\"https://file.cizai.io/wooapp.json\" target=\"_blank\" rel=\"noopener noreferrer\">下载地址</a></p>\n<div id=\"dynamic-content\">\n  <p>Loading...</p>\n</div>",
+      "content_html": "\n<p>一个全栈开发者，从事大数据开发。</p>\n<p>本站桌面端安装包，支持windows，linux，mac。<a href=\"https://file.cizai.io/wooapp.json\" target=\"_blank\" rel=\"noopener noreferrer\">下载地址</a></p>\n<div id=\"dynamic-content\">\n  <p>Loading...</p>\n</div>\n",
       "image": "https://blog.cizai.io/assets/images/cover3.jpg",
       "date_published": "2024-03-17T17:45:45.000Z",
-      "date_modified": "2024-05-15T10:57:15.000Z",
+      "date_modified": "2024-05-17T11:26:17.000Z",
       "authors": [],
       "tags": []
     },
