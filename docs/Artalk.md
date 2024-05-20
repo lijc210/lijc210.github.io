@@ -1,17 +1,6 @@
 # Artalk 评论系统 docker 部署
 
-## build docker 镜像（因官方镜像不支持传递端口参数，所以自己构建镜像）
-
-git clone https://github.com/walinejs/waline.git
-
-修改packages/server/Dockerfile文件，添加以下内容：
-RUN echo "module.exports.port = 9000;" >> node_modules/@waline/vercel/src/config/config.js
-
-docker build -t waline -f packages/server/Dockerfile .
-
-# 腾讯云函数不支持arm架构，在mac环境下构建docker镜像
-
-docker buildx build --platform linux/amd64 -t waline -f packages/server/Dockerfile .
+docker pull artalk/artalk-go:latest
 
 ## 运行docker容器，腾讯云函数必须要9000端口
 
@@ -34,7 +23,12 @@ docker run -d \
     -e ATK_SITE_NAME=此在笔记 \
     -e ATK_SITE_URL=https://blog.cizai.io \
     -e ATK_SITE_LANG=zh-CN \
-    -e ARK_TRUSRED_DOMAINS=https://blog.cizai.io,http://127.0.0.1:8080 \
+    -e ATK_TRUSRED_DOMAINS=https://blog.cizai.io,http://127.0.0.1:8080,http://localhost:8080 \
+    -e ATK_EMAIL_ENABLE=true \
+    -e ATK_EMAIL_SMTP_HOST=smtp.exmail.qq.com \
+    -e ATK_EMAIL_SMTP_PORT=465 \
+    -e ATK_EMAIL_SMTP_USERNAME=admin@cizai.io \
+    -e ATK_EMAIL_SMTP_PASSWORD=feJStiU58iU58K7z \
     -v $HOME/workspace/workconf/artalk:/data \
     --restart=always \
     artalk/artalk-go
@@ -51,7 +45,14 @@ password: PJqKTAkytW
 # 初始化个人版服务，密码 Sysz0210
 docker login ccr.ccs.tencentyun.com --username=100008301194
 
+# 查看本地镜像架构
+docker inspect artalk/artalk-go | grep Architecture
+# 如果不是amd64架构，则不能直接推送到腾讯云容器镜像仓库，需要需要拉取 amd64 架构的镜像
+
+# 拉取 amd64 架构的镜像
+docker pull --platform linux/amd64 artalk/artalk-go:latest
+
 # 推送容器镜像
-docker tag waline:latest ccr.ccs.tencentyun.com/self-hub/waline:latest
-docker push ccr.ccs.tencentyun.com/self-hub/waline:latest
+docker tag artalk/artalk-go:latest ccr.ccs.tencentyun.com/self-hub/artalk:latest
+docker push ccr.ccs.tencentyun.com/self-hub/artalk:latest
 ```
