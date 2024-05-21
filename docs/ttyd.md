@@ -31,6 +31,6 @@ docker push ccr.ccs.tencentyun.com/self-hub/ttyd:latest
 
 ## 注意
 
-腾讯云函数不支持同时监听 http 和 websocket，因此在腾讯云函数上不支持。
+腾讯云函数http和ws无法共存，只能支持http或者只能支持ws
 
-创建ubuntu 镜像，然后挂载 nfs，通过网页文件浏览管理
+使用filebrowser可以通过网页文件浏览管理
