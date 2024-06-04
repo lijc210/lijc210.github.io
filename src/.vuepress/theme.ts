@@ -157,7 +157,8 @@ export default hopeTheme({
       // Artalk 配置
       
       provider: "Artalk",
-      server: "http://127.0.0.1:9000",
+      // server: "http://127.0.0.1:9000",
+      server: "https://artalk.cizai.net",
       site: "此在笔记",
       locale: "zh-CN",
       
