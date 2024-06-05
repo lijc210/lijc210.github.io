@@ -3,7 +3,7 @@
   <id>https://blog.cizai.io/</id>
   <title>此在笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</subtitle>
-  <updated>2024-06-04T06:57:30.156Z</updated>
+  <updated>2024-06-05T03:54:53.752Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.cizai.io/atom.xml"/>
   <link rel="alternate" href="https://blog.cizai.io/"/>
@@ -136,7 +136,7 @@ password <span class="token operator">=</span> <span class="token string">"abc"<
     <title type="text">内网穿透</title>
     <id>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</id>
     <link href="https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html"/>
-    <updated>2024-04-28T11:22:56.000Z</updated>
+    <updated>2024-06-05T03:51:29.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>serveo</h2>
 <p>ssh -R 80:localhost:3000 serveo.net</p>
@@ -182,8 +182,11 @@ lt <span class="token parameter variable">--subdomain</span> <span class="token 
 
 </code></pre></div><h2>cloudflare tunnel</h2>
 <div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>
-https://bra.live/setup-home-server-with-cloudflare-tunnel/
-
+登录到cloudflare.com，点击Zero Trust,  
+选择Network -<span class="token operator">&gt;</span> Tunnels，点击Create a Tunnel，Cloudflared和WARP选择Cloudflared，填入一个tunnel名称
+点击保存后，选择 <span class="token function">docker</span> 方式部署，在本地执行以下命令
+<span class="token function">docker</span> run <span class="token parameter variable">--name</span> cloudflared <span class="token parameter variable">-d</span> <span class="token parameter variable">--restart</span><span class="token operator">=</span>unless-stopped cloudflare/cloudflared:latest tunnel --no-autoupdate run <span class="token parameter variable">--token</span> <span class="token operator">&lt;</span>token<span class="token operator">&gt;</span> 
+查看Connectors页面是否有刚才创建的Tunnel，接着点击下一步，填入子域名和要映射的本地端口，点击创建Tunnel，等待几分钟后，就可以通过子域名访问本地
 </code></pre></div><h2>vscode 端口转发</h2>
 <h2>WireGuard</h2>
 <h2>frp</h2>

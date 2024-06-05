@@ -6,8 +6,8 @@
     <link>https://blog.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 04 Jun 2024 06:57:30 GMT</pubDate>
-    <lastBuildDate>Tue, 04 Jun 2024 06:57:30 GMT</lastBuildDate>
+    <pubDate>Wed, 05 Jun 2024 03:54:53 GMT</pubDate>
+    <lastBuildDate>Wed, 05 Jun 2024 03:54:53 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
@@ -160,8 +160,11 @@ lt <span class="token parameter variable">--subdomain</span> <span class="token 
 
 </code></pre></div><h2>cloudflare tunnel</h2>
 <div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>
-https://bra.live/setup-home-server-with-cloudflare-tunnel/
-
+登录到cloudflare.com，点击Zero Trust,  
+选择Network -<span class="token operator">&gt;</span> Tunnels，点击Create a Tunnel，Cloudflared和WARP选择Cloudflared，填入一个tunnel名称
+点击保存后，选择 <span class="token function">docker</span> 方式部署，在本地执行以下命令
+<span class="token function">docker</span> run <span class="token parameter variable">--name</span> cloudflared <span class="token parameter variable">-d</span> <span class="token parameter variable">--restart</span><span class="token operator">=</span>unless-stopped cloudflare/cloudflared:latest tunnel --no-autoupdate run <span class="token parameter variable">--token</span> <span class="token operator">&lt;</span>token<span class="token operator">&gt;</span> 
+查看Connectors页面是否有刚才创建的Tunnel，接着点击下一步，填入子域名和要映射的本地端口，点击创建Tunnel，等待几分钟后，就可以通过子域名访问本地
 </code></pre></div><h2>vscode 端口转发</h2>
 <h2>WireGuard</h2>
 <h2>frp</h2>
