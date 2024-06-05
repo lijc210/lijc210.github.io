@@ -9,6 +9,18 @@ tag:
 
 # docker
 
+## orbstack设置国内镜像加速
+```
+{
+    "registry-mirrors": [
+        "http://hub-mirror.c.163.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "https://registry.docker-cn.com",
+        "https://registry.hub.docker.com"
+    ]
+}
+```
+
 ## docker 安装与启动
 Windows WSL2 
 ```
@@ -280,26 +292,3 @@ guoquan-apocalypse-app项目使用slim
 
 所以alpine镜像安装一堆依赖后，可能比slim镜像大，所以在需要安装很多依赖的时候，推荐使用slim镜像
 ```
-
-
-
-## portainer 安装
-```
-docker pull portainer/portainer-ce
-docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v /data/portainer:/data --restart=always --name portainer portainer/portainer-ce
-```
-更新
-```
-docker ps -a
-docker rm 705fd5bce67a
-docker pull portainer/portainer-ce
-docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v /data/portainer:/data --restart=always --name portainer portainer/portainer-ce
-```
-
-## mysql 安装
-```
-docker pull mysql:latest
-docker run -d -p 3306:3306 --name some-mysql -e MYSQL_ROOT_PASSWORD=123456 mysql:latest
-```
-
-
