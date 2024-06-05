@@ -21,6 +21,16 @@ tag:
 }
 ```
 
+## portainer 重置密码
+```
+docker stop portainer
+docker run --rm -v /data/docker_data/portainer_data:/data portainer/helper-reset-password
+docker start portainer
+
+其中/data/docker_data/portainer_data为本地挂载路径，执行完后会输出用户名和密码
+```
+
+
 ## docker 安装与启动
 Windows WSL2 
 ```
