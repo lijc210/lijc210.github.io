@@ -78,10 +78,12 @@ git push -u origin main #  更新远程仓库
 https://github.com/gitpython-developers/GitPython/discussions/1458
 
 ## git强制覆盖本地仓库
+```
 main覆盖本地
 git fetch --all && git reset --hard origin/main && git pull
 master
 git fetch --all && git reset --hard origin/master && git pull
+```
 
 ## git强制提交本地分支覆盖远程分支
 ```
