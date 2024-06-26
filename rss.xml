@@ -6,14 +6,35 @@
     <link>https://blog.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 11 Jun 2024 10:01:24 GMT</pubDate>
-    <lastBuildDate>Tue, 11 Jun 2024 10:01:24 GMT</lastBuildDate>
+    <pubDate>Wed, 26 Jun 2024 11:13:51 GMT</pubDate>
+    <lastBuildDate>Wed, 26 Jun 2024 11:13:51 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
     <category>站点收藏</category>
     <category>每日悦读</category>
     <category>数据库</category>
+    <item>
+      <title>wireguard</title>
+      <link>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/wireguard.html</link>
+      <guid>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/wireguard.html</guid>
+      <source url="https://blog.cizai.io/rss.xml">wireguard</source>
+      <description>wireguard 安装 wireguard 一键安装脚本 https://github.com/angristan/wireguard-install 再次运行可以添加更多用户 配合v2ray使用 https://www.40huo.cn/blog/wireguard-over-vless.html https://github.com/XTLS/X...</description>
+      <category>工具</category>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<h2>安装</h2>
+<p>wireguard 一键安装脚本
+https://github.com/angristan/wireguard-install</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>curl -O https://raw.githubusercontent.com/angristan/wireguard-install/master/wireguard-install.sh</span></span>
+<span class="line"><span>chmod +x wireguard-install.sh</span></span>
+<span class="line"><span>./wireguard-install.sh</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>再次运行可以添加更多用户</p>
+<h2>配合v2ray使用</h2>
+<p>https://www.40huo.cn/blog/wireguard-over-vless.html</p>
+<p>https://github.com/XTLS/Xray-core/issues/1896</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>流量捕获</title>
       <link>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E6%B5%81%E9%87%8F%E6%8D%95%E8%8E%B7.html</link>
@@ -38,108 +59,106 @@
 <p>拥有公网IP的情况下，可以使用frp来实现内网机器的端口映射和访问。</p>
 <h2>安装</h2>
 <p>linux</p>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>wget https://github.com/fatedier/frp/releases/download/v0.57.0/frp_0.57.0_linux_amd64.tar.gz
-tar -zxvf frp_0.57.0_linux_amd64.tar.gz
-</code></pre></div><p>mac</p>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>wget https://github.com/fatedier/frp/releases/download/v0.57.0/frp_0.57.0_darwin_arm64.tar.gz
-tar -zxvf frp_0.57.0_darwin_arm64.tar.gz
-</code></pre></div><h2>通过tcp访问内网机器端口</h2>
-<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>公网服务器上编辑frps.toml
-bindPort <span class="token operator">=</span> <span class="token number">7000</span>
-
-内网服务器上编辑frpc.toml
-serverAddr <span class="token operator">=</span> <span class="token string">"x.x.x.x"</span> <span class="token comment"># 公网服务器的 IP 地址</span>
-serverPort <span class="token operator">=</span> <span class="token number">7000</span>
-
-<span class="token punctuation">[</span><span class="token punctuation">[</span>proxies<span class="token punctuation">]</span><span class="token punctuation">]</span>
-name <span class="token operator">=</span> <span class="token string">"ssh"</span>
-<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"tcp"</span>
-localIP <span class="token operator">=</span> <span class="token string">"127.0.0.1"</span>
-localPort <span class="token operator">=</span> <span class="token number">22</span>
-remotePort <span class="token operator">=</span> <span class="token number">2222</span>
-
-<span class="token punctuation">[</span><span class="token punctuation">[</span>proxies<span class="token punctuation">]</span><span class="token punctuation">]</span>
-name <span class="token operator">=</span> <span class="token string">"web"</span>
-<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"tcp"</span>
-localIP <span class="token operator">=</span> <span class="token string">"127.0.0.1"</span>
-localPort <span class="token operator">=</span> <span class="token number">5500</span>
-remotePort <span class="token operator">=</span> <span class="token number">5555</span>
-
-<span class="token comment"># localIP 和 localPort 配置为需要从公网访问的内网服务的地址和端口。</span>
-<span class="token comment"># remotePort 表示在 frp 服务端监听的端口，访问此端口的流量将被转发到本地服务的相应端口。</span>
-
-启动 frps 和 frpc
-./frps <span class="token parameter variable">-c</span> frps.toml
-./frpc <span class="token parameter variable">-c</span> frpc.toml
-
-使用以下命令通过 SSH 访问内网机器，假设用户名为 test：
-<span class="token function">ssh</span> <span class="token parameter variable">-o</span> <span class="token assign-left variable">Port</span><span class="token operator">=</span><span class="token number">2222</span> test@x.x.x.x
-
-使用以下命令通过 Web 服务访问内网机器，假设服务运行在 <span class="token number">5555</span> 端口：
-<span class="token function">curl</span> http://x.x.x.x:5555
-
-</code></pre></div><h2>通过自定义域名访问内网的 Web 服务</h2>
-<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>公网服务器上编辑frps.toml
-bindPort <span class="token operator">=</span> <span class="token number">7000</span>
-
-内网服务器上编辑frpc.toml
-serverAddr <span class="token operator">=</span> <span class="token string">"x.x.x.x"</span> <span class="token comment"># 公网服务器的 IP 地址</span>
-serverPort <span class="token operator">=</span> <span class="token number">7000</span>
-
-<span class="token punctuation">[</span><span class="token punctuation">[</span>proxies<span class="token punctuation">]</span><span class="token punctuation">]</span>
-name <span class="token operator">=</span> <span class="token string">"web"</span>
-<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"http"</span>
-localIP <span class="token operator">=</span> <span class="token string">"127.0.0.1"</span>
-localPort <span class="token operator">=</span> <span class="token number">80</span>
-customDomains <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"www.yourdomain.com"</span><span class="token punctuation">]</span>
-
-启动 frps 和 frpc
-./frps <span class="token parameter variable">-c</span> frps.toml
-./frpc <span class="token parameter variable">-c</span> frpc.toml
-
-将 www.yourdomain.com的域名 A 记录解析到服务器的 IP 地址 x.x.x.x
-
-访问 http://www.yourdomain.com 即可访问内网的 Web 服务
-</code></pre></div><h2>代理上网 （无法打开被强的网站）</h2>
-<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>公网服务器上编辑frps.toml
-bindPort <span class="token operator">=</span> <span class="token number">7000</span>
-
-内网服务器上编辑frpc.toml
-serverAddr <span class="token operator">=</span> <span class="token string">"x.x.x.x"</span> <span class="token comment"># 公网服务器的 IP 地址</span>
-server_port <span class="token operator">=</span> <span class="token number">7000</span> 
-
-<span class="token punctuation">[</span><span class="token punctuation">[</span>proxies<span class="token punctuation">]</span><span class="token punctuation">]</span>
-name <span class="token operator">=</span> <span class="token string">"plugin_http_proxy"</span>
-<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"tcp"</span>
-remotePort <span class="token operator">=</span> <span class="token number">6004</span>
-<span class="token punctuation">[</span>proxies.plugin<span class="token punctuation">]</span>
-<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"http_proxy"</span>
-httpUser <span class="token operator">=</span> <span class="token string">"abc"</span>
-httpPassword <span class="token operator">=</span> <span class="token string">"abc"</span>
-
-<span class="token punctuation">[</span><span class="token punctuation">[</span>proxies<span class="token punctuation">]</span><span class="token punctuation">]</span>
-name <span class="token operator">=</span> <span class="token string">"plugin_socks5"</span>
-<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"tcp"</span>
-remotePort <span class="token operator">=</span> <span class="token number">6005</span>
-<span class="token punctuation">[</span>proxies.plugin<span class="token punctuation">]</span>
-<span class="token builtin class-name">type</span> <span class="token operator">=</span> <span class="token string">"socks5"</span>
-username <span class="token operator">=</span> <span class="token string">"abc"</span>
-password <span class="token operator">=</span> <span class="token string">"abc"</span>
-
-启动 frps 和 frpc
-./frps <span class="token parameter variable">-c</span> frps.toml
-./frpc <span class="token parameter variable">-c</span> frpc.toml
-
-<span class="token comment"># 设置代理</span>
-<span class="token builtin class-name">export</span> <span class="token assign-left variable">http_proxy</span><span class="token operator">=</span>http://abc:abc@x.x.x.x:6004
-<span class="token builtin class-name">export</span> <span class="token assign-left variable">https_proxy</span><span class="token operator">=</span><span class="token variable">$http_proxy</span>
-<span class="token builtin class-name">export</span> <span class="token assign-left variable">all_proxy</span><span class="token operator">=</span>socks5://abc:abc@x.x.x.x:6005
-<span class="token builtin class-name">export</span> <span class="token assign-left variable">no_proxy</span><span class="token operator">=</span><span class="token string">"localhost,127.0.0.1,x.x.x.x"</span>
-
-<span class="token function">wget</span> https://www.baidu.com 可以代理访问
-<span class="token function">wget</span> https://www.google.com 无法打开被强的网站，因为没有伪装加密
-
-</code></pre></div>]]></content:encoded>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>wget https://github.com/fatedier/frp/releases/download/v0.57.0/frp_0.57.0_linux_amd64.tar.gz</span></span>
+<span class="line"><span>tar -zxvf frp_0.57.0_linux_amd64.tar.gz</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>mac</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>wget https://github.com/fatedier/frp/releases/download/v0.57.0/frp_0.57.0_darwin_arm64.tar.gz</span></span>
+<span class="line"><span>tar -zxvf frp_0.57.0_darwin_arm64.tar.gz</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h2>通过tcp访问内网机器端口</h2>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">公网服务器上编辑frps.toml</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">bindPort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 7000</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">内网服务器上编辑frpc.toml</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">serverAddr</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "x.x.x.x"</span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> # 公网服务器的 IP 地址</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">serverPort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 7000</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[[proxies]]</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">name</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "ssh"</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">type</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "tcp"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">localIP</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "127.0.0.1"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">localPort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 22</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">remotePort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 2222</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[[proxies]]</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">name</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "web"</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">type</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "tcp"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">localIP</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "127.0.0.1"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">localPort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 5500</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">remotePort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 5555</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"># localIP 和 localPort 配置为需要从公网访问的内网服务的地址和端口。</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"># remotePort 表示在 frp 服务端监听的端口，访问此端口的流量将被转发到本地服务的相应端口。</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">启动</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frps</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 和</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frpc</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">./frps</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -c</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frps.toml</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">./frpc</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -c</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frpc.toml</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">使用以下命令通过</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> SSH</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 访问内网机器，假设用户名为</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> test：</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">ssh</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -o</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> Port=</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66">2222</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> test@x.x.x.x</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">使用以下命令通过</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> Web</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 服务访问内网机器，假设服务运行在</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 5555</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 端口：</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">curl</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> http://x.x.x.x:5555</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>通过自定义域名访问内网的 Web 服务</h2>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">公网服务器上编辑frps.toml</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">bindPort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 7000</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">内网服务器上编辑frpc.toml</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">serverAddr</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "x.x.x.x"</span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> # 公网服务器的 IP 地址</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">serverPort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 7000</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[[proxies]]</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">name</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "web"</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">type</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "http"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">localIP</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "127.0.0.1"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">localPort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 80</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">customDomains</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> [</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">"www.yourdomain.com"</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">启动</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frps</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 和</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frpc</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">./frps</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -c</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frps.toml</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">./frpc</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -c</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frpc.toml</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">将</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> www.yourdomain.com的域名</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> A</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 记录解析到服务器的</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> IP</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 地址</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> x.x.x.x</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">访问</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> http://www.yourdomain.com</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 即可访问内网的</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> Web</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 服务</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>代理上网 （无法打开被强的网站）</h2>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">公网服务器上编辑frps.toml</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">bindPort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 7000</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">内网服务器上编辑frpc.toml</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">serverAddr</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "x.x.x.x"</span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> # 公网服务器的 IP 地址</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">server_port</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 7000</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> </span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[[proxies]]</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">name</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "plugin_http_proxy"</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">type</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "tcp"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">remotePort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 6004</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[proxies.plugin]</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">type</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "http_proxy"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">httpUser</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "abc"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">httpPassword</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "abc"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[[proxies]]</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">name</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "plugin_socks5"</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">type</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "tcp"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">remotePort</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 6005</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[proxies.plugin]</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">type</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "socks5"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">username</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "abc"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">password</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "abc"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">启动</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frps</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 和</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frpc</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">./frps</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -c</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frps.toml</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">./frpc</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -c</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> frpc.toml</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"># 设置代理</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">export</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> http_proxy</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">http</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">://</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">abc</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">abc</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">@</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">x</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">x</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">x</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">x</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">6004</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">export</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> https_proxy</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">$http_proxy</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">export</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> all_proxy</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">socks5</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">://</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">abc</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">abc</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">@</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">x</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">x</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">x</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">x</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">6005</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">export</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> no_proxy</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">"localhost,127.0.0.1,x.x.x.x"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">wget</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> https://www.baidu.com</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 可以代理访问</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">wget</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> https://www.google.com</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 无法打开被强的网站，因为没有伪装加密</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
     <item>
       <title>内网穿透</title>
@@ -157,27 +176,26 @@ password <span class="token operator">=</span> <span class="token string">"abc"<
 <p>ngrok http 3000</p>
 <h2>localtunnel</h2>
 <h3>访问时需要验证</h3>
-<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>快速开始
-npx localtunnel <span class="token parameter variable">--subdomain</span> cizai <span class="token parameter variable">--port</span> <span class="token number">3000</span>
-
-全局安装
-<span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> localtunnel
-lt <span class="token parameter variable">--port</span> <span class="token number">3000</span>
-
-自定义个性前缀
-lt <span class="token parameter variable">--subdomain</span> <span class="token operator">&lt;</span>个性前缀<span class="token operator">&gt;</span> <span class="token parameter variable">--port</span> <span class="token operator">&lt;</span>要映射的端口<span class="token operator">&gt;</span>
-
-<span class="token comment"># 获取访问密码</span>
-<span class="token function">wget</span> <span class="token parameter variable">-q</span> <span class="token parameter variable">-O</span> - https://loca.lt/mytunnelpassword
-
-</code></pre></div><h2>cloudflare tunnel</h2>
-<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code>
-登录到cloudflare.com，点击Zero Trust,  
-选择Network -<span class="token operator">&gt;</span> Tunnels，点击Create a Tunnel，Cloudflared和WARP选择Cloudflared，填入一个tunnel名称
-点击保存后，选择 <span class="token function">docker</span> 方式部署，在本地执行以下命令
-<span class="token function">docker</span> run <span class="token parameter variable">--name</span> cloudflared <span class="token parameter variable">-d</span> <span class="token parameter variable">--restart</span><span class="token operator">=</span>unless-stopped cloudflare/cloudflared:latest tunnel --no-autoupdate run <span class="token parameter variable">--token</span> <span class="token operator">&lt;</span>token<span class="token operator">&gt;</span> 
-查看Connectors页面是否有刚才创建的Tunnel，接着点击下一步，填入子域名和要映射的本地端口，点击创建Tunnel，等待几分钟后，就可以通过子域名访问本地
-</code></pre></div><h2>vscode 端口转发</h2>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">快速开始</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> localtunnel</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --subdomain</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> cizai</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --port</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 3000</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">全局安装</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -g</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> localtunnel</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">lt</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --port</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 3000</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">自定义个性前缀</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">lt</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --subdomain</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">个性前</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">缀</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --port</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">要映射的端</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">口</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"># 获取访问密码</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">wget</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -q</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -O</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> -</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> https://loca.lt/mytunnelpassword</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>cloudflare tunnel</h2>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">登录到cloudflare.com，点击Zero</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> Trust,</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">  </span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">选择Network</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> -</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">&gt;</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> Tunnels，点击Create</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> a</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> Tunnel，Cloudflared和WARP选择Cloudflared，填入一个tunnel名称</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">点击保存后，选择</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> docker</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 方式部署，在本地执行以下命令</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">docker</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> run</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --name</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> cloudflared</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -d</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --restart=unless-stopped</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> cloudflare/cloudflared:latest</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tunnel</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --no-autoupdate</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> run</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --token</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">toke</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">n</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> </span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">查看Connectors页面是否有刚才创建的Tunnel，接着点击下一步，填入子域名和要映射的本地端口，点击创建Tunnel，等待几分钟后，就可以通过子域名访问本地</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>vscode 端口转发</h2>
 <h2>WireGuard</h2>
 <h2>frp</h2>
 <p>https://github.com/fatedier/frp</p>
@@ -259,16 +277,16 @@ https://github.com/lijc210/lijc210.github.io/blob/main/write2md.py</p>
       <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <h2>Impala时间戳分组</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>select   
-from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd') as sdate,
-count(1),
-count(if(second_id is null,1,null))
-from users 
--- 2023-06-14 00:00:00
-where siyu_add_time &gt; 1686672000000
-group by from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd')
-order by from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd') desc
-</code></pre></div>]]></content:encoded>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>select   </span></span>
+<span class="line"><span>from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd') as sdate,</span></span>
+<span class="line"><span>count(1),</span></span>
+<span class="line"><span>count(if(second_id is null,1,null))</span></span>
+<span class="line"><span>from users </span></span>
+<span class="line"><span>-- 2023-06-14 00:00:00</span></span>
+<span class="line"><span>where siyu_add_time &gt; 1686672000000</span></span>
+<span class="line"><span>group by from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd')</span></span>
+<span class="line"><span>order by from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd') desc</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
     <item>
       <title>clickhouse</title>
@@ -280,415 +298,89 @@ order by from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd') desc
       <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <h2>clickhouse 常用命令</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>更新数据
-ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update item_no='' where item_no is null;
-ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update store_shop_code='' where store_shop_code is null;
-ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update unify_goods_code='' where unify_goods_code is null;
-
-
-重命名表
-RENAME TABLE table_A TO table_A_bak, table_B TO table_B_bak;
-
-
-
-查看所有表
-select *
-FROM system.tables t WHERE database ='ads' AND engine &lt;&gt;'Distributed' ORDER by total_rows DESC 
-
-
-select *
-FROM system.tables t WHERE database ='ads'
-AND engine &lt;&gt;'Distributed'
-and name not like '%del%'
-and name not like '%20%'
-ORDER by total_rows DESC
-
-
-
-自动清理query_log，query_thread_log，trace_log
-
-ALTER TABLE system.query_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY
-
-ALTER TABLE system.query_thread_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY
-
-ALTER TABLE system.trace_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY
-
-立即清理
-alter table system.query_thread_log_0 drop partition '202105'
-分区名可以用下语句查询
-select * from system.parts p where table = '表名'
-
-查看parts  
-select * from system.parts  where table = 'abs_activity_item_info_day_replica'
-select * from system.parts where active = 0
-当前慢查询
-SELECT * FROM system.processes limit 100
-
-耗时大于60秒
-kill query where elapsed &gt;= 60
-
-clickhouse不能创建等执行操作时（每个节点都要执行）
-select * from system.mutations where is_done = 0;
-kill mutation ON CLUSTER ck_cluster1 
- where database='ads' and table='ads_jd_erp_sale_outstock_replica' 
-
-
-进入zk清理任务
-deleteall /clickhouse/distributed_ddl/query-0000011932
-查询阻塞的任务
-select * from system.distributed_ddl_queue where status != 'Finished'
-
-
-查看表大小
-SELECT
-    table AS `表名`,
-    sum(rows) AS `总行数`,
-    formatReadableSize(sum(data_uncompressed_bytes)) AS `原始大小`,
-    formatReadableSize(sum(data_compressed_bytes)) AS `压缩大小`,
-    round((sum(data_compressed_bytes) / sum(data_uncompressed_bytes)) * 100, 0) AS `压缩率`
-FROM system.parts
-GROUP BY table
-order by sum(data_compressed_bytes) desc
-
-
-修改字段名
-ALTER TABLE visits RENAME COLUMN webBrowser TO browser
-分布式集群下用分布式DDL修改字段名
-ALTER TABLE visits on cluster shipin_cluster RENAME COLUMN webBrowser TO browser
-
-
-新增字段
- alter table ads_itemprice_sales_section_replica ON CLUSTER ck_cluster1 add column sort_mark Nullable(int)
- alter table ads_itemprice_sales_section ON CLUSTER ck_cluster1 add column sort_mark Nullable(int)
-</code></pre></div><h2>clickhouse表引擎</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>更新数据</span></span>
+<span class="line"><span>ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update item_no='' where item_no is null;</span></span>
+<span class="line"><span>ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update store_shop_code='' where store_shop_code is null;</span></span>
+<span class="line"><span>ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update unify_goods_code='' where unify_goods_code is null;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>重命名表</span></span>
+<span class="line"><span>RENAME TABLE table_A TO table_A_bak, table_B TO table_B_bak;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>查看所有表</span></span>
+<span class="line"><span>select *</span></span>
+<span class="line"><span>FROM system.tables t WHERE database ='ads' AND engine &lt;&gt;'Distributed' ORDER by total_rows DESC </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>select *</span></span>
+<span class="line"><span>FROM system.tables t WHERE database ='ads'</span></span>
+<span class="line"><span>AND engine &lt;&gt;'Distributed'</span></span>
+<span class="line"><span>and name not like '%del%'</span></span>
+<span class="line"><span>and name not like '%20%'</span></span>
+<span class="line"><span>ORDER by total_rows DESC</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>自动清理query_log，query_thread_log，trace_log</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ALTER TABLE system.query_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ALTER TABLE system.query_thread_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ALTER TABLE system.trace_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>立即清理</span></span>
+<span class="line"><span>alter table system.query_thread_log_0 drop partition '202105'</span></span>
+<span class="line"><span>分区名可以用下语句查询</span></span>
+<span class="line"><span>select * from system.parts p where table = '表名'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>查看parts  </span></span>
+<span class="line"><span>select * from system.parts  where table = 'abs_activity_item_info_day_replica'</span></span>
+<span class="line"><span>select * from system.parts where active = 0</span></span>
+<span class="line"><span>当前慢查询</span></span>
+<span class="line"><span>SELECT * FROM system.processes limit 100</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>耗时大于60秒</span></span>
+<span class="line"><span>kill query where elapsed &gt;= 60</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>clickhouse不能创建等执行操作时（每个节点都要执行）</span></span>
+<span class="line"><span>select * from system.mutations where is_done = 0;</span></span>
+<span class="line"><span>kill mutation ON CLUSTER ck_cluster1 </span></span>
+<span class="line"><span> where database='ads' and table='ads_jd_erp_sale_outstock_replica' </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>进入zk清理任务</span></span>
+<span class="line"><span>deleteall /clickhouse/distributed_ddl/query-0000011932</span></span>
+<span class="line"><span>查询阻塞的任务</span></span>
+<span class="line"><span>select * from system.distributed_ddl_queue where status != 'Finished'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>查看表大小</span></span>
+<span class="line"><span>SELECT</span></span>
+<span class="line"><span>    table AS `表名`,</span></span>
+<span class="line"><span>    sum(rows) AS `总行数`,</span></span>
+<span class="line"><span>    formatReadableSize(sum(data_uncompressed_bytes)) AS `原始大小`,</span></span>
+<span class="line"><span>    formatReadableSize(sum(data_compressed_bytes)) AS `压缩大小`,</span></span>
+<span class="line"><span>    round((sum(data_compressed_bytes) / sum(data_uncompressed_bytes)) * 100, 0) AS `压缩率`</span></span>
+<span class="line"><span>FROM system.parts</span></span>
+<span class="line"><span>GROUP BY table</span></span>
+<span class="line"><span>order by sum(data_compressed_bytes) desc</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>修改字段名</span></span>
+<span class="line"><span>ALTER TABLE visits RENAME COLUMN webBrowser TO browser</span></span>
+<span class="line"><span>分布式集群下用分布式DDL修改字段名</span></span>
+<span class="line"><span>ALTER TABLE visits on cluster shipin_cluster RENAME COLUMN webBrowser TO browser</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>新增字段</span></span>
+<span class="line"><span> alter table ads_itemprice_sales_section_replica ON CLUSTER ck_cluster1 add column sort_mark Nullable(int)</span></span>
+<span class="line"><span> alter table ads_itemprice_sales_section ON CLUSTER ck_cluster1 add column sort_mark Nullable(int)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>clickhouse表引擎</h2>
 <p>| 系列        | 引擎                         | 特点                                                                                                                                                                                                                                    | 场景                                                                                     |
 |</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>elasticsearch</title>
-      <link>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch.html</link>
-      <guid>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch.html</guid>
-      <source url="https://blog.cizai.io/rss.xml">elasticsearch</source>
-      <description>elasticsearch 查看集群状态，修复 记录慢日志，重启也生效 记录慢查询日志 批量按条件更新 搜索词分权重 统一更改刷新时间 优化性能 索引复制数据 暂时移除一个节点 搜索结果返回不一致问题 一、背景 这周在使用Elasticsearch搜索的时候遇到一个，对于同一个搜索请求，会出现top50返回结果和排序不一致的问题。那么为什么会出现这样的...</description>
-      <category>数据库</category>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[
-<h2>查看集群状态，修复</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>GET _cluster/allocation/explain?pretty
-
-GET /_cluster/allocation/explain
-
-get /_cluster/settings
-
-PUT /_cluster/settings
-{
-  "transient": {
-    "cluster.routing.allocation.enable": "none"
-  }
-}
-#分片配置
-
-PUT /_cluster/settings
-{
-  "transient": {
-    "cluster.routing.allocation.enable": "all"
-  }
-}
-
-#分片重新均衡分配
-
-PUT /_cluster/settings
-{
-  "transient": {
-    "cluster.routing.rebalance.enable": "all"
-  }
-}
-
-# 设置副本数量
-PUT /aabb/_settings
-{
-"number_of_replicas" : 2
-}
-
-get _cluster/health?level=indices
-
-
-GET _cat/nodes?v&amp;h=ip,heap.current,heap.percent,heap.max,ram.max,disk.avail,node.role,m
-
-curl http://localhost:9200/_cat/nodes?v&amp;h=ip,heap.current,heap.percent,heap.max,ram.max,disk.avail,node.role,m
-
-get _cat/master
-
-post /_cluster/reroute
-{
-  "commands": [
-    {
-      "allocate_empty_primary": {
-        "index": "wap_yonghu_v1",
-        "shard": 2,
-        "node": "Ee6ubnnmT52LJchcw0P-pQ",
-        "accept_data_loss": false
-      }
-    }
-  ]
-}
-
-
-#数据丢失
-post /_cluster/reroute
-{
-"commands": [
-{
-"allocate_empty_primary": {
-"index": "aabb_v2",
-"shard": 0,
-"node": "Ee6ubnnmT52LJchcw0P-pQ",
-"accept_data_loss": true
-}
-}
-]
-}
-
-#数据不丢失
-post /_cluster/reroute
-{
-"commands" : [ {
-"allocate_stale_primary" : {
-"index" : "aabb_v2",
-"shard" :0,
-"node" : "Ee6ubnnmT52LJchcw0P-pQ",
-"accept_data_loss" : true
-}
-}]
-}
-
-
-POST /_cluster/reroute?retry_failed=true
-
-
-手动迁移分片
-POST /_cluster/reroute
-{
-  "commands": [
-    {
-      "move": {
-        "index": "aabb_v1",
-        "shard": 1,
-        "from_node": "10.10.20.143",
-        "to_node": "10.10.20.153"
-      }
-    }
-  ]
-}
-
-</code></pre></div><h2>记录慢日志，重启也生效</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>PUT /_settings
-{
-"index.search.slowlog.level": "trace",            
-"index.search.slowlog.threshold.query.warn": "10s",  
-"index.search.slowlog.threshold.query.info": "5s",  
-"index.search.slowlog.threshold.query.debug": "2s",  
-"index.search.slowlog.threshold.query.trace": "500ms"
-}
-</code></pre></div><h2>记录慢查询日志</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>curl -XPUT 'http://localhost:9200/_all/_settings?preserve_existing=true' -d '{
-  "index.indexing.slowlog.threshold.index.debug" : "500ms",
-  "index.indexing.slowlog.threshold.index.info" : "2s",
-  "index.indexing.slowlog.threshold.index.warn" : "5s",
-  "index.search.slowlog.threshold.fetch.debug" : "500ms",
-  "index.search.slowlog.threshold.fetch.info" : "2s",
-  "index.search.slowlog.threshold.fetch.warn" : "5s",
-  "index.search.slowlog.threshold.query.debug" : "500ms",
-  "index.search.slowlog.threshold.query.info" : "2s",
-  "index.search.slowlog.threshold.query.warn" : "5s"
-}'
-</code></pre></div><h2>批量按条件更新</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>POST pyspider/result/_update_by_query
-{
-  "script": {
-    "inline": "ctx._source.result.company_list=0;"
-  },
-  "query": {
-    "term": {
-      "_id": {
-        "value": "qichacha:ecde53ee4b22383478536ee7d976046b"
-      }
-    }
-  }
-}
-</code></pre></div><h2>搜索词分权重</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>post aabb/v9_news/_search
-{
-"query": {
-"bool": {
-"must": {
-"multi_match": {
-"query": "温馨的客厅",
-"fields": [
-"title"
-]
-}
-},
-"should": [
-{
-"match": {
-"title": {
-"query": "客厅",
-"boost": 4
-}
-}
-},
-{
-"match": {
-"title": {
-"query": "温馨",
-"boost": 2
-}
-}
-}
-]
-}
-},"_source":["title","create_time"]
-,"size": 50
-}
-</code></pre></div><h2>统一更改刷新时间</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>curl -XPUT 'http://10.10.20.165:9200/_all/_settings?preserve_existing=true' -d '{
-  "index.refresh_interval" : "15s"
-}'
-</code></pre></div><h2>优化性能</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>GET _nodes/hot_threads?pretty
-
-
-PUT /aabb/_settings
-{
-    "index":{
-        "refresh_interval":"30s",
-        "translog":{
-            "flush_threshold_size":"2048m",
-            "sync_interval":"120s",
-            "durability":"async"
-        },
-        "merge":{
-            "policy.max_merge_at_once":5,
-            "policy.max_merge_at_once_explicit":15,
-            "policy.floor_segment":"1mb",
-            "scheduler.max_thread_count":"1"
-        }
-    }
-}
-
-
-PUT /uc/_settings
-{
-    "index":{
-        "refresh_interval":"-1"
-        }
-}
-</code></pre></div><h2>索引复制数据</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>http://localhost:9200/_reindex
-{
-    "source":{
-        "index":"old_index"
-    },
-    "dest":{
-        "index":"new_index",
-        "op_type":"create"
-    }
-}
-http://localhost:9200/_reindex
-{
-    "source":{
-        "index":"cut_word_data_v1"
-    },
-    "dest":{
-        "index":"cut_word_data_v2",
-        "op_type":"create"
-    }
-}
-curl -l -H "Content-type: application/json" -d '{"source":{"index":"crm-address_v2"},"dest":{"index":"crm-address_v1","op_type":"create" }}'  http://localhost:9200/_reindex
-
-
-curl -l -H "Content-type: application/json" -d '{"source":{"index":"aabb_v1"},"dest":{"index":"aabb_v2","op_type":"create" }}'  http://localhost:9200/_reindex
-
-
-curl -l -H "Content-type: application/json" -d '{"source":{"index":"wap_anli_v2"},"dest":{"index":"wap_anli_v1","op_type":"create" }}'  http://localhost:9200/_reindex
-
-
-curl -l -H "Content-type: application/json" -d '{"source":{"remote":{"host":"http://10.10.20.33:9200"},"index":"kn2_es_v1"},"dest":{"index":"kn2_es_v1","op_type":"create"}}'  http://localhost:9200/_reindex
-
-curl -l -H "Content-type: application/json" -d '{"source":{"remote":{"host":"http://10.10.20.33:9200"},"index":"pyspider"},"dest":{"index":"pyspider_v1","op_type":"create"}}'  http://localhost:9200/_reindex
-
-
-http://localhost:9200/_reindex
-{
-    "source":{
-        "index":"kn2_es_v1"
-    },
-    "dest":{
-        "index":"kn2_es_v2",
-        "op_type":"create"
-    }
-}
-
-
-远程复制：
-
-POST _reindex
-{
-    "source":{
-        "remote":{
-            "host":"http://10.10.20.33:9200"
-        },
-        "index":"test1"
-    },
-    "dest":{
-        "index":"test2",
-        "op_type":"create"
-    }
-}
-</code></pre></div><h2>暂时移除一个节点</h2>
-<div class="language-text" data-ext="text" data-title="text"><pre class="language-text"><code>
-下线：
-PUT _cluster/settings
-{
-"transient" : {
-"cluster.routing.allocation.exclude._name" : "node-2"
-}
-}
-注意 这个操作是transient集群重启后，这个设置会失效
-
-
-
-上线
-PUT _cluster/settings
-{
-"transient" : {
-"cluster.routing.allocation.exclude._name" : ""
-}
-}
-只要让_name匹配不到对用的node即可
-</code></pre></div><h2>搜索结果返回不一致问题</h2>
-<p>一、背景</p>
-<p>这周在使用Elasticsearch搜索的时候遇到一个，对于同一个搜索请求，会出现top50返回结果和排序不一致的问题。那么为什么会出现这样的问题？
-后来通过百度和google，发现这是因为Elastcisearch的分布式搜索特性导致。Elasticsearch在搜索时，会循环的选择主分片和其副本中的一个来计算和返回搜索结果，而由于主分片和副本中相关统计信息的不同，从而导致了同一个搜索串的评分的不一致，进而导致排序不一样。而造成这种主分片和副本统计信息不一致的具体原因，是因为文档删除时造成的，具体可以参考官方给出的解释：https://www.elastic.co/guide/en/elasticsearch/reference/current/consistent-scoring.html
-二、解决办法
-针对上述问题，Elasticsearch官方也给出了解决方案（https://www.elastic.co/guide/en/elasticsearch/guide/2.x/_search_options.html#_preference），即在搜索时设置preference特性。如下：
-SearchRequestBuilder builder = client.prepareSearch(offLin.index)
-.setTypes(offLin.type)
-.setQuery(queryBuilder)
-.setFetchSource(fetchFields, null)
-.setSize(limit)
-.setPreference("_primary_first");
-那么preference可以取哪些值，每个值的含义是什么呢，可以参考下面解释：
-（1）randomizeacross shards：随机选择分片或其副本查询数据，es的默认方式。
-（2）_local：优先在本地节点上的分片查询数据然后再去其他节点上的分片查询，本地节点没有IO问题但有可能造成负载不均问题。
-（3）_primary：搜索只在主分片执行搜索请求，副本不参与搜索；性能会打折扣，达不到性能的水平扩展。
-（4）_primary_first：优先在主分片执行，如果主分片挂掉，会在副本执行请求。
-（5）_only_node:123 ：只在123这个节点执行搜索。
-（6）_prefer_node:123：搜索请求优先在节点123执行。
-（7）_shards:1,2：搜索只在分片2、3执行，可以与_primary参数一起使用如：_shards:2,3;_primary
-（8）随机字符串：指定一个随机字符串，可以保证同样的请求，被分配到同样的副本上面，从而保证同一请求结果的稳定性。我遇到的问题就可以使用这种方式，把搜索串的hash值作为随机字符串，这样可以保证同一个搜索条件的请求的返回结果和排序一致。</p>
 ]]></content:encoded>
     </item>
   </channel>
