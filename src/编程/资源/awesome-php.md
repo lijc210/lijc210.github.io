@@ -10,9 +10,8 @@ tag:
 
 如果您觉得这个[项目](https://github.com/awesome-code-resources/awesome-php-zh)对您有帮助，就请点右上角的**Star**按钮为它加星星✨✨ 其他TIOBE Top 20编程语言的中文翻译请看[awesome-code-resources](https://github.com/awesome-code-resources/awesome-code-resources)。
 本项目的原始仓库地址为[这里](https://github.com/ziadoz/awesome-php)。
-# Awesome PHP[![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-
-一个令人惊讶的Awesome PHP库，资源和闪亮的东西的精心策划的列表。
+# Awesome PHP [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+一个令人惊讶的令人敬畏的PHP库，资源和闪亮的东西的精心策划的列表。
 
 ## 贡献和合作
 
@@ -20,7 +19,7 @@ tag:
 
 ## 目录
 
-- [Awesome PHP](#Awesome-PHP)
+- [真棒PHP](#真棒PHP)
   - [Composer存储库](#Composer存储库)
   - [依赖关系管理](#依赖关系管理)
   - [依赖关系管理](#依赖关系管理)
@@ -526,7 +525,7 @@ tag:
 * [Carbon](https://github.com/briannesbitt/Carbon)-一个简单的DateTime API扩展。
 * [Chronos](https://github.com/cakephp/chronos)-支持可变和不可变日期/时间的DateTime API扩展。
 * [Moment.php](https://github.com/fightbulc/moment.php)-Moment.js启发了具有i18n支持的PHP日期时间处理程序。
-* [Yasumi](https://github.com/azuyalabs/yasumi)-一个库，以帮助您计算假期的日期和名称。
+* [Yasumi](https://github.com/azuyalabs/yasumi)-一个图书馆，以帮助您计算假期的日期和名称。
 ### 事件
 
 *事件驱动或实现非阻塞事件循环的库。* 
@@ -673,7 +672,7 @@ tag:
 * [CommonMark PHP](https://github.com/thephpleague/commonmark)-高度可扩展的Markdown解析器，它完全支持[CommonMark spec](https://spec.commonmark.org/)。
 * [Decoda](https://github.com/milesj/decoda)-一个轻量级的标记解析器库。
 * [Essence](https://github.com/essence/essence)-用于提取web媒体的库。
-* [Embera](https://github.com/mpratt/Embera)-Oembed消费者库。
+* [Embera](https://github.com/mpratt/Embera)-Oembed消费者图书馆。
 * [HTML to Markdown](https://github.com/thephpleague/html-to-markdown)-将HTML转换为Markdown。
 * [HTML5 PHP](https://github.com/Masterminds/html5-php)-一个HTML5解析器和序列化程序库。
 * [Parsedown](https://github.com/erusev/parsedown)-另一个Markdown解析器。
@@ -727,7 +726,7 @@ tag:
 * [Aura.Filter](https://github.com/auraphp/Aura.Filter)-提供工具来验证和清理对象和数组。
 * [CakePHP Validation](https://github.com/cakephp/validation)-另一个验证库。
 * [Filterus](https://github.com/ircmaxell/filterus)一个简单的PHP过滤库。
-* [ISO-codes](https://github.com/ronanguilloux/IsoCodes)-根据ISO，国际金融，公共管理，GS1，图书行业，许多国家的电话号码和邮政编码标准验证输入的库。
+* [ISO-codes](https://github.com/ronanguilloux/IsoCodes)-根据ISO，国际金融，公共管理，GS1，图书行业，许多国家的电话号码和邮政编码标准验证输入的图书馆。
 * [JSON Schema](https://github.com/jsonrainbow/json-schema)-A[JSON Schema](https://json-schema.org/)验证库。
 * [MetaYaml](https://github.com/romaricdrigon/MetaYaml)-支持YAML、JSON和XML的架构验证库。
 * [Respect Validation](https://github.com/Respect/Validation)-一个简单的验证库。
@@ -842,8 +841,7 @@ tag:
 * [Pagerfanta](https://github.com/whiteoctober/Pagerfanta)-一个分页库。
 * [Safe](https://github.com/thecodingmachine/safe)-所有PHP函数，重写为抛出异常，而不是返回false。
 * [SuperClosure](https://github.com/jeremeamia/super_closure)-允许序列化闭包的库。
-# 软件
-
+# Software
 *用于创建开发环境的软件。* 
 
 ### PHP安装
@@ -907,8 +905,7 @@ tag:
 * [appserver.io](https://github.com/appserver-io/appserver)-PHP的多线程应用程序服务器，用PHP编写。
 * [php-pm](https://github.com/php-pm/php-pm)-用于PHP应用程序的流程管理器，增压器和负载平衡器。
 * [RoadRunner](https://github.com/roadrunner-server/roadrunner)-高性能PHP应用程序服务器，负载均衡器和进程管理器。
-# 资源
-
+# Resources
 各种资源，如书籍，网站和文章，用于提高您的PHP开发技能和知识。
 
 ### PHP网站

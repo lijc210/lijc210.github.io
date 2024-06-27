@@ -10,15 +10,14 @@ tag:
 
 如果您觉得这个[项目](https://github.com/awesome-code-resources/awesome-vba-zh)对您有帮助，就请点右上角的**Star**按钮为它加星星✨✨ 其他TIOBE Top 20编程语言的中文翻译请看[awesome-code-resources](https://github.com/awesome-code-resources/awesome-code-resources)。
 本项目的原始仓库地址为[这里](https://github.com/sancarn/awesome-vba)。
-# Awesome VBA![VBALogo](/resources/VBALogo.png)[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-
+# Awesome VBA ![VBALogo](/resources/VBALogo.png) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 Visual Basic for Applications (VBA) 是Microsoft的事件驱动编程语言Visual Basic 6.0 (VB6) 的实现，内置于大多数桌面Microsoft Office应用程序中。
 
 这是VBA和vb6的库和资源的精选列表。
 
 ## 符号体系
 
-由于VBA的性质，许多库不适用于所有操作系统，所有Office应用程序或所有体系结构 (x64/x86)。一些库还可能需要外部资源 (DLL，插件等)，由于VBA缺乏包管理器，这些资源很难使用。为了帮助您找到适合您需求的项目，这个Awesome 列表使用以下符号。符号体系还具有可提供更多信息的工具提示。
+由于VBA的性质，许多库不适用于所有操作系统，所有Office应用程序或所有体系结构 (x64/x86)。一些库还可能需要外部资源 (DLL，插件等)，由于VBA缺乏包管理器，这些资源很难使用。为了帮助您找到适合您需求的项目，这个令人敬畏的列表使用以下符号。符号体系还具有可提供更多信息的工具提示。
 
 #### 平台兼容性
 
@@ -49,7 +48,7 @@ Visual Basic for Applications (VBA) 是Microsoft的事件驱动编程语言Visua
   - [其他重要信息](#其他重要信息)
 - [内容](#内容)
 - [框架](#框架)
-- [库](#库)
+- [图书馆](#图书馆)
   - [数据格式-(JSON、CSV、XML等)](#数据格式-(JSON、CSV、XML等))
   - [数据结构-(数组列表和字典)](#数据结构-(数组列表和字典))
   - [数学库](#数学库)
@@ -82,7 +81,7 @@ Visual Basic for Applications (VBA) 是Microsoft的事件驱动编程语言Visua
 * [![p_win](/resources/WindowsLogo.svg)](#-)[![a_all](/resources/Star.svg)](#-)[stdVBA](http://github.com/sancarn/stdVBA)-一个包含大量自动化和实用程序类的框架。注重代码的紧凑性和长期可维护性。
 * [![p_win](/resources/WindowsLogo.svg)](#-)[![a_all](/resources/Star.svg)](#-)[![o_32](/resources/32-Bit.svg)](#-)[VbCorLib](https://github.com/kellyethridge/VBCorLib)-一个框架，带来了许多强大的。NET类到VBA/vb6。
 * [![p_win](/resources/WindowsLogo.svg)](#-)[![a_all](/resources/Star.svg)](#-)[Hidennotare](https://github.com/RelaxTools/Hidennotare)-日本作家RelaxTools的框架。包含许多类、接口和表单。
-## 库
+## 图书馆
 
 ### 数据格式
 
@@ -215,8 +214,8 @@ Visual Basic for Applications (VBA) 是Microsoft的事件驱动编程语言Visua
 * [![p_win](/resources/WindowsLogo.svg)](#-)[![a_xl](/resources/ExcelLogo.svg)](#-)[Sam Rad's DatePicker](http://samradapps.com/datepicker/)-视觉上令人印象深刻和专业的DatePicker addin for Excel。仅工作表/不能与userforms一起使用。
 ### 游戏/有趣的项目
 
-* [![p_win](/resources/WindowsLogo.svg)](#-)[![a_xl](/resources/ExcelLogo.svg)](#-)[xlStudio](https://github.com/DylanTallchiefGit/xlStudio)-Microsoft Excel的DAW。还检查了Awesome [video](https://youtu.be/RFdCM2kHL64)。
-* [![p_win](/resources/WindowsLogo.svg)](#-)[![a_xl](/resources/ExcelLogo.svg)](#-)[Cellivization](https://s0lly.itch.io/cellivization)-在Excel中创建的酷炫的类似RTS的游戏。还检查了Awesome [video](https://www.youtube.com/watch?v=PzETBRcr_i8)。
+* [![p_win](/resources/WindowsLogo.svg)](#-)[![a_xl](/resources/ExcelLogo.svg)](#-)[xlStudio](https://github.com/DylanTallchiefGit/xlStudio)-Microsoft Excel的DAW。还检查了真棒[video](https://youtu.be/RFdCM2kHL64)。
+* [![p_win](/resources/WindowsLogo.svg)](#-)[![a_xl](/resources/ExcelLogo.svg)](#-)[Cellivization](https://s0lly.itch.io/cellivization)-在Excel中创建的酷炫的类似RTS的游戏。还检查了真棒[video](https://www.youtube.com/watch?v=PzETBRcr_i8)。
 * [![p_win](/resources/WindowsLogo.svg)](#-)[![a_xl](/resources/ExcelLogo.svg)](#-)[Arkanoid](http://leandroascierto.com/blog/juego-arkanoid-en-excel/)-Arkanoid，复古的街机游戏，内置在Excel中。在某些机器上，它比其他机器运行得更快。
 * [![p_win](/resources/WindowsLogo.svg)](#-)[![a_xl](/resources/ExcelLogo.svg)](#-)[Battleships](https://github.com/rubberduck-vba/Battleship)
 * [![p_win](/resources/WindowsLogo.svg)](#-)[![a_ac](/resources/AccessLogo.svg)](#-)[Pacman](https://arkham46.developpez.com/articles/office/clgdiplus/tuto/tutoclgdiplusgame3/?page=Page_11#LXXIV)
@@ -228,7 +227,7 @@ Visual Basic for Applications (VBA) 是Microsoft的事件驱动编程语言Visua
 * [![p_all](/resources/Crown.svg)](#-)[![a_all](/resources/Star.svg)](#-)[vscode-vba](https://github.com/serkonda7/vscode-vba)-将VBA编辑器支持添加到Visual Studio Code的扩展。
 ## 样式参考线
 
-* [RubberDuck's style guide](https://rubberduckvba.wordpress.com/2021/05/29/rubberduck-style-guide/)-有一些Awesome 中级-高级指导。
+* [RubberDuck's style guide](https://rubberduckvba.wordpress.com/2021/05/29/rubberduck-style-guide/)-有一些很棒的中级-高级指导。
 * [VB6 Coding conventions](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-basic-6/aa240822(v%3dvs.60))-VBA中使用的变量/类/模块命名约定。极大地帮助组织在VBE (除非你有rubberduck)。
 ## 信息
 
@@ -286,7 +285,7 @@ Visual Basic for Applications (VBA) 是Microsoft的事件驱动编程语言Visua
 * [![o_paid](/resources/Money.svg)](#-)[Get to know VBA](https://youtu.be/MFR_XARJjoY)-使用VBA呈现和创建的一些出色的应用程序。
 ### 论坛
 
-* [Reddit](http://reddit.co.uk/r/vba)-每日VBA问答。偶尔的专业提示共享和显示和告诉库出版。
+* [Reddit](http://reddit.co.uk/r/vba)-每日VBA问答。偶尔的专业提示共享和显示和告诉图书馆出版。
 * [StackOverflow](https://stackoverflow.com/questions/tagged/vba)一个伟大的地方问问题。重复的问题被标记为重复，并将作者发送到正确的位置。
 * [Chandoo](https://chandoo.org/wp/)-Chandoo论坛-Purna Duggirala (MVP) 的博客。非常活跃。
 * [Visual Basic Discord](https://discord.gg/gpcSue9f)-VB.NET/VBA/VB6狂热者的聊天室。
