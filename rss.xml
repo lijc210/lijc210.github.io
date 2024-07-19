@@ -6,14 +6,47 @@
     <link>https://blog.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 09 Jul 2024 07:14:10 GMT</pubDate>
-    <lastBuildDate>Tue, 09 Jul 2024 07:14:10 GMT</lastBuildDate>
+    <pubDate>Fri, 19 Jul 2024 08:35:42 GMT</pubDate>
+    <lastBuildDate>Fri, 19 Jul 2024 08:35:42 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
     <category>站点收藏</category>
     <category>每日悦读</category>
     <category>数据库</category>
+    <item>
+      <title>nc端口测试</title>
+      <link>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/nc%E7%AB%AF%E5%8F%A3%E6%B5%8B%E8%AF%95.html</link>
+      <guid>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/nc%E7%AB%AF%E5%8F%A3%E6%B5%8B%E8%AF%95.html</guid>
+      <source url="https://blog.cizai.io/rss.xml">nc端口测试</source>
+      <description>nc端口测试 nc (netcat) 是 Linux/Unix 下的一个网络工具，它可以用来测试和调试网络连接和端口。 安装 测试 tcp 测试 udp</description>
+      <category>工具</category>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>nc (netcat) 是 Linux/Unix 下的一个网络工具，它可以用来测试和调试网络连接和端口。</p>
+<h2>安装</h2>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">ubuntu:</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> </span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> apt-get</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> netcat</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">mac:</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> </span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> nc</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>测试 tcp</h2>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"># 监听 12345 端口</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">nc</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -l</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 12345</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"># 连接到目标主机的 12345 端口</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">nc</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -vz</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 127.0.0.1</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 12345</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">显示</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> succeeded!,</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 表示连接成功。</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>测试 udp</h2>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"># 监听 12345 端口</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">nc</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -lu</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 12345</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"># 连接到目标主机的 12345 端口</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">nc</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -vu</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 127.0.0.1</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 12345</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">如果立即结束，表示连接不成功，如果没有立即结束，不代表一定成功，可能有防火墙阻挡，需要在目标端使用tcpdump进行判断</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
     <item>
       <title>wireguard</title>
       <link>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/wireguard.html</link>
@@ -287,101 +320,6 @@ https://github.com/lijc210/lijc210.github.io/blob/main/write2md.py</p>
 <span class="line"><span>group by from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd')</span></span>
 <span class="line"><span>order by from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd') desc</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>clickhouse</title>
-      <link>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhouse.html</link>
-      <guid>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhouse.html</guid>
-      <source url="https://blog.cizai.io/rss.xml">clickhouse</source>
-      <description>clickhouse clickhouse 常用命令 clickhouse表引擎 clickhouse性能优化 数据类型 建表时能用数值型或日期时间型表示的字段，就不要用字符串——全String类型在以Hive为中心的数仓建设中常见，但CK环境不应受此影响。 虽然clickhouse底层将DateTime存储为时间戳Long类型，但不建议直接存储Lon...</description>
-      <category>数据库</category>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[
-<h2>clickhouse 常用命令</h2>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>更新数据</span></span>
-<span class="line"><span>ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update item_no='' where item_no is null;</span></span>
-<span class="line"><span>ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update store_shop_code='' where store_shop_code is null;</span></span>
-<span class="line"><span>ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update unify_goods_code='' where unify_goods_code is null;</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>重命名表</span></span>
-<span class="line"><span>RENAME TABLE table_A TO table_A_bak, table_B TO table_B_bak;</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>查看所有表</span></span>
-<span class="line"><span>select *</span></span>
-<span class="line"><span>FROM system.tables t WHERE database ='ads' AND engine &lt;&gt;'Distributed' ORDER by total_rows DESC </span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>select *</span></span>
-<span class="line"><span>FROM system.tables t WHERE database ='ads'</span></span>
-<span class="line"><span>AND engine &lt;&gt;'Distributed'</span></span>
-<span class="line"><span>and name not like '%del%'</span></span>
-<span class="line"><span>and name not like '%20%'</span></span>
-<span class="line"><span>ORDER by total_rows DESC</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>自动清理query_log，query_thread_log，trace_log</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>ALTER TABLE system.query_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>ALTER TABLE system.query_thread_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>ALTER TABLE system.trace_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>立即清理</span></span>
-<span class="line"><span>alter table system.query_thread_log_0 drop partition '202105'</span></span>
-<span class="line"><span>分区名可以用下语句查询</span></span>
-<span class="line"><span>select * from system.parts p where table = '表名'</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>查看parts  </span></span>
-<span class="line"><span>select * from system.parts  where table = 'abs_activity_item_info_day_replica'</span></span>
-<span class="line"><span>select * from system.parts where active = 0</span></span>
-<span class="line"><span>当前慢查询</span></span>
-<span class="line"><span>SELECT * FROM system.processes limit 100</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>耗时大于60秒</span></span>
-<span class="line"><span>kill query where elapsed &gt;= 60</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>clickhouse不能创建等执行操作时（每个节点都要执行）</span></span>
-<span class="line"><span>select * from system.mutations where is_done = 0;</span></span>
-<span class="line"><span>kill mutation ON CLUSTER ck_cluster1 </span></span>
-<span class="line"><span> where database='ads' and table='ads_jd_erp_sale_outstock_replica' </span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>进入zk清理任务</span></span>
-<span class="line"><span>deleteall /clickhouse/distributed_ddl/query-0000011932</span></span>
-<span class="line"><span>查询阻塞的任务</span></span>
-<span class="line"><span>select * from system.distributed_ddl_queue where status != 'Finished'</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>查看表大小</span></span>
-<span class="line"><span>SELECT</span></span>
-<span class="line"><span>    table AS `表名`,</span></span>
-<span class="line"><span>    sum(rows) AS `总行数`,</span></span>
-<span class="line"><span>    formatReadableSize(sum(data_uncompressed_bytes)) AS `原始大小`,</span></span>
-<span class="line"><span>    formatReadableSize(sum(data_compressed_bytes)) AS `压缩大小`,</span></span>
-<span class="line"><span>    round((sum(data_compressed_bytes) / sum(data_uncompressed_bytes)) * 100, 0) AS `压缩率`</span></span>
-<span class="line"><span>FROM system.parts</span></span>
-<span class="line"><span>GROUP BY table</span></span>
-<span class="line"><span>order by sum(data_compressed_bytes) desc</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>修改字段名</span></span>
-<span class="line"><span>ALTER TABLE visits RENAME COLUMN webBrowser TO browser</span></span>
-<span class="line"><span>分布式集群下用分布式DDL修改字段名</span></span>
-<span class="line"><span>ALTER TABLE visits on cluster shipin_cluster RENAME COLUMN webBrowser TO browser</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>新增字段</span></span>
-<span class="line"><span> alter table ads_itemprice_sales_section_replica ON CLUSTER ck_cluster1 add column sort_mark Nullable(int)</span></span>
-<span class="line"><span> alter table ads_itemprice_sales_section ON CLUSTER ck_cluster1 add column sort_mark Nullable(int)</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>clickhouse表引擎</h2>
-<p>| 系列        | 引擎                         | 特点                                                                                                                                                                                                                                    | 场景                                                                                     |
-|</p>
-]]></content:encoded>
     </item>
   </channel>
 </rss>
