@@ -4,7 +4,7 @@ export const zhNavbar = navbar([
     "/",
   {
     text: "编程",
-    icon: "code",
+    icon: "fa-solid fa-code",
     prefix: "/编程/",
     children: [
       { text: "语言", icon: "edit", link: "语言/" },
@@ -17,7 +17,7 @@ export const zhNavbar = navbar([
   },
   {
     text: "大数据",
-    icon: "storage",
+    icon: "fa-solid fa-database",
     prefix: "/大数据/",
     children: [
       { text: "数据库", icon: "edit", link: "数据库/" },
@@ -26,7 +26,7 @@ export const zhNavbar = navbar([
   },
   {
     text: "系统",
-    icon: "OS",
+    icon: "fa-brands fa-apple",
     prefix: "/系统/",
     children: [
       { text: "android", icon: "edit", link: "android/" },
@@ -38,7 +38,7 @@ export const zhNavbar = navbar([
   },
   {
     text: "生活",
-    icon: "people",
+    icon: "fa-solid fa-mug-hot",
     prefix: "/生活/",
     children: [
       { text: "句子", icon: "edit", link: "句子/" },
@@ -47,18 +47,23 @@ export const zhNavbar = navbar([
     ],
   },
   {
+    text: "此在新闻",
+    icon: "fa-solid fa-newspaper",
+    link: "https://news.cizai.io/"
+  },
+  {
     text: "每日悦读",
-    icon: "read",
+    icon: "fa-solid fa-book",
     link: "https://nas.cizai.net/miniflux/"
   },
   {
     text: "Contact",
-    icon: "edit",
+    icon: "fa-solid fa-edit",
     prefix: "/Contact/",
     children: [
       // { text: "微信", icon: "wechat", link: "https://theme-hope.vuejs.press/" },
-      { text: "Email", icon: "alias", link: "mailto:lijc210@163.com" },
-      { text: "RSS", icon: "rss", link: "https://blog.cizai.io/rss.xml" }
+      { text: "Email", icon: "fa-solid fa-envelope", link: "mailto:lijc210@163.com" },
+      { text: "RSS", icon: "fa-solid fa-rss", link: "https://blog.cizai.io/rss.xml" }
     ],
   }
 ]);

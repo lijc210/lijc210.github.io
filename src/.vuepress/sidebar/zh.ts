@@ -5,7 +5,7 @@ export const zhSidebar = sidebar({
     "",
     {
       text: "编程",
-      icon: "code",
+      icon: "fa-solid fa-code",
       prefix: "编程/",
       link: "编程/",
       collapsible: true,
@@ -13,7 +13,7 @@ export const zhSidebar = sidebar({
     },
     {
       text: "大数据",
-      icon: "storage",
+      icon: "fa-solid fa-database",
       prefix: "大数据/",
       link: "大数据/",
       collapsible: true,
@@ -21,7 +21,7 @@ export const zhSidebar = sidebar({
     },
     {
       text: "系统",
-      icon: "OS",
+      icon: "fa-brands fa-apple",
       prefix: "系统/",
       link: "系统/",
       collapsible: true,
@@ -29,17 +29,9 @@ export const zhSidebar = sidebar({
     },
     {
       text: "生活",
-      icon: "people",
+      icon: "fa-solid fa-mug-hot",
       prefix: "生活/",
       link: "生活/",
-      collapsible: true,
-      children: "structure",
-    },
-    {
-      text: "每日悦读",
-      icon: "read",
-      prefix: "每日悦读/",
-      link: "每日悦读/",
       collapsible: true,
       children: "structure",
     },

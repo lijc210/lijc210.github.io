@@ -1,6 +1,6 @@
 ---
 cover: /assets/images/cover2.jpg
-icon: edit
+icon: fa-solid fa-book-open-reader
 date: 2022-01-12
 category:
   - Vegetable

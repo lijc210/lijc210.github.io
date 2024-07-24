@@ -1,5 +1,5 @@
 ---
-icon: edit
+icon: fa-solid fa-book-open-reader
 date: 2024-04-02
 category:
   - 工具

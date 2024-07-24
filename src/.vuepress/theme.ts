@@ -12,13 +12,16 @@ export default hopeTheme({
     url: "https://blog.cizai.io",
   },
 
-  iconAssets: "fontawesome",
+  iconAssets: "fontawesome-with-brands",
 
   logo: "/logo.png",
 
-  repo: "lijc210/lijc210",
-
+  repo: "lijc210/lijc210.github.io",
   docsDir: "src",
+  docsBranch: "main",
+  lastUpdated: true,
+  contributors: true,
+  editLink: true,
 
   blog: {
     articleInfo: ["Date", "PageView", "Category", "Tag", "Word", "ReadingTime"],
