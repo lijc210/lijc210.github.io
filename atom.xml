@@ -3,7 +3,7 @@
   <id>https://blog.cizai.io/</id>
   <title>此在笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</subtitle>
-  <updated>2024-07-24T03:43:17.461Z</updated>
+  <updated>2024-07-24T07:25:52.295Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.cizai.io/atom.xml"/>
   <link rel="alternate" href="https://blog.cizai.io/"/>
@@ -14,7 +14,7 @@
     <title type="text">nc端口测试</title>
     <id>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/nc%E7%AB%AF%E5%8F%A3%E6%B5%8B%E8%AF%95.html</id>
     <link href="https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/nc%E7%AB%AF%E5%8F%A3%E6%B5%8B%E8%AF%95.html"/>
-    <updated>2024-07-19T08:32:13.000Z</updated>
+    <updated>2024-07-24T07:22:17.000Z</updated>
     <summary type="html"><![CDATA[
 <p>nc (netcat) 是 Linux/Unix 下的一个网络工具，它可以用来测试和调试网络连接和端口。</p>
 <h2>安装</h2>
@@ -54,7 +54,7 @@
     <title type="text">wireguard</title>
     <id>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/wireguard.html</id>
     <link href="https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/wireguard.html"/>
-    <updated>2024-06-26T11:03:44.000Z</updated>
+    <updated>2024-07-24T07:22:17.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>安装</h2>
 <p>wireguard 一键安装脚本
@@ -82,7 +82,7 @@ https://github.com/angristan/wireguard-install</p>
     <title type="text">流量捕获</title>
     <id>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E6%B5%81%E9%87%8F%E6%8D%95%E8%8E%B7.html</id>
     <link href="https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E6%B5%81%E9%87%8F%E6%8D%95%E8%8E%B7.html"/>
-    <updated>2024-06-11T09:57:48.000Z</updated>
+    <updated>2024-07-24T07:22:17.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>mitmproxy</h2>
 ]]></summary>
@@ -96,7 +96,7 @@ https://github.com/angristan/wireguard-install</p>
     <title type="text">反向代理应用frp</title>
     <id>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/frp.html</id>
     <link href="https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/frp.html"/>
-    <updated>2024-04-28T11:22:56.000Z</updated>
+    <updated>2024-07-24T07:22:17.000Z</updated>
     <summary type="html"><![CDATA[
 <p>拥有公网IP的情况下，可以使用frp来实现内网机器的端口映射和访问。</p>
 <h2>安装</h2>
@@ -215,7 +215,7 @@ https://github.com/angristan/wireguard-install</p>
     <title type="text">内网穿透</title>
     <id>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</id>
     <link href="https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html"/>
-    <updated>2024-06-05T03:51:29.000Z</updated>
+    <updated>2024-07-24T07:22:17.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>serveo</h2>
 <p>ssh -R 80:localhost:3000 serveo.net</p>
@@ -278,7 +278,7 @@ https://github.com/angristan/wireguard-install</p>
     <title type="text">关于本站</title>
     <id>https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html</id>
     <link href="https://blog.cizai.io/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99.html"/>
-    <updated>2024-05-17T11:26:17.000Z</updated>
+    <updated>2024-07-24T07:22:17.000Z</updated>
     <summary type="html"><![CDATA[
 <p>一个全栈开发者，从事大数据开发。</p>
 <p>本站桌面端安装包，支持windows，linux，mac。<a href="https://file.cizai.io/wooapp.json" target="_blank" rel="noopener noreferrer">下载地址</a></p>
@@ -299,7 +299,7 @@ https://github.com/angristan/wireguard-install</p>
     <title type="text">站点收藏</title>
     <id>https://blog.cizai.io/%E7%AB%99%E7%82%B9%E6%94%B6%E8%97%8F.html</id>
     <link href="https://blog.cizai.io/%E7%AB%99%E7%82%B9%E6%94%B6%E8%97%8F.html"/>
-    <updated>2024-03-17T17:45:45.000Z</updated>
+    <updated>2024-07-24T07:22:17.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>白噪音</h2>
 <table>
@@ -336,7 +336,7 @@ https://github.com/angristan/wireguard-install</p>
     <title type="text">Impala</title>
     <id>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/Impala.html</id>
     <link href="https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/Impala.html"/>
-    <updated>2024-03-17T17:45:45.000Z</updated>
+    <updated>2024-07-24T07:22:17.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>Impala时间戳分组</h2>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>select   </span></span>
@@ -368,7 +368,7 @@ https://github.com/angristan/wireguard-install</p>
     <title type="text">clickhouse</title>
     <id>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhouse.html</id>
     <link href="https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhouse.html"/>
-    <updated>2024-03-17T17:45:45.000Z</updated>
+    <updated>2024-07-24T07:22:17.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>clickhouse 常用命令</h2>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>更新数据</span></span>
@@ -545,7 +545,7 @@ https://github.com/angristan/wireguard-install</p>
     <title type="text">elasticsearch</title>
     <id>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch.html</id>
     <link href="https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch.html"/>
-    <updated>2024-03-17T17:45:45.000Z</updated>
+    <updated>2024-07-24T07:22:17.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>查看集群状态，修复</h2>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>GET _cluster/allocation/explain?pretty</span></span>
