@@ -1,92 +1,139 @@
 # lijc210.github.com
 
-# node版本
+## vuepress-theme-hope
 
-```
+## Node版本
+
+```bash
 nvm install 20.11.1
 nvm use v20.11.1
 npm install pnpm@8.15.4 -g
 pnpm -v 8.15.4
 ```
 
-# 创建项目
+## 创建项目
 
+```bash
 pnpm create vuepress-theme-hope lijc210.github.io
-
-# 启动命令
-
 ```
+
+## 启动命令
+
+```bash
 pnpm install
-pnpm docs:dev 启动开发服务器
-pnpm docs:build 构建项目并输出
-pnpm docs:clean-dev 清除缓存并启动开发服务器
+pnpm docs:dev # 启动开发服务器
+pnpm docs:build # 构建项目并输出
+pnpm docs:clean-dev # 清除缓存并启动开发服务器
 ```
 
-# 升级主题和 VuePress 版本
+## 升级主题和 VuePress 版本
 
+```bash
 pnpm dlx vp-update
-
-# 安装插件
-
-```
-pnpm add -D @waline/client
-pnpm add -D @vuepress/plugin-pwa
-pnpm add -D @vuepress/plugin-pwa@next
-pnpm add -D reveal.js
-pnpm add -D @vuepress/plugin-feed
-pnpm add -D @vuepress/plugin-shiki@next
-pnpm add -D @vuepress/plugin-docsearch@next
-pnpm add -D artalk
 ```
 
-# Markdown 教程
+## 安装插件
 
-https://www.runoob.com/markdown/md-tutorial.html
+```bash
+pnpm add -D @waline/client @vuepress/plugin-pwa @vuepress/plugin-pwa@next reveal.js @vuepress/plugin-feed @vuepress/plugin-shiki@next @vuepress/plugin-docsearch@next artalk
+```
 
-# VSCode中使用Markdown
+## Markdown 教程
+
+[Markdown 教程](https://www.runoob.com/markdown/md-tutorial.html)
+
+## VSCode中使用Markdown
 
 安装Markdown Notes Pack插件
 
-# theme-hope.vuejs.press
+## theme-hope.vuejs.press
 
-* https://theme-hope.vuejs.press/zh/cookbook/tutorial/
-* https://newzone.top/
+* [主题教程](https://theme-hope.vuejs.press/zh/cookbook/tutorial/)
+* [Newzone](https://newzone.top/)
 
-# 访问
+## 访问
 
-* https://www.cizai.io
-* https://lijc210.github.io
-* https://lijc210.gitee.io
+* [Cizai](https://www.cizai.io)
+* [GitHub Pages](https://lijc210.github.io)
+* [Gitee Pages](https://lijc210.gitee.io)
 
-# github地址
+## GitHub地址
 
-https://github.com/lijc210/lijc210.github.io.git
+[GitHub Repo](https://github.com/lijc210/lijc210.github.io.git)
 
-# 问题
+## 问题
 
-wsl ubuntu环境下不能热加载windows目录下的改动，需要把目录放到ubuntu环境
+WSL Ubuntu环境下不能热加载Windows目录下的改动，需要把目录放到Ubuntu环境
 
-# 图片画质增强
+## 图片画质增强
 
-https://www.upscale.media/
+[Upscale Media](https://www.upscale.media/)
 
-# 图片移除背景
+## 图片移除背景
 
-https://www.remove.bg/
+[Remove BG](https://www.remove.bg/)
 
-# svg转png
+## SVG转PNG
 
-https://svgtopng.com/zh/
+[SVG to PNG](https://svgtopng.com/zh/)
 
-# 每日悦读
+## 每日悦读
 
-```
+```bash
 cd ~/lijc210.github.io && nohup python3 ttrss.py >~/ttrss.log 2>&1 &
 ```
 
-# 订阅地址
-http://124.222.129.36/public.php?op=bookmarklets--subscribe&feed_url=https://rustcc.cn/rss
+## 订阅地址
+
+[订阅地址](http://124.222.129.36/public.php?op=bookmarklets--subscribe&feed_url=https://rustcc.cn/rss)
 
 
+## Artalk测试
 
+将以下代码保存为 html 文件，然后进行调试
 
+```html
+<!-- CSS -->
+<link href="http://127.0.0.1:9000/dist/Artalk.css" rel="stylesheet" />
+
+<!-- JS -->
+<script src="http://127.0.0.1:9000/dist/Artalk.js"></script>
+
+<!-- Artalk -->
+<div id="Comments"></div>
+<script>
+  Artalk.init({
+    el: "#Comments", // 绑定元素的 Selector
+    pageKey: "/post/1", // 固定链接 (留空自动获取)
+    pageTitle: "关于引入 Artalk 的这档子事", // 页面标题 (留空自动获取)
+    server: "http://127.0.0.1:9000", // 后端地址
+    site: "Artalk 的博客", // 你的站点名
+  });
+</script>
+
+```
+
+## Artalk正式环境
+
+将以下代码保存为 html 文件，然后进行调试
+
+```html
+<!-- CSS -->
+<link href="https://artalk.cizai.net/dist/Artalk.css" rel="stylesheet" />
+
+<!-- JS -->
+<script src="https://artalk.cizai.net/dist/Artalk.js"></script>
+
+<!-- Artalk -->
+<div id="Comments"></div>
+<script>
+  Artalk.init({
+    el: "#Comments", // 绑定元素的 Selector
+    pageKey: "/post/1", // 固定链接 (留空自动获取)
+    pageTitle: "关于引入 Artalk 的这档子事", // 页面标题 (留空自动获取)
+    server: "https://artalk.cizai.net", // 后端地址
+    site: "此在笔记", // 你的站点名
+  });
+</script>
+
+```

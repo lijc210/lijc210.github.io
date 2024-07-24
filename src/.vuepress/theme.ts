@@ -12,7 +12,7 @@ export default hopeTheme({
     url: "https://blog.cizai.io",
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "fontawesome",
 
   logo: "/logo.png",
 
@@ -26,7 +26,6 @@ export default hopeTheme({
     avatar: "/logo.png",
     description: "热爱编程和开源，记录有趣的事物，分析探索成果",
     intro: "/关于本站.html",
-    roundAvatar: true,
     medias: {
       Zhihu: "https://zhihu.com",
       GitHub: "https://github.com",
@@ -37,6 +36,7 @@ export default hopeTheme({
       Email: "mailto:lijc210@163.com",
       Rss: "/rss.xml",
     },
+    articlePerPage:20
   },
 
   locales: {
@@ -245,40 +245,40 @@ export default hopeTheme({
     },
     // install @vuepress/plugin-pwa and uncomment these if you want a PWA
     pwa: {
-      // update: "disable",
+      update: "force",
       favicon: "/favicon.ico",
       cacheHTML: true,
       cacheImage: true,
       appendBase: true,
       apple: {
-        icon: "/assets/icon/apple-icon-152.png",
+        icon: "/assets/icon/logo-192.png",
         statusBarColor: "black",
       },
       msTile: {
-        image: "/assets/icon/ms-icon-144.png",
+        image: "/assets/icon/logo-192.png",
         color: "#ffffff",
       },
       manifest: {
         icons: [
           {
-            src: "/assets/icon/chrome-mask-512.png",
+            src: "/assets/icon/logo-512.png",
             sizes: "512x512",
             purpose: "maskable",
             type: "image/png",
           },
           {
-            src: "/assets/icon/chrome-mask-192.png",
+            src: "/assets/icon/logo-192.png",
             sizes: "192x192",
             purpose: "maskable",
             type: "image/png",
           },
           {
-            src: "/assets/icon/chrome-512.png",
+            src: "/assets/icon/logo-512.png",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "/assets/icon/chrome-192.png",
+            src: "/assets/icon/logo-192.png",
             sizes: "192x192",
             type: "image/png",
           },
@@ -290,7 +290,7 @@ export default hopeTheme({
             url: "/demo/",
             icons: [
               {
-                src: "/assets/icon/guide-maskable.png",
+                src: "/assets/icon/logo-192.png",
                 sizes: "192x192",
                 purpose: "maskable",
                 type: "image/png",

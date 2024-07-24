@@ -9,22 +9,28 @@ tag:
 
 # nodejs
 
-## npm更换淘宝镜像源
+## npm 更换淘宝镜像源
 
-* 默认源
-```
+- 默认源
+
+```shell
 npm config set registry https://registry.npmjs.org
 ```
-* 设成淘宝的：
+
+- 设成淘宝的：
+
+```shell
+npm config set registry https://registry.npmmirror.com
 ```
-npm config set registry https://registry.npm.taobao.org
-npm config set ELECTRON_MIRROR http://npm.taobao.org/mirrors/electron/
-```
-* 换成原来的
-```
+
+- 换成原来的
+
+```shell
 npm config set registry https://registry.npmjs.org/
 ```
-* 配置后通过以下方法验证是否成功:
-```
+
+- 配置后通过以下方法验证是否成功:
+
+```shell
 npm config get registry
 ```
