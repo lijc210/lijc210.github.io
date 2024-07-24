@@ -6,13 +6,12 @@
     <link>https://blog.cizai.io/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 24 Jul 2024 02:55:12 GMT</pubDate>
-    <lastBuildDate>Wed, 24 Jul 2024 02:55:12 GMT</lastBuildDate>
+    <pubDate>Wed, 24 Jul 2024 03:43:17 GMT</pubDate>
+    <lastBuildDate>Wed, 24 Jul 2024 03:43:17 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
     <category>站点收藏</category>
-    <category>每日悦读</category>
     <category>数据库</category>
     <item>
       <title>nc端口测试</title>
@@ -267,40 +266,6 @@ https://github.com/angristan/wireguard-install</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>订阅说明</title>
-      <link>https://blog.cizai.io/%E6%AF%8F%E6%97%A5%E6%82%A6%E8%AF%BB/</link>
-      <guid>https://blog.cizai.io/%E6%AF%8F%E6%97%A5%E6%82%A6%E8%AF%BB/</guid>
-      <source url="https://blog.cizai.io/rss.xml">订阅说明</source>
-      <description>订阅说明 实现原理 使用ttrss.py启动订阅服务接口，使用rsshub订阅插件，将Tiny Tiny RSS地址改为订阅接口地址，即可直接订阅网站，存入rss.csv。 定时执行write2csv.py，抓取网络上的订阅地址，存入rss.csv。 定时执行write2md.py，读取rss.csv，获取今日新增文章，写入md文档，提交git，自动显...</description>
-      <category>每日悦读</category>
-      <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[
-<h2>实现原理</h2>
-<p>使用ttrss.py启动订阅服务接口，使用rsshub订阅插件，将Tiny Tiny RSS地址改为订阅接口地址，即可直接订阅网站，存入rss.csv。</p>
-<p>定时执行write2csv.py<span></span>，抓取网络上的订阅地址，存入rss.csv。</p>
-<p>定时执行write2md.py<span></span>，读取rss.csv，获取今日新增文章，写入md文档，提交git，自动显示在每日悦读。</p>
-<p>参考代码：
-https://github.com/lijc210/lijc210.github.io/blob/main/write2md.py</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>订阅说明</title>
-      <link>https://blog.cizai.io/%E6%AF%8F%E6%97%A5%E6%82%A6%E8%AF%BB/%E8%AE%A2%E9%98%85%E8%AF%B4%E6%98%8E.html</link>
-      <guid>https://blog.cizai.io/%E6%AF%8F%E6%97%A5%E6%82%A6%E8%AF%BB/%E8%AE%A2%E9%98%85%E8%AF%B4%E6%98%8E.html</guid>
-      <source url="https://blog.cizai.io/rss.xml">订阅说明</source>
-      <description>订阅说明 实现原理 使用ttrss.py启动订阅服务接口，使用rsshub订阅插件，将Tiny Tiny RSS地址改为订阅接口地址，即可直接订阅网站，存入rss.csv。 定时执行write2csv.py，抓取网络上的订阅地址，存入rss.csv。 定时执行write2md.py，读取rss.csv，获取今日新增文章，写入md文档，提交git，自动显...</description>
-      <category>每日悦读</category>
-      <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[
-<h2>实现原理</h2>
-<p>使用ttrss.py启动订阅服务接口，使用rsshub订阅插件，将Tiny Tiny RSS地址改为订阅接口地址，即可直接订阅网站，存入rss.csv。</p>
-<p>定时执行write2csv.py<span></span>，抓取网络上的订阅地址，存入rss.csv。</p>
-<p>定时执行write2md.py<span></span>，读取rss.csv，获取今日新增文章，写入md文档，提交git，自动显示在每日悦读。</p>
-<p>参考代码：
-https://github.com/lijc210/lijc210.github.io/blob/main/write2md.py</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Impala</title>
       <link>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/Impala.html</link>
       <guid>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/Impala.html</guid>
@@ -320,6 +285,426 @@ https://github.com/lijc210/lijc210.github.io/blob/main/write2md.py</p>
 <span class="line"><span>group by from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd')</span></span>
 <span class="line"><span>order by from_unixtime(cast(siyu_add_time/1000 as int) , 'yyyy-MM-dd') desc</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>clickhouse</title>
+      <link>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhouse.html</link>
+      <guid>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/clickhouse.html</guid>
+      <source url="https://blog.cizai.io/rss.xml">clickhouse</source>
+      <description>clickhouse clickhouse 常用命令 clickhouse表引擎 clickhouse性能优化 数据类型 建表时能用数值型或日期时间型表示的字段，就不要用字符串——全String类型在以Hive为中心的数仓建设中常见，但CK环境不应受此影响。 虽然clickhouse底层将DateTime存储为时间戳Long类型，但不建议直接存储Lon...</description>
+      <category>数据库</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<h2>clickhouse 常用命令</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>更新数据</span></span>
+<span class="line"><span>ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update item_no='' where item_no is null;</span></span>
+<span class="line"><span>ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update store_shop_code='' where store_shop_code is null;</span></span>
+<span class="line"><span>ALTER table ads_sales_item_shop_di_replica ON CLUSTER ck_cluster1 update unify_goods_code='' where unify_goods_code is null;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>重命名表</span></span>
+<span class="line"><span>RENAME TABLE table_A TO table_A_bak, table_B TO table_B_bak;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>查看所有表</span></span>
+<span class="line"><span>select *</span></span>
+<span class="line"><span>FROM system.tables t WHERE database ='ads' AND engine &lt;&gt;'Distributed' ORDER by total_rows DESC </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>select *</span></span>
+<span class="line"><span>FROM system.tables t WHERE database ='ads'</span></span>
+<span class="line"><span>AND engine &lt;&gt;'Distributed'</span></span>
+<span class="line"><span>and name not like '%del%'</span></span>
+<span class="line"><span>and name not like '%20%'</span></span>
+<span class="line"><span>ORDER by total_rows DESC</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>自动清理query_log，query_thread_log，trace_log</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ALTER TABLE system.query_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ALTER TABLE system.query_thread_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ALTER TABLE system.trace_log on cluster ck_cluster1 MODIFY TTL event_date + INTERVAL 15 DAY</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>立即清理</span></span>
+<span class="line"><span>alter table system.query_thread_log_0 drop partition '202105'</span></span>
+<span class="line"><span>分区名可以用下语句查询</span></span>
+<span class="line"><span>select * from system.parts p where table = '表名'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>查看parts  </span></span>
+<span class="line"><span>select * from system.parts  where table = 'abs_activity_item_info_day_replica'</span></span>
+<span class="line"><span>select * from system.parts where active = 0</span></span>
+<span class="line"><span>当前慢查询</span></span>
+<span class="line"><span>SELECT * FROM system.processes limit 100</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>耗时大于60秒</span></span>
+<span class="line"><span>kill query where elapsed &gt;= 60</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>clickhouse不能创建等执行操作时（每个节点都要执行）</span></span>
+<span class="line"><span>select * from system.mutations where is_done = 0;</span></span>
+<span class="line"><span>kill mutation ON CLUSTER ck_cluster1 </span></span>
+<span class="line"><span> where database='ads' and table='ads_jd_erp_sale_outstock_replica' </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>进入zk清理任务</span></span>
+<span class="line"><span>deleteall /clickhouse/distributed_ddl/query-0000011932</span></span>
+<span class="line"><span>查询阻塞的任务</span></span>
+<span class="line"><span>select * from system.distributed_ddl_queue where status != 'Finished'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>查看表大小</span></span>
+<span class="line"><span>SELECT</span></span>
+<span class="line"><span>    table AS `表名`,</span></span>
+<span class="line"><span>    sum(rows) AS `总行数`,</span></span>
+<span class="line"><span>    formatReadableSize(sum(data_uncompressed_bytes)) AS `原始大小`,</span></span>
+<span class="line"><span>    formatReadableSize(sum(data_compressed_bytes)) AS `压缩大小`,</span></span>
+<span class="line"><span>    round((sum(data_compressed_bytes) / sum(data_uncompressed_bytes)) * 100, 0) AS `压缩率`</span></span>
+<span class="line"><span>FROM system.parts</span></span>
+<span class="line"><span>GROUP BY table</span></span>
+<span class="line"><span>order by sum(data_compressed_bytes) desc</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>修改字段名</span></span>
+<span class="line"><span>ALTER TABLE visits RENAME COLUMN webBrowser TO browser</span></span>
+<span class="line"><span>分布式集群下用分布式DDL修改字段名</span></span>
+<span class="line"><span>ALTER TABLE visits on cluster shipin_cluster RENAME COLUMN webBrowser TO browser</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>新增字段</span></span>
+<span class="line"><span> alter table ads_itemprice_sales_section_replica ON CLUSTER ck_cluster1 add column sort_mark Nullable(int)</span></span>
+<span class="line"><span> alter table ads_itemprice_sales_section ON CLUSTER ck_cluster1 add column sort_mark Nullable(int)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>clickhouse表引擎</h2>
+<p>| 系列        | 引擎                         | 特点                                                                                                                                                                                                                                    | 场景                                                                                     |
+|</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>elasticsearch</title>
+      <link>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch.html</link>
+      <guid>https://blog.cizai.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch.html</guid>
+      <source url="https://blog.cizai.io/rss.xml">elasticsearch</source>
+      <description>elasticsearch 查看集群状态，修复 记录慢日志，重启也生效 记录慢查询日志 批量按条件更新 搜索词分权重 统一更改刷新时间 优化性能 索引复制数据 暂时移除一个节点 搜索结果返回不一致问题 一、背景 这周在使用Elasticsearch搜索的时候遇到一个，对于同一个搜索请求，会出现top50返回结果和排序不一致的问题。那么为什么会出现这样的...</description>
+      <category>数据库</category>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<h2>查看集群状态，修复</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>GET _cluster/allocation/explain?pretty</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>GET /_cluster/allocation/explain</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>get /_cluster/settings</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>PUT /_cluster/settings</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  "transient": {</span></span>
+<span class="line"><span>    "cluster.routing.allocation.enable": "none"</span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>#分片配置</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>PUT /_cluster/settings</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  "transient": {</span></span>
+<span class="line"><span>    "cluster.routing.allocation.enable": "all"</span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#分片重新均衡分配</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>PUT /_cluster/settings</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  "transient": {</span></span>
+<span class="line"><span>    "cluster.routing.rebalance.enable": "all"</span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 设置副本数量</span></span>
+<span class="line"><span>PUT /aabb/_settings</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>"number_of_replicas" : 2</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>get _cluster/health?level=indices</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>GET _cat/nodes?v&amp;h=ip,heap.current,heap.percent,heap.max,ram.max,disk.avail,node.role,m</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>curl http://localhost:9200/_cat/nodes?v&amp;h=ip,heap.current,heap.percent,heap.max,ram.max,disk.avail,node.role,m</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>get _cat/master</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>post /_cluster/reroute</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  "commands": [</span></span>
+<span class="line"><span>    {</span></span>
+<span class="line"><span>      "allocate_empty_primary": {</span></span>
+<span class="line"><span>        "index": "wap_yonghu_v1",</span></span>
+<span class="line"><span>        "shard": 2,</span></span>
+<span class="line"><span>        "node": "Ee6ubnnmT52LJchcw0P-pQ",</span></span>
+<span class="line"><span>        "accept_data_loss": false</span></span>
+<span class="line"><span>      }</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>  ]</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#数据丢失</span></span>
+<span class="line"><span>post /_cluster/reroute</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>"commands": [</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>"allocate_empty_primary": {</span></span>
+<span class="line"><span>"index": "aabb_v2",</span></span>
+<span class="line"><span>"shard": 0,</span></span>
+<span class="line"><span>"node": "Ee6ubnnmT52LJchcw0P-pQ",</span></span>
+<span class="line"><span>"accept_data_loss": true</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>]</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#数据不丢失</span></span>
+<span class="line"><span>post /_cluster/reroute</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>"commands" : [ {</span></span>
+<span class="line"><span>"allocate_stale_primary" : {</span></span>
+<span class="line"><span>"index" : "aabb_v2",</span></span>
+<span class="line"><span>"shard" :0,</span></span>
+<span class="line"><span>"node" : "Ee6ubnnmT52LJchcw0P-pQ",</span></span>
+<span class="line"><span>"accept_data_loss" : true</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>}]</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>POST /_cluster/reroute?retry_failed=true</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>手动迁移分片</span></span>
+<span class="line"><span>POST /_cluster/reroute</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  "commands": [</span></span>
+<span class="line"><span>    {</span></span>
+<span class="line"><span>      "move": {</span></span>
+<span class="line"><span>        "index": "aabb_v1",</span></span>
+<span class="line"><span>        "shard": 1,</span></span>
+<span class="line"><span>        "from_node": "10.10.20.143",</span></span>
+<span class="line"><span>        "to_node": "10.10.20.153"</span></span>
+<span class="line"><span>      }</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>  ]</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>记录慢日志，重启也生效</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>PUT /_settings</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>"index.search.slowlog.level": "trace",            </span></span>
+<span class="line"><span>"index.search.slowlog.threshold.query.warn": "10s",  </span></span>
+<span class="line"><span>"index.search.slowlog.threshold.query.info": "5s",  </span></span>
+<span class="line"><span>"index.search.slowlog.threshold.query.debug": "2s",  </span></span>
+<span class="line"><span>"index.search.slowlog.threshold.query.trace": "500ms"</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>记录慢查询日志</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>curl -XPUT 'http://localhost:9200/_all/_settings?preserve_existing=true' -d '{</span></span>
+<span class="line"><span>  "index.indexing.slowlog.threshold.index.debug" : "500ms",</span></span>
+<span class="line"><span>  "index.indexing.slowlog.threshold.index.info" : "2s",</span></span>
+<span class="line"><span>  "index.indexing.slowlog.threshold.index.warn" : "5s",</span></span>
+<span class="line"><span>  "index.search.slowlog.threshold.fetch.debug" : "500ms",</span></span>
+<span class="line"><span>  "index.search.slowlog.threshold.fetch.info" : "2s",</span></span>
+<span class="line"><span>  "index.search.slowlog.threshold.fetch.warn" : "5s",</span></span>
+<span class="line"><span>  "index.search.slowlog.threshold.query.debug" : "500ms",</span></span>
+<span class="line"><span>  "index.search.slowlog.threshold.query.info" : "2s",</span></span>
+<span class="line"><span>  "index.search.slowlog.threshold.query.warn" : "5s"</span></span>
+<span class="line"><span>}'</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>批量按条件更新</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>POST pyspider/result/_update_by_query</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  "script": {</span></span>
+<span class="line"><span>    "inline": "ctx._source.result.company_list=0;"</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  "query": {</span></span>
+<span class="line"><span>    "term": {</span></span>
+<span class="line"><span>      "_id": {</span></span>
+<span class="line"><span>        "value": "qichacha:ecde53ee4b22383478536ee7d976046b"</span></span>
+<span class="line"><span>      }</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>搜索词分权重</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>post aabb/v9_news/_search</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>"query": {</span></span>
+<span class="line"><span>"bool": {</span></span>
+<span class="line"><span>"must": {</span></span>
+<span class="line"><span>"multi_match": {</span></span>
+<span class="line"><span>"query": "温馨的客厅",</span></span>
+<span class="line"><span>"fields": [</span></span>
+<span class="line"><span>"title"</span></span>
+<span class="line"><span>]</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>},</span></span>
+<span class="line"><span>"should": [</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>"match": {</span></span>
+<span class="line"><span>"title": {</span></span>
+<span class="line"><span>"query": "客厅",</span></span>
+<span class="line"><span>"boost": 4</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>},</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>"match": {</span></span>
+<span class="line"><span>"title": {</span></span>
+<span class="line"><span>"query": "温馨",</span></span>
+<span class="line"><span>"boost": 2</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>]</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>},"_source":["title","create_time"]</span></span>
+<span class="line"><span>,"size": 50</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>统一更改刷新时间</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>curl -XPUT 'http://10.10.20.165:9200/_all/_settings?preserve_existing=true' -d '{</span></span>
+<span class="line"><span>  "index.refresh_interval" : "15s"</span></span>
+<span class="line"><span>}'</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>优化性能</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>GET _nodes/hot_threads?pretty</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>PUT /aabb/_settings</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>    "index":{</span></span>
+<span class="line"><span>        "refresh_interval":"30s",</span></span>
+<span class="line"><span>        "translog":{</span></span>
+<span class="line"><span>            "flush_threshold_size":"2048m",</span></span>
+<span class="line"><span>            "sync_interval":"120s",</span></span>
+<span class="line"><span>            "durability":"async"</span></span>
+<span class="line"><span>        },</span></span>
+<span class="line"><span>        "merge":{</span></span>
+<span class="line"><span>            "policy.max_merge_at_once":5,</span></span>
+<span class="line"><span>            "policy.max_merge_at_once_explicit":15,</span></span>
+<span class="line"><span>            "policy.floor_segment":"1mb",</span></span>
+<span class="line"><span>            "scheduler.max_thread_count":"1"</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>PUT /uc/_settings</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>    "index":{</span></span>
+<span class="line"><span>        "refresh_interval":"-1"</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>索引复制数据</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>http://localhost:9200/_reindex</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>    "source":{</span></span>
+<span class="line"><span>        "index":"old_index"</span></span>
+<span class="line"><span>    },</span></span>
+<span class="line"><span>    "dest":{</span></span>
+<span class="line"><span>        "index":"new_index",</span></span>
+<span class="line"><span>        "op_type":"create"</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>http://localhost:9200/_reindex</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>    "source":{</span></span>
+<span class="line"><span>        "index":"cut_word_data_v1"</span></span>
+<span class="line"><span>    },</span></span>
+<span class="line"><span>    "dest":{</span></span>
+<span class="line"><span>        "index":"cut_word_data_v2",</span></span>
+<span class="line"><span>        "op_type":"create"</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>curl -l -H "Content-type: application/json" -d '{"source":{"index":"crm-address_v2"},"dest":{"index":"crm-address_v1","op_type":"create" }}'  http://localhost:9200/_reindex</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>curl -l -H "Content-type: application/json" -d '{"source":{"index":"aabb_v1"},"dest":{"index":"aabb_v2","op_type":"create" }}'  http://localhost:9200/_reindex</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>curl -l -H "Content-type: application/json" -d '{"source":{"index":"wap_anli_v2"},"dest":{"index":"wap_anli_v1","op_type":"create" }}'  http://localhost:9200/_reindex</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>curl -l -H "Content-type: application/json" -d '{"source":{"remote":{"host":"http://10.10.20.33:9200"},"index":"kn2_es_v1"},"dest":{"index":"kn2_es_v1","op_type":"create"}}'  http://localhost:9200/_reindex</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>curl -l -H "Content-type: application/json" -d '{"source":{"remote":{"host":"http://10.10.20.33:9200"},"index":"pyspider"},"dest":{"index":"pyspider_v1","op_type":"create"}}'  http://localhost:9200/_reindex</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>http://localhost:9200/_reindex</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>    "source":{</span></span>
+<span class="line"><span>        "index":"kn2_es_v1"</span></span>
+<span class="line"><span>    },</span></span>
+<span class="line"><span>    "dest":{</span></span>
+<span class="line"><span>        "index":"kn2_es_v2",</span></span>
+<span class="line"><span>        "op_type":"create"</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>远程复制：</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>POST _reindex</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>    "source":{</span></span>
+<span class="line"><span>        "remote":{</span></span>
+<span class="line"><span>            "host":"http://10.10.20.33:9200"</span></span>
+<span class="line"><span>        },</span></span>
+<span class="line"><span>        "index":"test1"</span></span>
+<span class="line"><span>    },</span></span>
+<span class="line"><span>    "dest":{</span></span>
+<span class="line"><span>        "index":"test2",</span></span>
+<span class="line"><span>        "op_type":"create"</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>暂时移除一个节点</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span></span></span>
+<span class="line"><span>下线：</span></span>
+<span class="line"><span>PUT _cluster/settings</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>"transient" : {</span></span>
+<span class="line"><span>"cluster.routing.allocation.exclude._name" : "node-2"</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>注意 这个操作是transient集群重启后，这个设置会失效</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>上线</span></span>
+<span class="line"><span>PUT _cluster/settings</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>"transient" : {</span></span>
+<span class="line"><span>"cluster.routing.allocation.exclude._name" : ""</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>只要让_name匹配不到对用的node即可</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>搜索结果返回不一致问题</h2>
+<p>一、背景</p>
+<p>这周在使用Elasticsearch搜索的时候遇到一个，对于同一个搜索请求，会出现top50返回结果和排序不一致的问题。那么为什么会出现这样的问题？
+后来通过百度和google，发现这是因为Elastcisearch的分布式搜索特性导致。Elasticsearch在搜索时，会循环的选择主分片和其副本中的一个来计算和返回搜索结果，而由于主分片和副本中相关统计信息的不同，从而导致了同一个搜索串的评分的不一致，进而导致排序不一样。而造成这种主分片和副本统计信息不一致的具体原因，是因为文档删除时造成的，具体可以参考官方给出的解释：https://www.elastic.co/guide/en/elasticsearch/reference/current/consistent-scoring.html
+二、解决办法
+针对上述问题，Elasticsearch官方也给出了解决方案（https://www.elastic.co/guide/en/elasticsearch/guide/2.x/_search_options.html#_preference），即在搜索时设置preference特性。如下：
+SearchRequestBuilder builder = client.prepareSearch(offLin.index)
+.setTypes(offLin.type)
+.setQuery(queryBuilder)
+.setFetchSource(fetchFields, null)
+.setSize(limit)
+.setPreference("_primary_first");
+那么preference可以取哪些值，每个值的含义是什么呢，可以参考下面解释：
+（1）randomizeacross shards：随机选择分片或其副本查询数据，es的默认方式。
+（2）_local：优先在本地节点上的分片查询数据然后再去其他节点上的分片查询，本地节点没有IO问题但有可能造成负载不均问题。
+（3）_primary：搜索只在主分片执行搜索请求，副本不参与搜索；性能会打折扣，达不到性能的水平扩展。
+（4）_primary_first：优先在主分片执行，如果主分片挂掉，会在副本执行请求。
+（5）_only_node:123 ：只在123这个节点执行搜索。
+（6）_prefer_node:123：搜索请求优先在节点123执行。
+（7）_shards:1,2：搜索只在分片2、3执行，可以与_primary参数一起使用如：_shards:2,3;_primary
+（8）随机字符串：指定一个随机字符串，可以保证同样的请求，被分配到同样的副本上面，从而保证同一请求结果的稳定性。我遇到的问题就可以使用这种方式，把搜索串的hash值作为随机字符串，这样可以保证同一个搜索条件的请求的返回结果和排序一致。</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>
