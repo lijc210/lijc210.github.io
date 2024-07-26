@@ -113,3 +113,19 @@ git remote set-url --add origin <url>
 ```
 git checkout master && git pull  && git merge dev && git push && git checkout dev
 ```
+
+## git 删除历史提交
+
+```
+git rebase -i HEAD~1
+# 其中N为要删除的提交的个数
+git push -f origin master
+```
+
+## git 重命名分支
+```
+git branch -m master main
+git push origin HEAD:main
+git push origin --delete master
+# 可能是默认分支删除不掉，需要登陆到平台修改默认分支
+```
