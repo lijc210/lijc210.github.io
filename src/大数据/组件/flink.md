@@ -11,7 +11,16 @@ tag:
 
 ## flink优化参数
 
-```
+taskmanager.memory.managed.fraction 是 Apache Flink 中的一个配置参数，用于定义 TaskManager 进程中托管内存的占比。托管内存（Managed Memory）主要用于 Flink 中的一些内存密集型操作，比如排序、哈希连接、以及 RocksDB 状态后端等。
+默认值: 该参数的默认值通常为 0.4，即 40% 的可用堆内存会分配给托管内存。
+参数类型: 小数，取值范围在 0.0 到 1.0 之间。
+
+taskmanager.memory.network.fraction 是 Apache Flink 中的一个配置参数，用于定义 TaskManager 进程中网络内存的占比。网络内存（Network Memory）用于 Flink 的数据传输和网络缓冲，主要负责 TaskManager 之间的数据交换。
+
+默认值: 该参数的默认值通常为 0.1，即 10% 的可用堆内存会分配给网络内存。
+参数类型: 小数，取值范围在 0.0 到 1.0 之间。
+
+```shell
 table.exec.state.ttl=172800000
 
 table.exec.mini-batch.enabled=true
@@ -20,14 +29,19 @@ table.exec.mini-batch.size=10000
 table.exec.topn.cache-size=100000
 table.optimizer.agg-phase-strategy=TWO_PHASE
 state.backend.rocksdb.block.cache-size=512m
+taskmanager.memory.network.fraction=0.2 
+taskmanager.memory.managed.fraction=0.6
+```
 
+## 写入数据库优化
 
-
+```shell
 'sink.buffer-flush.max-rows' = '500',
 'sink.buffer-flush.interval' = '5s'
 ```
 
 ## SavePoint
+
 * SavePoint的路径需要在flink-conf.yaml中配置。
 > state.savepoints.dir: hdfs://node01:8020/flink/state/savepoint
 * 两种savepoint方式:
