@@ -3,7 +3,7 @@
   <id>https://blog.cizai.io/</id>
   <title>此在笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记 ，记录并输出一切能让自己提升的知识。</subtitle>
-  <updated>2024-09-03T10:14:37.820Z</updated>
+  <updated>2024-09-13T07:03:19.704Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.cizai.io/atom.xml"/>
   <link rel="alternate" href="https://blog.cizai.io/"/>
@@ -74,7 +74,7 @@
     <title type="text">wireguard</title>
     <id>https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/wireguard.html</id>
     <link href="https://blog.cizai.io/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/wireguard.html"/>
-    <updated>2024-07-24T07:22:17.000Z</updated>
+    <updated>2024-09-13T06:59:33.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>安装</h2>
 <p>wireguard 一键安装脚本
@@ -94,6 +94,7 @@ https://github.com/angristan/wireguard-install</p>
 <h2>配合v2ray使用</h2>
 <p>https://www.40huo.cn/blog/wireguard-over-vless.html</p>
 <p>https://github.com/XTLS/Xray-core/issues/1896</p>
+<p>https://github.com/scriptwang/blog/blob/master/docs/blog/2021-12-26_WireGuard%2BV2ray%E6%89%93%E9%80%A0%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%AE%89%E5%85%A8%E9%9A%90%E5%8C%BF%E4%B8%94%E9%AB%98%E9%80%9F%E7%9A%84%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E9%9A%A7%E9%81%93.md</p>
 ]]></content>
     <category term="工具"/>
     <published>2024-06-26T00:00:00.000Z</published>
