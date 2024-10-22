@@ -42,6 +42,7 @@ Type:
 * revert: 回滚到上一个版本
 
 ## git 设置代理和取消
+
 ```shell
 git config --global http.proxy http://127.0.0.1:4455
 git config --global https.proxy https://127.0.0.1:4455
@@ -52,7 +53,9 @@ git config --global https.proxy 'socks5://127.0.0.1:4455'
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
+
 ## git 初次提交到远程空的仓库
+
 ```shell
 git init
 git remote add origin [仓库地址]
@@ -78,7 +81,8 @@ git push -u origin main #  更新远程仓库
 https://github.com/gitpython-developers/GitPython/discussions/1458
 
 ## git强制覆盖本地仓库
-```
+
+```shell
 main覆盖本地
 git fetch --all && git reset --hard origin/main && git pull
 master
@@ -86,12 +90,14 @@ git fetch --all && git reset --hard origin/master && git pull
 ```
 
 ## git强制提交本地分支覆盖远程分支
-```
+
+```shell
 git push origin 分支名 --force
 ```
 
 ## git 删除历史记录
-```
+
+```shell
 git checkout --orphan <new_branch>
 git add -A
 git commit -am "Initial commit"
@@ -99,31 +105,39 @@ git branch -D master
 git branch -m master
 git push -f origin master
 ```
+
 这将创建一个新的分支，添加所有文件，提交并删除原来的主分支，最后将当前分支重命名为主分支并将其推送到远程仓库。请注意，这将删除所有历史记录，包括分支和标记。
 
 ## git pull报错fatal: refusing to merge unrelated histories
+
 git pull命令中添加–allow-unrelated-histories
 
 ## git新增一个推送地址
-```
+
+```shell
 git remote set-url --add origin <url>
 ```
 
 ## 推送本地dev分支到远程master分支，再切回dev分支
-```
+
+```shell
 git checkout master && git pull  && git merge dev && git push && git checkout dev
 ```
 
-## git 删除历史提交
+## git 删除所有 Commit 提交记录
 
-```
-git rebase -i HEAD~1
-# 其中N为要删除的提交的个数
-git push -f origin master
+```shell
+git checkout --orphan latest_branch
+git add -A
+git commit -am "First Commit"
+git branch -D main
+git branch -m main
+git push -f origin main
 ```
 
 ## git 重命名分支
-```
+
+```shell
 git branch -m master main
 git push origin HEAD:main
 git push origin --delete master
